@@ -1,0 +1,75 @@
+{
+  "compilerOptions": {
+    /* ===== Type Checking ===== */
+    "strict": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictBindCallApply": true,
+    "strictBuiltinIteratorReturn": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+
+    /* ===== Modules ===== */
+    "module": "ESNext",
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "Bundler",
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "#/*": ["./src/*"]
+    },
+
+    /* ===== Emit ===== */
+    "noEmit": true,
+
+    /* ===== JavaScript Support ===== */
+    "allowJs": false,
+
+    /* ===== Editor Support ===== */
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    /* ===== Interop Constraints ===== */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    /* ===== Language and Environment ===== */
+    "target": "ES2022",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "moduleDetection": "force",
+    "useDefineForClassFields": true,
+
+    /* ===== Projects ===== */
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
+    "incremental": true,
+
+    /* ===== Completeness ===== */
+    "skipLibCheck": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts",
+    "build/types/**/*.ts",
+    "build/dev/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

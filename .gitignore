@@ -1,0 +1,15 @@
+# TypeScript
+next-env.d.ts
+*.module.css.d.ts
+
+# Dependencies
+node_modules/
+
+# Build output
+build/
+
+# Editor directories and files
+.vscode/*
+.idea/
+*~
+*.local
