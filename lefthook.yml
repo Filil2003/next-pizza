@@ -1,0 +1,26 @@
+# ===== Common settings =====
+output:
+  - success
+  - failure
+  - execution_info
+
+# ===== Git hooks =====
+pre-commit:
+  commands:
+    Check:
+      stage_fixed: true
+      run: pnpm check -- {staged_files}
+
+commit-msg:
+  jobs:
+    - name: "Commit message"
+      script: "check.sh"
+      runner: bash
+
+pre-push:
+  piped: true
+  commands:
+    Check:
+      run: pnpm check
+    Build:
+      run: pnpm build
