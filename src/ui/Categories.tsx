@@ -19,7 +19,7 @@ interface Props extends PropsWithChildren {
 }
 
 /* ===== Categories component ===== */
-export const Categories = ({ className }: Props) => {
+export function Categories({ className }: Props) {
   const activeCategory = CATEGORIES.at(0);
 
   return (
@@ -42,4 +42,4 @@ export const Categories = ({ className }: Props) => {
       ))}
     </div>
   );
-};
+}

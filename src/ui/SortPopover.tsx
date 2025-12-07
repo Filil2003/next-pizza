@@ -12,7 +12,7 @@ interface Props extends PropsWithChildren {
 }
 
 /* ===== SortPopover component ===== */
-export const SortPopover = ({ className }: Props) => {
+export function SortPopover({ className }: Props) {
   return (
     <Button variant="ghost" className={cn("bg-gray-50", className)}>
       <ArrowUpDown size="16" />
@@ -20,4 +20,4 @@ export const SortPopover = ({ className }: Props) => {
       <span className="text-primary">{FILTERS.at(0)}</span>
     </Button>
   );
-};
+}

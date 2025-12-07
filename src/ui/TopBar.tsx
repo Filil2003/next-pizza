@@ -10,7 +10,7 @@ interface Props extends PropsWithChildren {
 }
 
 /* ===== TopBar component ===== */
-export const TopBar = ({ className }: Props) => {
+export function TopBar({ className }: Props) {
   return (
     <div
       className={cn(
@@ -24,4 +24,4 @@ export const TopBar = ({ className }: Props) => {
       </Container>
     </div>
   );
-};
+}
