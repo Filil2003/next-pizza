@@ -30,9 +30,9 @@ const variants = cva(
         `,
       },
       size: {
-        sm: "h-9 px-3",
-        md: "h-10 px-4 py-2",
-        lg: "h-11 px-8",
+        sm: "mh-9 px-3",
+        md: "mh-10 px-4 py-2",
+        lg: "mh-11 px-8",
         icon: "h-10 w-10",
       },
     },
