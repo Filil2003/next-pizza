@@ -40,7 +40,7 @@ export function Header({ className }: Props) {
             </div>
             <ArrowRight
               size={20}
-              className="transition duration-300 opacity-0 group-hover:opacity-100 col-start-3 row-start-1 -translate-x-2 group-hover:translate-x-0"
+              className="transition duration-300 opacity-0 group-hover:opacity-100 col-start-3 row-start-1 -translate-x-2 group-hover:translate-x-0 justify-self-center"
             />
           </Button>
         </div>
