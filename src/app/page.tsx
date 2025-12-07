@@ -1,3 +1,12 @@
+import { Container } from "#/ui/Container.tsx";
+import { Heading } from "#/ui/Heading.tsx";
+
 export default function Home() {
-  return <h1>Привет</h1>;
+  return (
+    <Container className="mt-10">
+      <Heading as="h2" className="font-extrabold">
+        Все пиццы
+      </Heading>
+    </Container>
+  );
 }
