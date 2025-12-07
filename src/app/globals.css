@@ -17,6 +17,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  /*noinspection CssUnresolvedCustomProperty*/
+  --font-sans: var(--font-nunito);
 }
 
 @layer base {
