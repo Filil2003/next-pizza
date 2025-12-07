@@ -5,11 +5,12 @@ import { cn } from "#/lib/tailwind";
 
 const variants = cva(
   `
-  inline-grid content-center
+  inline-flex items-center justify-center
   text-sm font-medium whitespace-nowrap
   rounded-xl
   transition-colors
   active:translate-y-[1px]
+  has-[svg]:gap-1
   `,
   {
     variants: {
