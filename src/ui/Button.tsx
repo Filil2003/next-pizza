@@ -19,6 +19,10 @@ const variants = cva(
           bg-primary hover:bg-primary/90
           text-primary-foreground
         `,
+        secondary: `
+          bg-secondary hover:bg-secondary/50
+          text-primary
+        `,
         outline: `
           bg-transparent hover:bg-secondary
           text-primary
