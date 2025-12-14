@@ -1,5 +1,8 @@
+"use client";
+
 import type { PropsWithChildren } from "react";
 import { cn } from "#/lib/tailwind";
+import { useCategoryStore } from "#/store/category.ts";
 import { Button } from "#/ui/Button.tsx";
 
 /* ===== Mock data ===== */
@@ -20,7 +23,7 @@ interface Props extends PropsWithChildren {
 
 /* ===== Categories component ===== */
 export function Categories({ className }: Props) {
-  const activeCategory = CATEGORIES.at(0);
+  const { activeCategory, setActiveCategory } = useCategoryStore();
 
   return (
     <div
@@ -36,6 +39,7 @@ export function Categories({ className }: Props) {
           type="link"
           href={`/#${category}`}
           key={category}
+          onClick={() => setActiveCategory(category)}
         >
           {category}
         </Button>

@@ -24,8 +24,8 @@ export default function Home() {
 
         {/* Feed */}
         <div className="grow flex flex-col gap-12">
-          {products.map(({ id, title, items }) => (
-            <ProductsGroupList key={id} title={title} products={items} />
+          {products.map(({ title, items }) => (
+            <ProductsGroupList key={title} title={title} products={items} />
           ))}
         </div>
       </Container>

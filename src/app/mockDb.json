@@ -1,897 +1,768 @@
 [
   {
-    "id": 1,
     "title": "Пиццы",
     "items": [
       {
-        "id": 1,
         "name": "Пицца с хреном",
         "description": "Возможно первая в истории пицца с пикантным сливочным хреном, свиной шейкой и маринованными огурчиками. Дерзайте пробовать!",
-        "price": "479",
+        "price": 479,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199b8e98ec871ab8a443887a3e1a136.avif"
       },
       {
-        "id": 2,
         "name": "Додо",
         "description": "Секрет обновленной пиццы — в новом соусе. Он усиливает вкус и делает сочетание бекона, говядины и пепперони еще мяснее!",
-        "price": "539",
+        "price": 539,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019ac604bad37209b1ec496bbdd98560.avif"
       },
       {
-        "id": 3,
         "name": "Пепперони фреш",
         "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
-        "price": "289",
+        "price": 289,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf57bc517218ab93c762f4b0193e.avif"
       },
       {
-        "id": 4,
         "name": "Чесночный цыпленок",
         "description": "Цыпленок, чеснок, томаты, моцарелла, фирменный соус альфредо",
-        "price": "289",
+        "price": 289,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf24170179679a7872f2ddf16d18.avif"
       },
       {
-        "id": 5,
         "name": "Терияки",
         "description": "Цыпленок, красный лук, сладкий перец, соус терияки, сыр моцарелла и фирменный соус альфредо",
-        "price": "379",
+        "price": 379,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a10a0c9ab792190a97768688bc6e9.avif"
       },
       {
-        "id": 6,
         "name": "Четыре сыра",
         "description": "Сыр блю чиз, сыры чеддер и пармезан, моцарелла, фирменный соус альфредо",
-        "price": "399",
+        "price": 399,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a109fe01672189d029a725ba99705.avif"
       },
       {
-        "id": 7,
         "name": "Сырная",
         "description": "Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
-        "price": "289",
+        "price": 289,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf40eb1171aabe90b1b3ce07c0c5.avif"
       },
       {
-        "id": 8,
         "name": "Чоризо фреш",
         "description": "Острые колбаски чоризо, сладкий перец, моцарелла, фирменный томатный соус",
-        "price": "289",
+        "price": 289,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf4f806371f19d529f9e9e7dba36.avif"
       },
       {
-        "id": 9,
         "name": "Ветчина и сыр",
         "description": "Ветчина, моцарелла, фирменный соус альфредо",
-        "price": "339",
+        "price": 339,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf283b2372ea8e7cfc8adae9ea84.avif"
       },
       {
-        "id": 10,
         "name": "Двойной цыпленок",
         "description": "Двойная порция цыпленка, моцарелла, фирменный соус альфредо",
-        "price": "349",
+        "price": 349,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf3e424371b49f0b8d7dbe320a70.avif"
       },
       {
-        "id": 11,
         "name": "Креветка и песто",
         "description": "Креветки, томаты, шампиньоны, соус песто, моцарелла, итальянские травы, фирменный томатный соус",
-        "price": "519",
+        "price": 519,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf4d218b75d4a3e667fc2f6d7643.avif"
       },
       {
-        "id": 12,
         "name": "Чилл Грилл",
         "description": "Двойная порция цыпленка, маринованные огурчики, красный лук, соус гриль, моцарелла, чеснок, фирменный соус альфредо",
-        "price": "399",
+        "price": 399,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf4624de7324966f2fc62c3ca673.avif"
       },
       {
-        "id": 13,
         "name": "Ветчина и грибы",
         "description": "Ветчина, шампиньоны, увеличенная порция моцареллы, фирменный томатный соус",
-        "price": "369",
+        "price": 369,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198c659b357718f9c77ad0dc392dadf.avif"
       },
       {
-        "id": 14,
         "name": "Аррива!",
         "description": "Цыпленок, острые колбаски чоризо, соус бургер, сладкий перец, красный лук, томаты, моцарелла, соус ранч, чеснок",
-        "price": "469",
+        "price": 469,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf2e5d2973a4bf5ec61161496f91.avif"
       },
       {
-        "id": 15,
         "name": "Креветки со сладким чили",
         "description": "Креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла, фирменный соус альфредо",
-        "price": "509",
+        "price": 509,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf5147f27780a3290a82692e7a36.avif"
       },
       {
-        "id": 16,
         "name": "Карбонара",
         "description": "Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус альфредо, итальянские травы",
-        "price": "479",
+        "price": 479,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf2b03447079941f2d5ac6e986a9.avif"
       },
       {
-        "id": 17,
         "name": "Жюльен",
         "description": "Цыпленок, шампиньоны, ароматный грибной соус, лук, сухой чеснок, моцарелла, смесь сыров чеддер и пармезан, фирменный соус альфредо",
-        "price": "429",
+        "price": 429,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf4e67f474f991f04a46a49af5e6.avif"
       },
       {
-        "id": 18,
         "name": "Песто",
         "description": "Двойная порция цыпленка, соус песто, кубики брынзы, томаты, моцарелла, фирменный соус альфредо",
-        "price": "459",
+        "price": 459,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a8aaa69cc7601b28736b1ebe7fc25.avif"
       },
       {
-        "id": 19,
         "name": "Бургер-пицца",
         "description": "Ветчина, маринованные огурчики, томаты, красный лук, чеснок, соус бургер, моцарелла, фирменный томатный соус",
-        "price": "399",
+        "price": 399,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199b77856ec79a986a2d582c2678fff.avif"
       },
       {
-        "id": 20,
         "name": "Сырный цыпленок",
         "description": "Двойная порция цыпленка, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-        "price": "479",
+        "price": 479,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf44f21b753ab8d43dada31ecee1.avif"
       },
       {
-        "id": 21,
         "name": "Пепперони",
         "description": "Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус",
-        "price": "359",
+        "price": 359,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf39dda97082912be8d1f3f2b233.avif"
       },
       {
-        "id": 22,
         "name": "Гавайская",
         "description": "Двойная порция цыпленка, ананасы, моцарелла, фирменный соус альфредо",
-        "price": "369",
+        "price": 369,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf530345746e98039478001d5108.avif"
       },
       {
-        "id": 23,
         "name": "Цыпленок барбекю",
         "description": "Двойная порция цыпленка, бекон, соус барбекю, красный лук, моцарелла, фирменный томатный соус",
-        "price": "499",
+        "price": 499,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf2cc87a79baa946c53b634615f4.avif"
       },
       {
-        "id": 24,
         "name": "Цыпленок ранч",
         "description": "Двойная порция цыпленка, ветчина, соус ранч, моцарелла, томаты, чеснок, фирменный соус альфредо",
-        "price": "499",
+        "price": 499,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf265f7371bcb8a99321fecf2716.avif"
       },
       {
-        "id": 25,
         "name": "Маргарита",
         "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-        "price": "399",
+        "price": 399,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf3d788b78d491891a6da5e94bf1.avif"
       },
       {
-        "id": 26,
         "name": "Диабло",
         "description": "Острые колбаски чоризо, острый перец халапеньо, соус барбекю, пряная говядина, томаты, сладкий перец, красный лук, моцарелла, фирменный томатный соус",
-        "price": "479",
+        "price": 479,
         "imageUrl": "https://media.dodostatic.net/image/r:292x292/0198bf439a007604880d0231be87cd3e.avif"
       },
       {
-        "id": 27,
         "name": "Двойная пепперони",
         "description": "Двойная порция пикантной пепперони, увеличенная порция моцареллы, фирменный томатный соус",
-        "price": "469",
+        "price": 469,
         "imageUrl": "https://media.dodostatic.net/image/r:292x292/0198bf315122735a8b45cf8539df53f8.avif"
       },
       {
-        "id": 28,
         "name": "Четыре сезона",
         "description": "Увеличенная порция моцареллы, ветчина, пикантная пепперони, кубики брынзы, томаты, шампиньоны, итальянские травы, фирменный томатный соус",
-        "price": "529",
+        "price": 529,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf47733e787a98ed55d13e9a2251.avif"
       },
       {
-        "id": 29,
         "name": "Овощи и грибы",
         "description": "Шампиньоны, томаты, сладкий перец, красный лук, кубики брынзы, моцарелла, фирменный томатный соус, итальянские травы",
-        "price": "399",
+        "price": 399,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf29e76179b88bdbf2ec5527bba3.avif"
       },
       {
-        "id": 30,
         "name": "Додо микс",
         "description": "Бекон, цыпленок, ветчина, сыр блю чиз, сыры чеддер и пармезан, соус песто, кубики брынзы, томаты, красный лук, моцарелла, фирменный соус альфредо, чеснок, итальянские травы",
-        "price": "659",
+        "price": 659,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf4a963f722a8f2780b4a9b66365.avif"
       },
       {
-        "id": 31,
         "name": "Мясная",
         "description": "Перезагрузили рецепт: теперь пять видов мяса и новый фирменный соус, который делает вкус еще ярче. Цыпленок, говядина, колбаски, пепперони и бекон стали еще мяснее!",
-        "price": "499",
+        "price": 499,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a897c5ea574b889475bd98412de7b.avif"
       },
       {
-        "id": 32,
         "name": "Пикантные колбаски",
         "description": "Классические колбаски, лук красный, моцарелла, фирменный томатный соус",
-        "price": "289",
+        "price": 289,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf25089a74d08e08629b41ed39ee.avif"
       },
       {
-        "id": 33,
         "name": "Мясной микс с говядиной и колбасками",
         "description": "Пряная говядина, классические колбаски, пикантная пепперони, бекон, моцарелла и фирменный томатный соус",
-        "price": "599",
+        "price": 599,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf582d24772c8cf624df9d91503b.avif"
       },
       {
-        "id": 34,
         "name": "Соберите свою пиццу",
         "description": "В основе пиццы увеличенная порция моцареллы и фирменный томатный соус, а другие ингредиенты можно выбрать на свой вкус",
-        "price": "269",
+        "price": 269,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/11ee7d616b6eac0d9d1151039f788394.avif"
       }
     ]
   },
   {
-    "id": 2,
     "title": "Закуски",
     "items": [
       {
-        "id": 1,
         "name": "Ланчбокс с хреном",
         "description": "Это блюдо с ярким характером: дерзкий сливочный соус с хреном, свиная шейка и маринованные огурчики с картошкой по-деревенски",
-        "price": "359",
+        "price": 359,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bf046b9577f78d909cfe8e772264.avif"
       },
       {
-        "id": 2,
         "name": "Паста Мясная",
         "description": "Встречайте новую Мясную пасту из печи: в ней соединились пряная говядина, сочный цыпленок, лук и сыр моцарелла, а сливочный альфредо и новый фирменный соус выводят баланс вкуса на новый уровень",
-        "price": "439",
+        "price": 439,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a8979ca3773f5a96ad9402295bbe4.avif"
       },
       {
-        "id": 3,
         "name": "Холодный чикен ролл",
         "description": "Холодная закуска для легкого перекуса: ролл с цыпленком, свежим салатом, томатами, чеддером и пармезаном с соусом ранч",
-        "price": "239",
+        "price": 239,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980e8a432071ca863e03212730c399.avif"
       },
       {
-        "id": 4,
         "name": "Додстер",
         "description": "Легендарная горячая закуска с цыпленком, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
-        "price": "249",
+        "price": 249,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cb92528769295aeb186fb501f8e.avif"
       },
       {
-        "id": 5,
         "name": "Додстер Чилл Грилл",
         "description": "Горячая закуска с цыпленком и соусом гриль с луком, маринованными огурчиками и моцареллой в тонкой пшеничной лепешке",
-        "price": "259",
+        "price": 259,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cb84cfb7023b6eca978780d30c5.avif"
       },
       {
-        "id": 6,
         "name": "Супермясной Додстер",
         "description": "Горячая закуска, в которой много мяса — цыпленок, чоризо и пряная говядина с моцареллой и соусом бургер в тонкой пшеничной лепешке",
-        "price": "299",
+        "price": 299,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cb9c5f8725aa9fb71a2ed7095a7.avif"
       },
       {
-        "id": 7,
         "name": "Додстер с ветчиной",
         "description": "Горячий завтрак с ветчиной, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
-        "price": "239",
+        "price": 239,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cba8e9e70dab9df8aa0f577e527.avif"
       },
       {
-        "id": 8,
         "name": "Острый Додстер",
         "description": "Горячая закуска с цыпленком, перчиком халапеньо, маринованными огурчиками, томатами, моцареллой и соусом барбекю в тонкой пшеничной лепешке",
-        "price": "279",
+        "price": 279,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cbb11e677738af9e254a413763f.avif"
       },
       {
-        "id": 9,
         "name": "Картофель из печи с соусом",
         "description": "Запеченная в печи картошечка с пряными специями. В комплекте сырный соус",
-        "price": "180",
+        "price": 180,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198ae98f5a377b4938dd4c854f1857c.avif"
       },
       {
-        "id": 10,
         "name": "Картофель из печи",
         "description": "Запеченная в печи картошечка — привычный вкус и мало масла. В составе пряные специи",
-        "price": "149",
+        "price": 149,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019840bab7aa74cd8d4149cd161ba42d.avif"
       },
       {
-        "id": 11,
         "name": "Картофель по-деревенски",
         "description": "Дольки картофеля, запеченные в печи до хрустящей корочки",
-        "price": "149",
+        "price": 149,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980e91c07075d9be384b7b94e75a8f.avif"
       },
       {
-        "id": 12,
         "name": "Хашбрауны",
         "description": "Картофельные оладушки из печи. Отличная закуска для завтрака или перекуса в любое время дня",
-        "price": "139",
+        "price": 139,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01981875ae8e75239a409d63775530d8.avif"
       },
       {
-        "id": 13,
         "name": "Креветки",
         "description": "Цельные креветки в хрустящей панировке",
-        "price": "229",
+        "price": 229,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980e9159aa74ca93e7daaa7db3e9fd.avif"
       },
       {
-        "id": 14,
         "name": "Креветки терияки",
         "description": "Цельные креветки в хрустящей панировке с соусом терияки",
-        "price": "379",
+        "price": 379,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198556badcf772484ba8ef325c9f09f.avif"
       },
       {
-        "id": 15,
         "name": "Куриные наггетсы",
         "description": "Нежное куриное мясо в хрустящей панировке",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198131dce8b706bb3ed5a169df1bc84.avif"
       },
       {
-        "id": 16,
         "name": "Омлет с томатами в пите",
         "description": "Легкий и питательный завтрак: омлет из печи с томатами и моцареллой в пшеничной пите. Удобно брать с собой",
-        "price": "189",
+        "price": 189,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019860554d1474818d8cd5982dae2144.avif"
       },
       {
-        "id": 17,
         "name": "Омлет с ветчиной и грибами в пите",
         "description": "Горячий сытный омлет с поджаристой корочкой, ветчина, шампиньоны и моцарелла в пшеничной пите. Удобно взять с собой",
-        "price": "239",
+        "price": 239,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019860510daa726fa023e04a1ae06a87.avif"
       },
       {
-        "id": 18,
         "name": "Омлет с беконом в пите",
         "description": "Горячий сытный омлет с поджаристой корочкой, бекон, моцарелла и томаты в пшеничной пите. Удобно взять с собой",
-        "price": "239",
+        "price": 239,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198604c583a7487a958608727edca10.avif"
       },
       {
-        "id": 19,
         "name": "Омлет с пепперони в пите",
         "description": "Для тех, кто не пропускает завтраки — омлет с поджаристой корочкой, пикантная пепперони, томаты и моцарелла в пшеничной пите. Удобно взять с собой",
-        "price": "239",
+        "price": 239,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198605864fc73b8a8259cbfa18e95c8.avif"
       },
       {
-        "id": 20,
         "name": "Омлет сырный в пите",
         "description": "Вариант завтрака в пшеничной пите с омлетом с поджаристой корочкой, моцареллой, кубиками брынзы, сырами чеддер и пармезан. Удобно взять с собой",
-        "price": "239",
+        "price": 239,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01986056bdd074f68ad0fc8de6f1e723.avif"
       },
       {
-        "id": 21,
         "name": "Омлет с томатами",
         "description": "Легкий и питательный завтрак: омлет из печи с томатами и моцареллой",
-        "price": "159",
+        "price": 159,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01988a36bbee7743a6ca0637e674fa30.avif"
       },
       {
-        "id": 22,
         "name": "Омлет с ветчиной и грибами",
         "description": "Горячий сытный омлет с поджаристой корочкой, ветчина, шампиньоны и моцарелла",
-        "price": "209",
+        "price": 209,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01988a29a3fd7191b04504e1c1e3f480.avif"
       },
       {
-        "id": 23,
         "name": "Омлет с беконом",
         "description": "Классическое сочетание горячего омлета с поджаристой корочкой и бекона с добавлением моцареллы и томатов на завтрак",
-        "price": "209",
+        "price": 209,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01988a27ac0578b69644066f43e3d41c.avif"
       },
       {
-        "id": 24,
         "name": "Омлет с пепперони",
         "description": "Сытный и сбалансированный завтрак — омлет с поджаристой корочкой, пикантная пепперони, томаты и моцарелла",
-        "price": "209",
+        "price": 209,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01988a2c616b74498fb32c2ddff51901.avif"
       },
       {
-        "id": 25,
         "name": "Омлет сырный",
         "description": "Горячий завтрак из омлета с поджаристой корочкой, моцарелла, кубики брынзы, сыры чеддер и пармезан",
-        "price": "209",
+        "price": 209,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01988a37c69575b2900c83e314a17ae2.avif"
       },
       {
-        "id": 26,
         "name": "Соберите свой омлет",
         "description": "Ваш фирменный рецепт на основе горячего омлета из печи с томатами и моцареллой, Добавляйте начинку по вкусу, но в меру: больше 4-5 ингредиентов уже не поместятся.",
-        "price": "159",
+        "price": 159,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019860575a3175329bf1d7ca6facf8f5.avif"
       },
       {
-        "id": 27,
         "name": "Паста Карбонара",
         "description": "Паста из печи с беконом, сырами чеддер и пармезан, томатами, моцареллой, фирменным соусом альфредо и чесноком",
-        "price": "389",
+        "price": 389,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198e2eecb6c7394a59211a66122d6af.avif"
       },
       {
-        "id": 28,
         "name": "Паста Песто",
         "description": "Паста из печи с соусом песто, цыпленком, томатами, моцареллой и фирменным томатным соусом",
-        "price": "389",
+        "price": 389,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198e2fad47976d49f9966a743138c45.avif"
       },
       {
-        "id": 29,
         "name": "Паста с креветками",
         "description": "Паста из печи с креветками, томатами, моцареллой, соусом альфредо и чесноком",
-        "price": "389",
+        "price": 389,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198e306c6fe7259ae9305f336d770d5.avif"
       },
       {
-        "id": 30,
         "name": "Паста Креветка и песто",
         "description": "Паста из печи с соусом песто, креветками, томатами, моцареллой и фирменным соусом альфредо",
-        "price": "409",
+        "price": 409,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198e2f708ea73ed9b0f96052ddbbcca.avif"
       },
       {
-        "id": 31,
         "name": "Грибной Стартер",
         "description": "Горячая закуска с шампиньонами, моцареллой и соусом ранч в тонкой пшеничной лепешке",
-        "price": "249",
+        "price": 249,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980e907d7173f0ae2a8a40ceff7669.avif"
       },
       {
-        "id": 32,
         "name": "Сырный Стартер",
         "description": "Горячая закуска с очень сырной начинкой. Моцарелла, пармезан, чеддер и соус ранч в тонкой пшеничной лепешке",
-        "price": "249",
+        "price": 249,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980e9041a377569779e41755a81ad1.avif"
       },
       {
-        "id": 33,
         "name": "Дэнвич ветчина и сыр",
         "description": "Поджаристая чиабатта и знакомое сочетание ветчины, цыпленка, моцареллы со свежими томатами, соусом ранч и чесноком",
-        "price": "279",
+        "price": 279,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019897d07b6c7939a756349c707b6e43.avif"
       },
       {
-        "id": 34,
         "name": "Дэнвич чоризо барбекю",
         "description": "Насыщенный вкус острых колбасок чоризо и пикантной пепперони с соусами бургер и барбекю, свежими томатами, маринованными огурчиками, моцареллой и луком в румяной чиабатте",
-        "price": "299",
+        "price": 299,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01988873280c77f0b5df7d8272ab2e0d.avif"
       },
       {
-        "id": 35,
         "name": "Салат Овощной микс",
         "description": "Хрустящий салат айсберг, сочные томаты черри, перец, кубики брынзы, соус бальзамик и итальянские травы",
-        "price": "295",
+        "price": 295,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bebb115a7714b22c48a4acb9e12c.avif"
       },
       {
-        "id": 36,
         "name": "Салат Цезарь",
         "description": "Цыпленок, свежие листья салата айсберг, томаты черри, сыры чеддер и пармезан, соус цезарь, пшеничные гренки, итальянские травы",
-        "price": "315",
+        "price": 315,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198bebb723d747c983fbd6a7d91e898.avif"
       }
     ]
   },
   {
-    "id": 3,
     "title": "Кофе",
     "items": [
       {
-        "id": 1,
         "name": "Кофе Американо",
         "description": "Горячий кофе для ценителей чистого вкуса",
-        "price": "119",
+        "price": 119,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198227e7648741ead340c4c96da45a4.avif"
       },
       {
-        "id": 2,
         "name": "Латте Темный лес",
         "description": "Вишня, шоколад и мягкий кофе — вкус, как у знаменитого пирожного",
-        "price": "169",
+        "price": 169,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01995c21fa247222a0e435d8924a73f6.avif"
       },
       {
-        "id": 3,
         "name": "Кофе Капучино",
         "description": "Легендарный рецепт кофе: эспрессо, горячее молоко и плотная молочная пенка",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019840b6488170018dd640026aea9961.avif"
       },
       {
-        "id": 4,
         "name": "Кофе Латте",
         "description": "Идеально сбалансированное сочетание кофе, увеличенной порции молока и нежнейшей пенки",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01982280dc9a778c941ba53768d94882.avif"
       },
       {
-        "id": 5,
         "name": "Кофе Карамельный капучино",
         "description": "Классический капучино с молочной пенкой и карамельным сиропом",
-        "price": "169",
+        "price": 169,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01998643d08072eb8dec77eeca378a50.avif"
       },
       {
-        "id": 6,
         "name": "Кофе Кокосовый латте",
         "description": "Горячий латте с кокосовым сиропом",
-        "price": "169",
+        "price": 169,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199864186a476df9937a053d065344b.avif"
       },
       {
-        "id": 7,
         "name": "Кофе Ореховый латте",
         "description": "Горячий латте с сиропом со вкусом фундука",
-        "price": "169",
+        "price": 169,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01998642911c798ca1235e655ad191d0.avif"
       },
       {
-        "id": 8,
         "name": "Айс капучино",
         "description": "Освежающий холодный кофе с порцией эспрессо и пломбиром",
-        "price": "270",
+        "price": 270,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199864654447319847e41eb6b656ec9.avif"
       }
     ]
   },
   {
-    "id": 4,
     "title": "Напитки",
     "items": [
       {
-        "id": 1,
         "name": "Горячий сорбет манго-чили",
         "description": "Замороженный напиток на палочке со спелым манго, пряным перчиком и ягодами клюквы. Продукт доставляется без кипятка.",
-        "price": "219",
+        "price": 219,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019aba3c04277038bebf6cd7b1e0814a.avif"
       },
       {
-        "id": 2,
         "name": "Горячий сорбет апельсин и облепиха",
         "description": "Замороженный напиток на палочке с апельсином и облепихой: просто опустите в горячую воду и наблюдайте магию. Продукт доставляется без кипятка.",
-        "price": "219",
+        "price": 219,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019aba3aa5a772d2800c31192d2cc6ab.avif"
       },
       {
-        "id": 3,
         "name": "Добрый Кола",
         "description": "",
-        "price": "155",
+        "price": 155,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a108bcba075db9f0dd7f304bf918d.avif"
       },
       {
-        "id": 4,
         "name": "Добрый Кола без сахара",
         "description": "",
-        "price": "155",
+        "price": 155,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a108c96277706af47ee96b31feeba.avif"
       },
       {
-        "id": 5,
         "name": "Добрый Кола Ледяной Лимон",
         "description": "",
-        "price": "155",
+        "price": 155,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a108d526478988f5467e1812a9959.avif"
       },
       {
-        "id": 6,
         "name": "Добрый Киви-Виноград",
         "description": "",
-        "price": "155",
+        "price": 155,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a108b601a742eb22316c8e488d338.avif"
       },
       {
-        "id": 7,
         "name": "Добрый Апельсин",
         "description": "",
-        "price": "155",
+        "price": 155,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a108ae3b271c9a11f871088824138.avif"
       },
       {
-        "id": 8,
         "name": "Добрый Лимон-Лайм",
         "description": "",
-        "price": "155",
+        "price": 155,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0197f86321497340b0a98da0a428d7ce.avif"
       },
       {
-        "id": 9,
         "name": "Айсти зеленый со вкусом лимона",
         "description": "Холодный зеленый чай с лимоном по нашему рецепту с приятной кислинкой",
-        "price": "139",
+        "price": 139,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198a803239b7654a365c797b823cdd2.avif"
       },
       {
-        "id": 10,
         "name": "Айсти зеленый со вкусом лесных ягод",
         "description": "Холодный зеленый чай по нашему рецепту со свежим ароматом лесных ягод",
-        "price": "139",
+        "price": 139,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198a7fe871b78fa9d851008cf535f66.avif"
       },
       {
-        "id": 11,
         "name": "Лимонад Арбузный лайм",
         "description": "Cладость арбуза с освежающим лаймом и листьями мяты по фирменному рецепту",
-        "price": "159",
+        "price": 159,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0197f865f0a872f0874fb8caa5cb293a.avif"
       },
       {
-        "id": 12,
         "name": "Rich Tea Черный с лимоном",
         "description": "",
-        "price": "159",
+        "price": 159,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a1089d33a7943a2c2c89e518c1341.avif"
       },
       {
-        "id": 13,
         "name": "Rich Tea Зеленый",
         "description": "",
-        "price": "159",
+        "price": 159,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a10895a1574bd8c59896230e5c5fa.avif"
       },
       {
-        "id": 14,
         "name": "Rich Tea Зеленый с манго",
         "description": "",
-        "price": "159",
+        "price": 159,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a1089c07c71bd9e760865d4799b26.avif"
       },
       {
-        "id": 15,
         "name": "Напиток сокосодержащий Pulpy Апельсин",
         "description": "",
-        "price": "169",
+        "price": 169,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a10951fb27810953a0fb957292631.avif"
       },
       {
-        "id": 16,
         "name": "Нектар Добрый апельсин",
         "description": "",
-        "price": "279",
+        "price": 279,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a2ffe5f167221a27bc6050e5af131.avif"
       },
       {
-        "id": 17,
         "name": "Нектар Добрый мультифрукт",
         "description": "",
-        "price": "279",
+        "price": 279,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a1091292c77d6a6fc073a84b7b78b.avif"
       },
       {
-        "id": 18,
         "name": "Сок Добрый Яблоко",
         "description": "",
-        "price": "279",
+        "price": 279,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019a1091de47712882371f33a3672198.avif"
       },
       {
-        "id": 19,
         "name": "Морс Клюква",
         "description": "Фирменный ягодный морс из натуральной клюквы с терпким послевкусием Дизайн товара может отличаться",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0197f86e0aa870ad8924478d3d37aa40.avif"
       },
       {
-        "id": 20,
         "name": "Морс Черная смородина",
         "description": "Фирменный ягодный морс из натуральной душистой черной смородины Дизайн товара может отличаться",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0197f86db50d71cd87171622bb122c9c.avif"
       },
       {
-        "id": 21,
         "name": "Морс Вишня",
         "description": "Фирменный ягодный морс из натуральной спелой вишни. В меру сладкий и с приятной кислинкой Дизайн товара может отличаться",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0197f86de6d4772aa558450aff00e595.avif"
       }
     ]
   },
   {
-    "id": 5,
     "title": "Коктейли",
     "items": [
       {
-        "id": 1,
         "name": "Персиковый молочный коктейль",
         "description": "Сочный, спелый персик и приятная свежесть мороженого",
-        "price": "269",
+        "price": 269,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199864e07967186b27287dc88685579.avif"
       },
       {
-        "id": 2,
         "name": "Молочный коктейль Фисташка",
         "description": "Сочетание нежности, сливочной текстуры и тонкого вкуса фисташки",
-        "price": "269",
+        "price": 269,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199864a65a871ebade4be4d862a7c20.avif"
       },
       {
-        "id": 3,
         "name": "Молочный коктейль с печеньем Орео",
         "description": "Как вкуснее есть печенье? Его лучше пить! Попробуйте молочный коктейль с мороженым и дробленым печеньем «Орео»",
-        "price": "269",
+        "price": 269,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019986494294739e9e1edf44accf8dcc.avif"
       },
       {
-        "id": 4,
         "name": "Клубничный молочный коктейль",
         "description": "Не важно, какое время года на улице, этот коктейль с клубничным сиропом вернет вас в лето с одного глотка",
-        "price": "269",
+        "price": 269,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199ae7135777528bca136648af27fb4.avif"
       },
       {
-        "id": 5,
         "name": "Шоколадный молочный коктейль",
         "description": "Это шок! Шоколадный молочный коктейль со сливочным мороженым и фирменным какао",
-        "price": "269",
+        "price": 269,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0199864ca5fe77de868217896c71a63c.avif"
       },
       {
-        "id": 6,
         "name": "Классический молочный коктейль",
         "description": "Это классика: молоко, мороженое и ничего лишнего",
-        "price": "255",
+        "price": 255,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198227af30a72b3b2614e9da1d277a3.avif"
       }
     ]
   },
   {
-    "id": 6,
     "title": "Десерты",
     "items": [
       {
-        "id": 1,
         "name": "Яблочный крамбл",
         "description": "Горячий пирог из печи с рассыпчатой крошкой и кислинкой зеленого яблока",
-        "price": "199",
+        "price": 199,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198ae57be1772ec8b98e13c78b7f7ab.avif"
       },
       {
-        "id": 2,
         "name": "Тарт лимонный",
-        "description": "199",
-        "price": "Песочная тарталетка с насыщенным цитрусовым вкусом и приятной кислинкой",
+        "description": "Песочная тарталетка с насыщенным цитрусовым вкусом и приятной кислинкой",
+        "price": 199,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019888711809770cbe00dbdf9ced5022.avif"
       },
       {
-        "id": 3,
         "name": "Додобоны",
         "description": "Когда сливочное встречается с пряным, получаются горячие булочки с корицей в фирменном пломбирном соусе",
-        "price": "129",
+        "price": 129,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198ae6dbbee77e4900b92245d450a6c.avif"
       },
       {
-        "id": 4,
         "name": "Бруслетики",
         "description": "Это задорные сладкие рулетики, в которых закрутился микс из натуральной брусники и фирменного пломбирного соуса",
-        "price": "175",
+        "price": 175,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198ae62dfce741e9376f1a3da547e41.avif"
       },
       {
-        "id": 5,
         "name": "Пирожное Муравьешки",
         "description": "Сметанное печенье, вареная сгущенка и мед — просто и вкусно, как в детстве. В упаковке три шарика",
-        "price": "169",
+        "price": 169,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980d4299eb70c2ac5b0203c228851f.avif"
       },
       {
-        "id": 6,
         "name": "Фондан",
         "description": "Французский шоколадный десерт с хрустящей корочкой и жидкой начинкой",
-        "price": "459",
+        "price": 459,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cbfded078cab79c5e29d1d55357.avif"
       },
       {
-        "id": 7,
         "name": "Тирамису",
         "description": "Многослойный десерт в лучших итальянских традициях: легкий аромат какао, пропитанная кофе бисквитная прослойка и нежный крем",
-        "price": "199",
+        "price": 199,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198beb73b7d771a946dc64393dffde6.avif"
       },
       {
-        "id": 8,
         "name": "Чизкейк Дубайский",
         "description": "Мягкий чизкейк с насыщенным фисташковым вкусом и глазурью. Вдохновлён десертом, о котором говорят все — и не зря Название вымышленное. Чизкейк и ингредиенты в составе не из Дубая",
-        "price": "249",
+        "price": 249,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019999d8979e720182482f757c95fb35.avif"
       },
       {
-        "id": 9,
         "name": "Чизкейк карамельный с арахисом",
         "description": "Сливочный десерт с очень карамельной начинкой, шоколадным печеньем и орехами",
-        "price": "189",
+        "price": 189,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cc3c56e74ee9e5e8958a670d6cd.avif"
       },
       {
-        "id": 10,
         "name": "Чизкейк Нью-Йорк",
         "description": "Нежнейшая сырная основа, тонкий корж песочного теста и никаких добавок. Классика в мире десертов",
-        "price": "189",
+        "price": 189,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/019840ba1e6078459e4aa5777065f0bc.avif"
       },
       {
-        "id": 11,
         "name": "Чизкейк Банановый с шоколадным печеньем",
         "description": "Солнечная версия классического рецепта: нежный чизкейк с бананом и шоколадным печеньем",
-        "price": "189",
+        "price": 189,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198138723e478fba518947539dbbdcb.avif"
       },
       {
-        "id": 12,
         "name": "Шоколадный кукис",
         "description": "Мягкое печенье с кусочками шоколада. Идеально сочетается с чаем, кофе или какао",
-        "price": "115",
+        "price": 115,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cc17ab27929b37069e12dc66e6e.avif"
       },
       {
-        "id": 13,
         "name": "Маффин Соленая карамель",
         "description": "Кекс, раскрывающий необычное сочетание соленого арахиса и сладкой карамели",
-        "price": "100",
+        "price": 100,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cc4a4aa729e88828f8db0a48711.avif"
       },
       {
-        "id": 14,
         "name": "Маффин Три шоколада",
         "description": "Кекс из натурального какао с начинкой из кубиков белого и молочного шоколада",
-        "price": "100",
+        "price": 100,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980cc4cebb707a9b91ba24195fee1d.avif"
       },
       {
-        "id": 15,
         "name": "Сорбет Клубничный гранат",
         "description": "Охлаждающий дуэт сочных ягод и спелых фруктов",
-        "price": "165",
+        "price": 165,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/0198beb9582e7490806625070716d225.avif"
       },
       {
-        "id": 16,
         "name": "Сырники с малиновым вареньем",
         "description": "Любимый десерт многих гостей — румяные сырники из печи с малиновым вареньем. Нежные, в меру сладкие и напоминающие детство",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980d40cb2c77c69809dc155da7b8d4.avif"
       },
       {
-        "id": 17,
         "name": "Сырники со сгущенным молоком",
         "description": "Нежные сырники, приготовленные в печи, с порционным сгущенным молоком",
-        "price": "179",
+        "price": 179,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980d4162e076c08fac16ff25f3c6b5.avif"
       },
       {
-        "id": 18,
         "name": "Сырники",
         "description": "Любимый десерт многих гостей — румяные сырники из печи. Нежные, в меру сладкие и напоминающие детство",
-        "price": "165",
+        "price": 165,
         "imageUrl": "https://media.dodostatic.net/image/r:584x584/01980d3fd54678fa9b9fe6c9d7c0d24c.avif"
       }
     ]

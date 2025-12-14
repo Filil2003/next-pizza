@@ -7,7 +7,6 @@ import { Heading } from "#/ui/Heading.tsx";
 
 /* ===== Typing props ===== */
 interface Props extends PropsWithChildren {
-  id: number;
   name: string;
   description: string;
   price: number;

@@ -1,4 +1,8 @@
+"use client";
+
 import type { ComponentProps } from "react";
+import { InView } from "react-intersection-observer";
+import { useCategoryStore } from "#/store/category.ts";
 import { Heading } from "#/ui/Heading.tsx";
 import { ProductCard } from "#/ui/ProductCard.tsx";
 
@@ -11,17 +15,27 @@ interface Props {
 
 /* ===== ProductsGroupList component ===== */
 export function ProductsGroupList({ title, products, className }: Props) {
+  const { setActiveCategory } = useCategoryStore();
+
   return (
-    <div className={className}>
+    <InView
+      className={className}
+      as="section"
+      id={title}
+      rootMargin="-50% 0px -50% 0px"
+      onChange={(inView) => {
+        if (inView) setActiveCategory(title);
+      }}
+    >
       <Heading as="h2" className="font-extrabold mb-5">
         {title}
       </Heading>
 
       <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-12">
         {products.map((product) => (
-          <ProductCard {...product} key={product.id} price={product.price} />
+          <ProductCard {...product} key={product.name} price={product.price} />
         ))}
       </div>
-    </div>
+    </InView>
   );
 }
