@@ -2,4 +2,7 @@ ignoredBuiltDependencies:
   - sharp
 
 onlyBuiltDependencies:
+  - '@prisma/engines'
+  - better-sqlite3
   - lefthook
+  - prisma

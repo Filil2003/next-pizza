@@ -10,15 +10,21 @@
     "lint": "biome lint",
     "format": "biome format --write",
     "check": "biome check --fix --error-on-warnings",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.1.0",
+    "@prisma/client": "^7.1.0",
     "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-slider": "^1.3.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
     "lucide-react": "^0.555.0",
-    "next": "16.0.7",
+    "next": "16.1.0-canary.19",
+    "prisma": "^7.1.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-intersection-observer": "^10.0.0",
