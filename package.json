@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "biome lint",
     "format": "biome format --write",
-    "check": "biome check --fix --error-on-warnings",
+    "check": "biome check --fix --error-on-warnings --no-errors-on-unmatched",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma:push": "prisma db push",
     "prisma:studio": "prisma studio"
