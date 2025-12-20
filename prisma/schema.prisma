@@ -1,126 +1,110 @@
 generator client {
   provider = "prisma-client"
-  output   = "../src/generated/prisma"
+  output   = "../src/lib/prisma/generated"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
 }
 
+/* ===== User =====*/
 model User {
-  id               Int               @id @default(autoincrement())
-  fullName         String
-  email            String            @unique
-  password         String
-  role             UserRole          @default(USER)
-  provider         String?
-  providerId       String?
-  cart             Cart?
-  order            Order[]
-  verificationCode VerificationCode?
-  createdAt        DateTime          @default(now())
-  updatedAt        DateTime          @updatedAt
-}
+  id String @id @default(cuid(2))
 
-model Category {
-  id        Int       @id @default(autoincrement())
-  name      String    @unique
-  products  Product[]
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-}
+  email    String @unique
+  password String
+  fullName String
 
-model Product {
-  id          Int              @id @default(autoincrement())
-  name        String
-  imageUrl    String
-  ingredients Ingredient[]
-  variants    ProductVariant[]
-  category    Category         @relation(fields: [categoryId], references: [id])
-  categoryId  Int
-  createdAt   DateTime         @default(now())
-  updatedAt   DateTime         @updatedAt
-}
+  role UserRole @default(CUSTOMER)
 
-model ProductVariant {
-  id        Int        @id @default(autoincrement())
-  price     Int
-  size      Int?
-  doughType Int?
-  product   Product    @relation(fields: [productId], references: [id])
-  productId Int
-  cartItems CartItem[]
-}
-
-model Ingredient {
-  id        Int        @id @default(autoincrement())
-  name      String
-  price     Int
-  imageUrl  String
-  products  Product[]
-  cartItems CartItem[]
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-}
-
-model Cart {
-  id          Int        @id @default(autoincrement())
-  user        User?      @relation(fields: [userId], references: [id])
-  userId      Int?       @unique
-  items       CartItem[]
-  totalAmount Int        @default(0)
-  token       String
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
-}
-
-model CartItem {
-  id               Int            @id @default(autoincrement())
-  cart             Cart           @relation(fields: [cartId], references: [id])
-  cartId           Int
-  productVariant   ProductVariant @relation(fields: [productVariantId], references: [id])
-  productVariantId Int
-  quantity         Int            @default(1)
-  ingredients      Ingredient[]
-  createdAt        DateTime       @default(now())
-  updatedAt        DateTime       @updatedAt
-}
-
-model Order {
-  id          Int         @id @default(autoincrement())
-  user        User?       @relation(fields: [userId], references: [id])
-  userId      Int?
-  token       String
-  totalAmount Int
-  status      OrderStatus @default(PENDING)
-  paymentId   String?
-  items       Json
-  fullName    String
-  address     String
-  phone       String
-  email       String
-  comment     String?
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
-}
-
-enum OrderStatus {
-  PENDING
-  SUCCESSFUL
-  CANCELLED
-}
-
-model VerificationCode {
-  id        Int      @id @default(autoincrement())
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int      @unique
-  code      String   @unique
   createdAt DateTime @default(now())
-
-  @@unique([userId, code])
+  updatedAt DateTime @updatedAt
 }
 
 enum UserRole {
+  CUSTOMER
   ADMIN
-  USER
+}
+
+/* ===== Pizza =====*/
+model Pizza {
+  id String @id @default(cuid(2))
+
+  name    String  @unique @db.VarChar(50)
+  slug    String
+  InStock Boolean @default(true)
+
+  ingredients PizzaIngredient[]
+  toppings    PizzaTopping[]
+  variants    PizzaVariant[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PizzaIngredient {
+  pizzaId      String
+  pizza        Pizza      @relation(fields: [pizzaId], references: [id])
+  ingredientId String
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+
+  isRemovable Boolean @default(false)
+
+  @@id([pizzaId, ingredientId])
+}
+
+model PizzaTopping {
+  pizzaId      String
+  pizza        Pizza      @relation(fields: [pizzaId], references: [id])
+  ingredientId String
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+
+  @@id([pizzaId, ingredientId])
+}
+
+model Ingredient {
+  id String @id @default(cuid(2))
+
+  name     String  @unique @db.VarChar(30)
+  price    Int
+  imageUrn String? @unique
+
+  pizzas   PizzaIngredient[]
+  toppings PizzaTopping[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PizzaVariant {
+  id String @id @default(cuid(2))
+
+  pizzaId String
+  pizza   Pizza      @relation(fields: [pizzaId], references: [id])
+  sizeId  String
+  size    PizzaSize  @relation(fields: [sizeId], references: [name])
+  crustId String
+  crust   PizzaCrust @relation(fields: [crustId], references: [name])
+
+  price    Int
+  imageUrn String? @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([pizzaId, sizeId, crustId])
+}
+
+model PizzaSize {
+  name  String @id
+  value Int
+
+  variants PizzaVariant[]
+}
+
+model PizzaCrust {
+  name  String @id
+  value String
+
+  variants PizzaVariant[]
 }

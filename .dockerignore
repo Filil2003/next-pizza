@@ -1,0 +1,15 @@
+# Editor directories and files
+.vscode/*
+.idea/
+*~
+*.local
+
+# Dependencies
+node_modules/
+
+# Build output
+build/
+
+# Version control system
+.gitignore
+.git
