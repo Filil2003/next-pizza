@@ -1,5 +1,5 @@
 import { prisma } from "#/lib/prisma";
-import { seedData } from "./seedData.ts";
+import * as seedData from "./data";
 
 async function seed() {
   await prisma.user.createMany({
