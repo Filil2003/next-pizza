@@ -1,9 +1,8 @@
 import { Plus } from "lucide-react";
 import Image from "next/image";
 import type { PropsWithChildren } from "react";
-import { cn } from "#/lib/tailwind";
-import { Button } from "#/ui/Button.tsx";
-import { Heading } from "#/ui/Heading.tsx";
+import { cn } from "#/shared/lib/tailwind";
+import { Button, Heading } from "#/shared/ui";
 
 /* ===== Typing props ===== */
 interface Props extends PropsWithChildren {
@@ -20,7 +19,7 @@ export function ProductCard({
   description,
   price,
   imageUrl,
-  className,
+  className
 }: Props) {
   return (
     <div className={cn("flex flex-col", className)}>

@@ -4,11 +4,11 @@ import {
   type ChangeEvent,
   type ComponentProps,
   type PropsWithChildren,
-  useState,
+  useState
 } from "react";
-import { cn } from "#/lib/tailwind";
-import { FilterCheckbox } from "#/ui/FilterCheckbox.tsx";
-import { Input } from "#/ui/Input.tsx";
+import { cn } from "#/shared/lib/tailwind";
+import { Input } from "#/shared/ui";
+import { FilterCheckbox } from "./FilterCheckbox.tsx";
 
 /* ===== Typing props ===== */
 interface Props extends PropsWithChildren {
@@ -31,25 +31,25 @@ export function CheckboxFiltersGroup({
   defaultItems,
   limit = 5,
   searchInputPlaceholder = "Поиск...",
-  className,
+  className
 }: Props) {
-  const [showAll, setShowAll] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [searchValue, setSearchValue] = useState("");
 
   const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
   };
 
-  const list = showAll
+  const list = isExpanded
     ? items.filter(({ label }) =>
-        label.toLowerCase().startsWith(searchValue.toLowerCase()),
+        label.toLowerCase().startsWith(searchValue.toLowerCase())
       )
     : defaultItems.slice(0, limit);
 
   return (
     <div className={cn("", className)}>
       <p className="font-bold mb-3">{title}</p>
-      {showAll && (
+      {isExpanded && (
         <Input
           onChange={onInputChange}
           placeholder={searchInputPlaceholder}
@@ -60,8 +60,7 @@ export function CheckboxFiltersGroup({
       <div className="flex flex-col gap-4 max-h-96 pr-2 overflow-auto">
         {list.map((item, index) => (
           <FilterCheckbox
-            // biome-ignore lint/suspicious/noArrayIndexKey: <Static list>
-            key={index}
+            key={index.valueOf()}
             label={item.label}
             value={item.value}
             checked={false}
@@ -71,13 +70,13 @@ export function CheckboxFiltersGroup({
       </div>
 
       {items.length > limit && (
-        <div className={showAll ? "border-t border-t-neutral-100 mt-4" : ""}>
+        <div className={isExpanded ? "border-t border-t-neutral-100 mt-4" : ""}>
           <button
             type="button"
             className="text-primary mt-3"
-            onClick={() => setShowAll((prev) => !prev)}
+            onClick={() => setIsExpanded((prev) => !prev)}
           >
-            {showAll ? "Скрыть" : "+ Показать всё"}
+            {isExpanded ? "Скрыть" : "+ Показать всё"}
           </button>
         </div>
       )}

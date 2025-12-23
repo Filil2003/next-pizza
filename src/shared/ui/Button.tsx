@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import Link from "next/link";
 import type { ComponentProps } from "react";
-import { cn } from "#/lib/tailwind";
+import { cn } from "#/shared/lib/tailwind";
 
 const variants = cva(
   `
@@ -9,7 +9,7 @@ const variants = cva(
   text-sm font-medium whitespace-nowrap
   rounded-xl
   transition-colors
-  active:translate-y-[1px]
+  active:translate-y-px
   has-[svg]:gap-1
   `,
   {
@@ -31,20 +31,20 @@ const variants = cva(
         ghost: `
           hover:bg-secondary
           hover:text-secondary-foreground
-        `,
+        `
       },
       size: {
         sm: "mh-9 px-3",
         md: "mh-10 px-4 py-2",
         lg: "mh-11 px-8",
-        icon: "h-10 w-10",
-      },
+        icon: "h-10 w-10"
+      }
     },
     defaultVariants: {
       variant: "primary",
-      size: "md",
-    },
-  },
+      size: "md"
+    }
+  }
 );
 
 /* ===== Typing props ===== */

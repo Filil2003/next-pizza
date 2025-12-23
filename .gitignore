@@ -15,4 +15,4 @@ build/
 *.local
 
 # Generated Prisma Client
-/src/lib/prisma/generated
+**/prisma/generated

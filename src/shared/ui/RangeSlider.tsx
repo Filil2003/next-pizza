@@ -1,6 +1,6 @@
 import * as SliderPrimitive from "@radix-ui/react-slider";
 import { type ComponentProps, Fragment, type ReactNode } from "react";
-import { cn } from "#/lib/tailwind";
+import { cn } from "#/shared/lib/tailwind";
 
 /* ===== Typing props ===== */
 interface Props extends ComponentProps<typeof SliderPrimitive.Root> {
@@ -23,7 +23,7 @@ export function RangeSlider({
     <SliderPrimitive.Root
       className={cn(
         "relative flex w-full touch-none select-none items-center",
-        className,
+        className
       )}
       {...restProps}
     >
@@ -31,15 +31,14 @@ export function RangeSlider({
         <SliderPrimitive.Range className="absolute h-full bg-primary" />
       </SliderPrimitive.Track>
       {initialValue.map((value, index) => (
-        // biome-ignore lint/suspicious/noArrayIndexKey: <Index is safe here because thumbs count and order are static>
-        <Fragment key={index}>
+        <Fragment key={index.valueOf()}>
           <SliderPrimitive.Thumb className="relative block h-4 w-4 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
             {label && (
               <span
                 className={cn(
                   "absolute flex w-full justify-center",
                   labelPosition === "top" && "-top-7",
-                  labelPosition === "bottom" && "top-4",
+                  labelPosition === "bottom" && "top-4"
                 )}
               >
                 {label(value)}

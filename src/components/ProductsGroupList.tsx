@@ -2,9 +2,9 @@
 
 import type { ComponentProps } from "react";
 import { InView } from "react-intersection-observer";
+import { Heading } from "#/shared/ui";
 import { useCategoryStore } from "#/store/category.ts";
-import { Heading } from "#/ui/Heading.tsx";
-import { ProductCard } from "#/ui/ProductCard.tsx";
+import { ProductCard } from "./ProductCard.tsx";
 
 /* ===== Typing props ===== */
 interface Props {

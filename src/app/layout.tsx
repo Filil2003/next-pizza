@@ -2,7 +2,7 @@ import "./globals.css";
 import { clsx } from "clsx";
 import { Nunito } from "next/font/google";
 import type { ReactNode } from "react";
-import { Header } from "#/ui/Header.tsx";
+import { Header } from "#/components";
 
 const nunito = Nunito({
   subsets: ["cyrillic"],

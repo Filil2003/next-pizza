@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react";
-import { cn } from "#/lib/tailwind";
+import { cn } from "#/shared/lib/tailwind";
 
 /* ===== Typing props ===== */
 interface Props extends PropsWithChildren {
@@ -8,7 +8,5 @@ interface Props extends PropsWithChildren {
 
 /* ===== Container component ===== */
 export function Container({ className, children }: Props) {
-  return (
-    <div className={cn("mx-auto max-w-[1280px]", className)}>{children}</div>
-  );
+  return <div className={cn("mx-auto max-w-7xl", className)}>{children}</div>;
 }

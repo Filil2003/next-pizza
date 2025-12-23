@@ -1,9 +1,9 @@
 "use client";
 
 import type { PropsWithChildren } from "react";
-import { cn } from "#/lib/tailwind";
+import { cn } from "#/shared/lib/tailwind";
+import { Button } from "#/shared/ui";
 import { useCategoryStore } from "#/store/category.ts";
-import { Button } from "#/ui/Button.tsx";
 
 /* ===== Mock data ===== */
 const CATEGORIES = [
@@ -13,7 +13,7 @@ const CATEGORIES = [
   "Коктейли",
   "Кофе",
   "Напитки",
-  "Десерты",
+  "Десерты"
 ] as const;
 
 /* ===== Typing props ===== */
@@ -33,7 +33,7 @@ export function Categories({ className }: Props) {
         <Button
           className={cn(
             category === activeCategory &&
-              "bg-white shadow-md shadow-gray-200 text-primary",
+              "bg-white shadow-md shadow-gray-200 text-primary"
           )}
           variant="ghost"
           type="link"

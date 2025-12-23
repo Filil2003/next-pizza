@@ -1,5 +1,5 @@
 import { useId } from "react";
-import { Checkbox } from "#/ui/Checkbox.tsx";
+import { Checkbox } from "#/shared/ui";
 
 /* ===== Typing props ===== */
 interface Props {

@@ -6,8 +6,8 @@ import Link from "next/link";
 import { type ChangeEvent, useEffect, useRef, useState } from "react";
 import { Api } from "#/api/apiClient.ts";
 import type { SearchProductResponse } from "#/app/api/products/search/route.ts";
-import { useClickAway } from "#/lib/react";
-import { cn } from "#/lib/tailwind";
+import { useClickAway } from "#/shared/lib/react";
+import { cn } from "#/shared/lib/tailwind";
 
 /* ===== Typing props ===== */
 interface Props {

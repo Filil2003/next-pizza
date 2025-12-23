@@ -1,7 +1,7 @@
 import { ArrowUpDown } from "lucide-react";
 import type { PropsWithChildren } from "react";
-import { cn } from "#/lib/tailwind";
-import { Button } from "#/ui/Button.tsx";
+import { cn } from "#/shared/lib/tailwind";
+import { Button } from "#/shared/ui";
 
 /* ===== Mock data ===== */
 const FILTERS = ["популярное", "новинки"] as const;

@@ -1,9 +1,7 @@
 import type { PropsWithChildren } from "react";
-import { CheckboxFiltersGroup } from "#/ui/CheckboxFiltersGroup.tsx";
-import { FilterCheckbox } from "#/ui/FilterCheckbox.tsx";
-import { Heading } from "#/ui/Heading.tsx";
-import { Input } from "#/ui/Input.tsx";
-import { RangeSlider } from "#/ui/RangeSlider.tsx";
+import { Heading, Input, RangeSlider } from "#/shared/ui";
+import { CheckboxFiltersGroup } from "./CheckboxFiltersGroup.tsx";
+import { FilterCheckbox } from "./FilterCheckbox.tsx";
 
 /* ===== Typing props ===== */
 interface Props extends PropsWithChildren {
@@ -45,54 +43,54 @@ export function Filtration({ className }: Props) {
           defaultItems={[
             {
               label: "Сырный соус",
-              value: "1",
+              value: "1"
             },
             {
               label: "Моцарелла",
-              value: "2",
+              value: "2"
             },
             {
               label: "Чеснок",
-              value: "3",
+              value: "3"
             },
             {
               label: "Солёные огурчики",
-              value: "4",
+              value: "4"
             },
             {
               label: "Красный лук",
-              value: "5",
+              value: "5"
             },
             {
               label: "Томаты",
-              value: "6",
-            },
+              value: "6"
+            }
           ]}
           items={[
             {
               label: "Сырный соус",
-              value: "1",
+              value: "1"
             },
             {
               label: "Моцарелла",
-              value: "2",
+              value: "2"
             },
             {
               label: "Чеснок",
-              value: "3",
+              value: "3"
             },
             {
               label: "Солёные огурчики",
-              value: "4",
+              value: "4"
             },
             {
               label: "Красный лук",
-              value: "5",
+              value: "5"
             },
             {
               label: "Томаты",
-              value: "6",
-            },
+              value: "6"
+            }
           ]}
         />
       </div>
