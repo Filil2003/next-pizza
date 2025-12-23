@@ -4,6 +4,7 @@ import type { ComponentProps } from "react";
 import { cn } from "#/lib/tailwind";
 import { Button } from "#/ui/Button.tsx";
 import { Container } from "#/ui/Container.tsx";
+import { Search } from "#/ui/Search.tsx";
 
 /* ===== Typing props ===== */
 type Props = ComponentProps<"header">;
@@ -12,7 +13,7 @@ type Props = ComponentProps<"header">;
 export function Header({ className }: Props) {
   return (
     <header className={cn("border-b-2", className)}>
-      <Container className="flex items-center justify-between py-8">
+      <Container className="grid grid-cols-[auto_1fr_auto] gap-x-10 py-8">
         {/* Left side */}
         <div className="flex items-center gap-4">
           <Image src="/logo.png" alt="Logo" width="35" height="35" />
@@ -24,6 +25,7 @@ export function Header({ className }: Props) {
           </div>
         </div>
         {/* Middle side */}
+        <Search />
 
         {/* Right side */}
         <div className="flex items-center gap-3">
@@ -33,7 +35,7 @@ export function Header({ className }: Props) {
           </Button>
           <Button className="group grid grid-cols-[repeat(3,auto)]">
             <b>520 ₽</b>
-            <span className="h-full w-[1px] bg-white/30 mx-3" />
+            <span className="h-full w-px bg-white/30 mx-3" />
             <div className="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0 col-start-3 row-start-1">
               <ShoppingCartIcon size="16" strokeWidth="2" />
               <b>3</b>
