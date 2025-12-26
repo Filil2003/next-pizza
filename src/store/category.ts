@@ -12,12 +12,12 @@ interface Actions {
 type CategoryStore = State & Actions;
 
 const slice: StateCreator<CategoryStore, [["zustand/devtools", never]]> = (
-  setState,
+  setState
 ) => ({
   activeCategory: "Пиццы",
-  setActiveCategory: (category) => setState({ activeCategory: category }),
+  setActiveCategory: (category) => setState({ activeCategory: category })
 });
 
 export const useCategoryStore = create<CategoryStore>()(
-  devtools(slice, { name: "CategoryStore" }),
+  devtools(slice, { name: "CategoryStore" })
 );

@@ -6,13 +6,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "media.dodostatic.net",
-      },
-    ],
+        hostname: "media.dodostatic.net"
+      }
+    ]
   },
   experimental: {
-    typedEnv: true,
-  },
+    typedEnv: true
+  }
 };
 
 export default nextConfig;
