@@ -1,37 +1,11 @@
 import slugify from "slugify";
-import type { Prisma } from "#/lib/prisma";
+import type { Prisma } from "#/shared/lib/prisma";
 import { ingredient } from "./ingredient.ts";
+import pizzaJson from "./pizza.json";
 
-export const pizza: Prisma.PizzaCreateInput[] = [
-  createPizzaSeed({
-    name: "Пепперони фреш",
-    ingredients: [
-      {
-        name: "Пикантная пепперони",
-        isRemovable: true
-      },
-      { name: "Моцарелла" },
-      {
-        name: "Томаты",
-        isRemovable: true
-      }
-    ]
-  }),
-  createPizzaSeed({
-    name: "Четыре сыра",
-    ingredients: [
-      {
-        name: "Сыр блю чиз",
-        isRemovable: true
-      },
-      {
-        name: "Сыры чеддер и пармезан",
-        isRemovable: true
-      },
-      { name: "Моцарелла" }
-    ]
-  })
-] as const;
+export const pizza: Prisma.PizzaCreateInput[] = pizzaJson.map((pizza) => {
+  return createPizzaSeed(pizza);
+});
 
 export const pizzaSize: Prisma.PizzaSizeCreateInput[] = [
   { name: "SMALL", value: 25 },

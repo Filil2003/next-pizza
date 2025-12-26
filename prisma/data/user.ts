@@ -1,5 +1,5 @@
 import { hash } from "node:crypto";
-import type { Prisma } from "#/lib/prisma";
+import type { Prisma } from "#/shared/lib/prisma";
 
 export const user: Prisma.UserCreateInput[] = [
   createUserSeed({

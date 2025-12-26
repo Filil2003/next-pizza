@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import type { Prisma } from "#/lib/prisma";
+import type { Prisma } from "#/shared/lib/prisma";
 
 export const ingredient: Prisma.IngredientCreateInput[] = [
   createIngredientSeed({
@@ -27,7 +27,7 @@ export const ingredient: Prisma.IngredientCreateInput[] = [
     price: 5900
   }),
   createIngredientSeed({
-    name: "Нежный цыпленок",
+    name: "Цыпленок",
     price: 7900
   }),
   createIngredientSeed({
@@ -47,7 +47,7 @@ export const ingredient: Prisma.IngredientCreateInput[] = [
     price: 7900
   }),
   createIngredientSeed({
-    name: "Острая чоризо",
+    name: "Острые колбаски чоризо",
     price: 7900
   }),
   createIngredientSeed({
@@ -63,7 +63,7 @@ export const ingredient: Prisma.IngredientCreateInput[] = [
     price: 5900
   }),
   createIngredientSeed({
-    name: "Сочные ананасы",
+    name: "Ананасы",
     price: 5900
   }),
   createIngredientSeed({
@@ -91,7 +91,55 @@ export const ingredient: Prisma.IngredientCreateInput[] = [
     price: 22900
   }),
   createIngredientSeed({
-    name: "Сливочный хрен",
+    name: "Чеснок",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Сливочный соус",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Томатный соус",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус сливочный хрен",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус терияки",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус песто",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус гриль",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус бургер",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус ранч",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус сладкий чили",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Грибной соус",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Сырный соус",
+    price: 5900
+  }),
+  createIngredientSeed({
+    name: "Соус барбекю",
     price: 5900
   })
 ] as const;
