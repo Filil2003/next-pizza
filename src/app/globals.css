@@ -27,13 +27,13 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-balance;
   }
 
   @media (any-hover: hover) {
     button:not(:disabled),
     [role="button"]:not(:disabled) {
-      cursor: pointer;
+      @apply cursor-pointer;
     }
   }
 
@@ -45,12 +45,12 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth;
   }
 
   @media screen and (prefers-reduced-motion: reduce) {
     html {
-      scroll-behavior: auto;
+      @apply scroll-auto;
     }
   }
 }
