@@ -14,7 +14,7 @@ interface Props {
 }
 
 /* ===== ProductsGroupList component ===== */
-export function ProductsGroupList({ title, products, className }: Props) {
+export function ProductsGroup({ title, products, className }: Props) {
   const { setActiveCategory } = useCategoryStore();
 
   return (

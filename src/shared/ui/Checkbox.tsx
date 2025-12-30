@@ -12,16 +12,24 @@ export function Checkbox({ className, ...restProps }: Props) {
     <CheckboxPrimitive.Root
       data-slot="checkbox"
       className={cn(
-        "peer h-4 w-4 shrink-0 bg-gray-100 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
+        `
+        group
+        size-4
+        rounded-sm
+        bg-gray-100 data-[state=checked]:bg-primary
+        border border-gray-200 hover:border-primary data-[state=checked]:border-primary
+        disabled:cursor-not-allowed disabled:opacity-50
+        transition-all duration-200
+      `,
         className
       )}
       {...restProps}
     >
       <CheckboxPrimitive.Indicator
         data-slot="checkbox-indicator"
-        className="grid place-content-center text-current transition-none"
+        className="grid place-content-center"
       >
-        <CheckIcon className="size-3.5" />
+        <CheckIcon className="size-3.5 text-primary-foreground" />
       </CheckboxPrimitive.Indicator>
     </CheckboxPrimitive.Root>
   );

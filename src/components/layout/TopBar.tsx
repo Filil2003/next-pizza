@@ -1,8 +1,8 @@
 import type { PropsWithChildren } from "react";
+import { SortPopover } from "#/components/filtration";
+import { Categories } from "#/components/navigation";
 import { cn } from "#/shared/lib/tailwind";
 import { Container } from "#/shared/ui";
-import { Categories } from "./Categories.tsx";
-import { SortPopover } from "./SortPopover.tsx";
 
 /* ===== Typing props ===== */
 interface Props extends PropsWithChildren {

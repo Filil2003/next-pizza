@@ -1,12 +1,9 @@
-import { useId } from "react";
+import { type ComponentProps, useId } from "react";
 import { Checkbox } from "#/shared/ui";
 
 /* ===== Typing props ===== */
-interface Props {
+interface Props extends ComponentProps<typeof Checkbox> {
   label: string;
-  value: string;
-  onCheckedChange?: (checked: boolean) => void;
-  checked?: boolean;
 }
 
 /* ===== FilterCheckbox component ===== */
@@ -16,7 +13,7 @@ export function FilterCheckbox({ label, ...restProps }: Props) {
     <div className="flex items-center space-x-2">
       <Checkbox className="rounded-lg w-6 h-6" id={checkboxId} {...restProps} />
       <label
-        className="leading-none cursor-pointer flex-1"
+        className="leading-none cursor-pointer flex-1 select-none"
         htmlFor={checkboxId}
       >
         {label}

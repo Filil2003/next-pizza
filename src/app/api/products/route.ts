@@ -1,19 +1,9 @@
-import { type NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import type { SearchProductDto } from "#/shared/dto";
 import { prisma } from "#/shared/lib/prisma";
 
-export async function GET(
-  request: NextRequest
-): Promise<NextResponse<SearchProductDto[]>> {
-  const query = request.nextUrl.searchParams.get("query") ?? "";
-
+export async function GET() {
   const products = await prisma.pizza.findMany({
-    where: {
-      name: {
-        contains: query,
-        mode: "insensitive"
-      }
-    },
     include: {
       variants: {
         where: {
@@ -23,14 +13,23 @@ export async function GET(
         select: {
           imageUrn: true
         }
+      },
+      ingredients: {
+        include: {
+          ingredient: true
+        }
       }
-    },
-    take: 5
+    }
   });
 
+  console.log("==============================================");
+  console.log(products[0]);
+  console.log("==============================================");
+
   const flattenedProducts: SearchProductDto[] = products.map(
-    ({ variants, ...product }) => ({
+    ({ variants, ingredients, ...product }) => ({
       ...product,
+      ingredients: ingredients.map(({ ingredient }) => ingredient),
       imageUrn: variants[0]?.imageUrn ?? ""
     })
   );

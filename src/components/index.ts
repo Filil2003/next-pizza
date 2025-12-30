@@ -1,10 +1,3 @@
-export { Categories } from "./Categories";
-export { CheckboxFiltersGroup } from "./CheckboxFiltersGroup";
-export { FilterCheckbox } from "./FilterCheckbox";
-export { Filtration } from "./Filtration";
-export { Header } from "./Header";
-export { ProductCard } from "./ProductCard";
-export { ProductsGroupList } from "./ProductsGroupList";
-export { Search } from "./Search";
-export { SortPopover } from "./SortPopover";
-export { TopBar } from "./TopBar";
+export * from "./filtration";
+export * from "./layout";
+export * from "./product";

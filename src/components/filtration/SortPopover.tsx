@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowUpDown } from "lucide-react";
 import type { PropsWithChildren } from "react";
 import { cn } from "#/shared/lib/tailwind";

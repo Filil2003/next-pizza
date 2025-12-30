@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { ComponentProps } from "react";
 import { cn } from "#/shared/lib/tailwind";
 import { Button, Container } from "#/shared/ui";
-import { Search } from "./Search.tsx";
+import { Search } from "../navigation";
 
 /* ===== Typing props ===== */
 type Props = ComponentProps<"header">;

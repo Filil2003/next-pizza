@@ -4,8 +4,8 @@ import { Search as SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { type ChangeEvent, useEffect, useRef, useState } from "react";
-import { Api } from "#/api/apiClient.ts";
-import type { SearchProductResponse } from "#/app/api/products/search/route.ts";
+import { Services } from "#/services";
+import type { SearchProductDto } from "#/shared/dto";
 import { useClickAway } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 
@@ -18,18 +18,20 @@ interface Props {
 export const Search = ({ className }: Props) => {
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
-  const [suggestions, setSuggestions] = useState<SearchProductResponse[]>([]);
+  const [suggestions, setSuggestions] = useState<SearchProductDto[]>([]);
   const searchRef = useRef(null);
 
   useClickAway(searchRef, () => setIsFocused(false));
 
   useEffect(() => {
-    void Api.product.search(query).then(setSuggestions);
+    void Services.product.search(query).then(setSuggestions);
   }, [query]);
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
-    const value = event.target.value.trimStart().replace(/\s{2,}/g, " ");
-    setQuery(value);
+    const newSearchValue = event.currentTarget.value
+      .trimStart()
+      .replace(/\s{2,}/g, " ");
+    setQuery(newSearchValue);
   }
 
   function handleFocus() {
@@ -42,6 +44,7 @@ export const Search = ({ className }: Props) => {
     setSuggestions([]);
   }
 
+  // TODO: Добавить анимацию печатания категорий: Найти пиццу... Найти кофе... и так далее
   return (
     <>
       {isFocused && (
@@ -94,7 +97,7 @@ export const Search = ({ className }: Props) => {
                       .split(new RegExp(`(${query})`, "gi"))
                       .map((part, index) =>
                         part.toLowerCase() === query.toLowerCase() ? (
-                          <mark className="font-black" key={index.valueOf()}>
+                          <mark className="font-bold" key={index.valueOf()}>
                             {part}
                           </mark>
                         ) : (
