@@ -1,9 +1,9 @@
-import { type ComponentProps, useId } from "react";
+import { type ComponentProps, type ReactNode, useId } from "react";
 import { Checkbox } from "#/shared/ui";
 
 /* ===== Typing props ===== */
 interface Props extends ComponentProps<typeof Checkbox> {
-  label: string;
+  label: ReactNode;
 }
 
 /* ===== FilterCheckbox component ===== */

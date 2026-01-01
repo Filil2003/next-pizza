@@ -54,7 +54,7 @@ export function IngredientsFilter({
 
   const list = isExpanded
     ? ingredients.filter(({ label }) =>
-        label.toLowerCase().startsWith(searchValue.toLowerCase())
+        label.toLowerCase().includes(searchValue.toLowerCase())
       )
     : ingredients.slice(0, limit);
 
@@ -81,7 +81,21 @@ export function IngredientsFilter({
         {list.map((item, index) => (
           <FilterCheckbox
             key={index.valueOf()}
-            label={item.label}
+            label={
+              searchValue
+                ? item.label
+                    .split(new RegExp(`(${searchValue})`, "gi"))
+                    .map((part, index) =>
+                      part.toLowerCase() === searchValue.toLowerCase() ? (
+                        <mark className="font-bold" key={index.valueOf()}>
+                          {part}
+                        </mark>
+                      ) : (
+                        part
+                      )
+                    )
+                : item.label
+            }
             value={item.value}
             checked={selectedIngredients.has(item.value)}
             onCheckedChange={() => handleCheckedChange(item.value)}
