@@ -6,4 +6,5 @@ export { Heading } from "./Heading";
 export { ImageWithFallback } from "./ImageWithFallback";
 export { Input } from "./Input";
 export { RangeSlider } from "./RangeSlider";
+export { ScrollArea } from "./ScrollArea";
 export { ToggleGroup } from "./ToggleGroup";
