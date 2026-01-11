@@ -25,7 +25,7 @@ export function Heading<T extends HeadingTags = "h1">({
   } as const;
 
   const Tag: HeadingTags = as ?? "h1";
-  const classNames = cn(mapSizeByTag[Tag], "leading-[1.2]", className);
+  const classNames = cn(mapSizeByTag[Tag], "leading-4", className);
 
   return createElement(Tag, { ...restProps, className: classNames }, children);
 }
