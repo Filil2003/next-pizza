@@ -81,7 +81,7 @@ export const Search = ({ className }: Props) => {
                 <Link
                   className="flex items-center gap-3 px-3 py-2 hover:bg-primary/10"
                   role="option"
-                  href={`/pizza/${suggestion.id}`}
+                  href={`/product/${suggestion.id}`}
                   onClick={handleClick}
                 >
                   <div className="relative aspect-square w-8">

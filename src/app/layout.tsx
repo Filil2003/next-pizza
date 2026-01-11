@@ -3,7 +3,6 @@ import { clsx } from "clsx";
 import { Nunito } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import type { ReactNode } from "react";
-import { Header } from "#/components";
 
 const nunito = Nunito({
   subsets: ["cyrillic"],
@@ -23,10 +22,7 @@ export default function RootLayout({ children }: Props) {
       data-scroll-behavior="smooth"
     >
       <body>
-        <NuqsAdapter>
-          <Header />
-          <main className="min-h-svh">{children}</main>
-        </NuqsAdapter>
+        <NuqsAdapter>{children}</NuqsAdapter>
       </body>
     </html>
   );
