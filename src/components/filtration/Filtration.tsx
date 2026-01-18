@@ -1,5 +1,4 @@
 import { Services } from "#/services";
-import { Heading } from "#/shared/ui";
 import { IngredientsFilter } from "./IngredientsFilter.tsx";
 import { PriceFilter } from "./PriceFilter.tsx";
 
@@ -14,9 +13,7 @@ export async function Filtration({ className }: Props) {
 
   return (
     <aside className={className}>
-      <Heading as="h4" className="mb-5 font-bold">
-        Фильтрация
-      </Heading>
+      <h4 className="text-2xl mb-5 font-bold">Фильтрация</h4>
 
       <PriceFilter />
 

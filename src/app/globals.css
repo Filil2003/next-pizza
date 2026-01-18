@@ -30,6 +30,15 @@
     @apply bg-background text-foreground text-balance;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-6;
+  }
+
   @media (any-hover: hover) {
     button:not(:disabled),
     [role="button"]:not(:disabled) {
