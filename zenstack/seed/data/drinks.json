@@ -1,0 +1,277 @@
+{
+  "title": "Напитки",
+  "products": [
+    {
+      "name": "Горячий сорбет манго-чили",
+      "description": "Замороженный напиток на палочке со спелым манго, пряным перчиком и ягодами клюквы. Продукт доставляется без кипятка.",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "lcwezzt04o4s66buaa3tsvhm",
+          "price": 17900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Горячий сорбет апельсин и облепиха",
+      "description": "Замороженный напиток на палочке с апельсином и облепихой: просто опустите в горячую воду и наблюдайте магию. Продукт доставляется без кипятка.",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "c6nl7sm91gzkhrh5hdp12zx6",
+          "price": 17900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Горячий сорбет Малина-Клюква",
+      "description": "Замороженный напиток на палочке, раскрывающий вкус спелых ягод в стакане горячей воды. Продукт доставляется без кипятка.",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "wxnuej4whlnmjullqdmzvmab",
+          "price": 17900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Лимонад Домашний",
+      "description": "Прохладный лимонад, как будто только что приготовленный дома",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "blxb36byoljkj2dq08g6vmqb",
+          "price": 14900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л",
+            "withIce": "Без льда"
+          },
+          "toppings": []
+        },
+        {
+          "id": "c06t13oeiok6pratw0u7aevw",
+          "price": 14900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.3 л",
+            "withIce": "Со льдом"
+          },
+          "toppings": []
+        },
+        {
+          "id": "hpvad5a6f17lm8w0kffa6u7p",
+          "price": 24900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л",
+            "withIce": "Без льда"
+          },
+          "toppings": []
+        },
+        {
+          "id": "rzicvrxuhs2ka7lshf3hn3a2",
+          "price": 24900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л",
+            "withIce": "Со льдом"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Лимонад Тархун",
+      "description": "Это классика для тех, кто понимает",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "m4xdh4fzcwcrxcwzv49lxqii",
+          "price": 14900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л",
+            "withIce": "Без льда"
+          },
+          "toppings": []
+        },
+        {
+          "id": "i2tvl6me53wglngw942dnbyu",
+          "price": 14900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.3 л",
+            "withIce": "Со льдом"
+          },
+          "toppings": []
+        },
+        {
+          "id": "qprxgp0q14qz5wok7b4id3lm",
+          "price": 24900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л",
+            "withIce": "Без льда"
+          },
+          "toppings": []
+        },
+        {
+          "id": "jm1fkvjv24koe27gp7rnz9jr",
+          "price": 24900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л",
+            "withIce": "Со льдом"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Лимонад Клубничный Мохито",
+      "description": "Клубничная вариация безалкогольного коктейля: сладкий ягодный вкус, мятная свежесть и пузырьки",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "bx99um0blww37zqafzac0tvy",
+          "price": 14900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л",
+            "withIce": "Без льда"
+          },
+          "toppings": []
+        },
+        {
+          "id": "lruthj5nb1al5djhtxiul3vc",
+          "price": 14900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.3 л",
+            "withIce": "Со льдом"
+          },
+          "toppings": []
+        },
+        {
+          "id": "jwtf9j1qe0x98999gutsnmu4",
+          "price": 24900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л",
+            "withIce": "Без льда"
+          },
+          "toppings": []
+        },
+        {
+          "id": "kayaiiid4luza09nvjx0pzhu",
+          "price": 24900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л",
+            "withIce": "Со льдом"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Морс Клюква",
+      "description": "Фирменный ягодный морс из натуральной клюквы с терпким послевкусием",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "qqb4bd7vm4mxso2xddyyskcy",
+          "price": 15900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.45 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Морс Черная смородина",
+      "description": "Фирменный ягодный морс из натуральной душистой черной смородины",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "j6f6p9g6mw4nrgxy42pw7bna",
+          "price": 15900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.45 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Морс Вишня",
+      "description": "Фирменный ягодный морс из натуральной спелой вишни. В меру сладкий и с приятной кислинкой",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "of8zvwksib8eu491sb7gax5c",
+          "price": 15900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.45 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Какао",
+      "description": "Насыщенное, плотное и такое знакомое какао с молоком",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "kbxyuzh4nfqt4ug0z40fy9in",
+          "price": 15900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        }
+      ]
+    }
+  ]
+}

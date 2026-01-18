@@ -1,0 +1,290 @@
+{
+  "title": "Десерты",
+  "products": [
+    {
+      "name": "Пирожное Муравьешки",
+      "description": "Сметанное печенье, вареная сгущенка и мед — просто и вкусно, как в детстве",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "kxs61ww1i20a088iu2evz001",
+          "price": 16900,
+          "weight": "60 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "3 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Тирамису",
+      "description": "Многослойный десерт в лучших итальянских традициях: легкий аромат какао, пропитанная кофе бисквитная прослойка и нежный крем",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "ufb1mv7qfh1stnnbpt78k06p",
+          "price": 19900,
+          "weight": "90 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Чизкейк Дубайский",
+      "description": "Мягкий чизкейк с насыщенным фисташковым вкусом и глазурью. Вдохновлён десертом, о котором говорят все — и не зря",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "fyjzc4fz5gi2f0pyk8ae53ry",
+          "price": 24900,
+          "weight": "100 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Чизкейк карамельный с арахисом",
+      "description": "Сливочный десерт с очень карамельной начинкой, шоколадным печеньем и орехами",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "glv4gq6xnv62vjkj2ayu7x2e",
+          "price": 18900,
+          "weight": "100 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Чизкейк Нью-Йорк",
+      "description": "Нежнейшая сырная основа, тонкий корж песочного теста и никаких добавок. Классика в мире десертов",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "yx3l3r7ynrm1q41ge3kyajzz",
+          "price": 18900,
+          "weight": "100 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Чизкейк Банановый с шоколадным печеньем",
+      "description": "Солнечная версия классического рецепта: нежный чизкейк с бананом и шоколадным печеньем",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "heim3v1ee339du5f6hbe5ga5",
+          "price": 18900,
+          "weight": "100 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Шоколадный кукис",
+      "description": "Мягкое печенье с кусочками шоколада. Идеально сочетается с чаем, кофе или какао",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "bq34yxhqa84jc6zpxogrddsy",
+          "price": 11500,
+          "weight": "70 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Черничный маффин",
+      "description": "Воздушный кекс с ароматной начинкой из натуральной черники",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "hnvs7reme4qm4qv0jkfghtwn",
+          "price": 11900,
+          "weight": "120 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Маффин Соленая карамель",
+      "description": "Кекс, раскрывающий необычное сочетание соленого арахиса и сладкой карамели",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "k5n0p8var0xj67tmg94pt33p",
+          "price": 11900,
+          "weight": "120 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Маффин Три шоколада",
+      "description": "Кекс из натурального какао с начинкой из кубиков белого и молочного шоколада",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "j1fx9lv3ahl2srkt5yyhp34p",
+          "price": 119,
+          "weight": "120 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Сырники с малиновым вареньем",
+      "description": "Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "sxthgd9rlb6rjff5ltetf2fs",
+          "price": 17900,
+          "weight": "140 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "2 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "qjf5uml2vsvhujm1v6exek3f",
+          "price": 34900,
+          "weight": "280 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "4 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Сырники со сгущенным молоком",
+      "description": "Нежные сырники, приготовленные в печи, с порционным сгущенным молоком",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "xdf36wgfeeqg26jtfzqm67vl",
+          "price": 17900,
+          "weight": "140 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "2 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "dv30luezy3s0xcf5u423cfd2",
+          "price": 34900,
+          "weight": "280 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "4 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Сырники",
+      "description": "Любимый десерт многих гостей — румяные сырники из печи. Нежные, в меру сладкие и напоминающие детство",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "s9e3crqadup8awodt3ovrt45",
+          "price": 16500,
+          "weight": "130 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "2 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "to0wqwmtewq19ihvcs3e4r8c",
+          "price": 32900,
+          "weight": "260 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "4 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Сорбет Лимонный фреш",
+      "description": "Цитрусовая свежесть и сладкий вкус с приятной кислинкой",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "idjnp4h2iblvlxqm9oob7j36",
+          "price": 16500,
+          "weight": "90 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Сорбет Клубничный гранат",
+      "description": "Охлаждающий дуэт сочных ягод и спелых фруктов",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "a90nbu2is8w1rtdrnxz83td6",
+          "price": 16500,
+          "weight": "90 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    }
+  ]
+}

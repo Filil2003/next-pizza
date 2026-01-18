@@ -1,0 +1,167 @@
+{
+  "title": "Коктейли",
+  "products": [
+    {
+      "name": "Персиковый молочный коктейль",
+      "description": "Сочный, спелый персик и приятная свежесть мороженого",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "cxujr45y1kw0opx8to3qmirl",
+          "price": 23000,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "xyz9t5erw6xudco4ga0ir4su",
+          "price": 39900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Фисташковый молочный коктейль",
+      "description": "Сочетание нежности, сливочной текстуры и тонкого вкуса фисташки",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "mdrz95m8nc6zjo832rlpt628",
+          "price": 23000,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "lzw2lp6plj40vegfcd5gmbeu",
+          "price": 39900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Молочный коктейль с печеньем «Oreo»",
+      "description": "Как вкуснее есть печенье? Его лучше пить! Попробуйте молочный коктейль с мороженым и дробленым печеньем «Oreo»",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "k70xem1ner41blbrryc8tso1",
+          "price": 23000,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "ri5rkeq306isymijzrjo4s0c",
+          "price": 39900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Клубничный молочный коктейль",
+      "description": "Не важно, какое время года на улице, этот коктейль с клубничным сиропом вернет вас в лето с одного глотка",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "m9aqqltlkbu5apwny09p782i",
+          "price": 23000,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "sfefeqdguelst2l79xb2a3x6",
+          "price": 39900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Шоколадный молочный коктейль",
+      "description": "Это шок! Шоколадный молочный коктейль со сливочным мороженым и фирменным какао",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "rya39si0ek0s3m899v1xg1pq",
+          "price": 23000,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "gp5iwlmada4rus40donwoiur",
+          "price": 39900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Классический молочный коктейль",
+      "description": "Это классика: молоко, мороженое и ничего лишнего",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "t9b4bs5cl5l8j413ah306zqw",
+          "price": 18900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "iemn8xj8b6319682u7954jey",
+          "price": 28900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    }
+  ]
+}

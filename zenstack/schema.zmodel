@@ -1,0 +1,87 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+plugin ts {
+  provider = "@core/typescript"
+  output = "../src/shared/lib/zenstack/generated/"
+}
+
+// ===== Mixins =====
+type IdMixin {
+  id String @id @default(cuid(2))
+}
+
+type TimestampMixin {
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ===== Category =====
+model Category with IdMixin {
+  name     String    @unique
+  slug     String    @unique
+  products Product[]
+}
+
+// ===== Product =====
+model Product with IdMixin, TimestampMixin {
+  name        String              @unique
+  slug        String              @unique
+  description String?             @default("")
+  inStock     Boolean             @default(true)
+  categories  Category[]
+  variants    ProductVariant[]
+  ingredients ProductIngredient[]
+}
+
+// ===== ProductVariant =====
+model ProductVariant with IdMixin, TimestampMixin {
+  price      Int
+  imageUrl   String
+  toppings   ProductVariantTopping[]
+  options    Json
+  weight     String?
+
+  isShowCase Boolean                 @default(false)
+
+  product    Product                 @relation(fields: [productId], references: [id])
+  productId  String
+}
+
+// ===== Ingredient =====
+model Ingredient with IdMixin, TimestampMixin {
+  name     String                  @unique
+  imageUrl String?
+  products ProductIngredient[]
+  toppings ProductVariantTopping[]
+}
+
+// ===== ProductIngredient =====
+model ProductIngredient with IdMixin, TimestampMixin {
+  isRemovable  Boolean    @default(false)
+
+  product      Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productId    String
+
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
+  ingredientId String
+
+  @@unique([productId, ingredientId])
+  @@index([productId, createdAt])
+}
+
+// ===== ProductVariantTopping =====
+model ProductVariantTopping with IdMixin, TimestampMixin {
+  price            Int
+
+  productVariant   ProductVariant @relation(fields: [productVariantId], references: [id], onDelete: Cascade)
+  productVariantId String
+
+  ingredient       Ingredient?    @relation(fields: [ingredientId], references: [id])
+  ingredientId     String?
+
+  @@unique([productVariantId, ingredientId])
+  @@index([productVariantId, createdAt])
+}

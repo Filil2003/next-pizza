@@ -1,0 +1,282 @@
+{
+  "title": "Закуски",
+  "products": [
+    {
+      "name": "Картофель из печи",
+      "description": "Запеченная в печи картошечка — привычный вкус и мало масла. В составе пряные специи",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "shu77khp393wn5dzp54khrpf",
+          "price": 14900,
+          "weight": "80 г",
+          "isShowCase": true,
+          "options": {
+            "portion": "Стандартная"
+          },
+          "toppings": []
+        },
+        {
+          "id": "phe6dmnfe16xd1opa77l4z73",
+          "price": 28900,
+          "weight": "160 г",
+          "isShowCase": false,
+          "options": {
+            "portion": "Большая"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Картофель по-деревенски",
+      "description": "Дольки картофеля, запеченные в печи до хрустящей корочки",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "pwv9xdgghzha8nxqsbzd859c",
+          "price": 14900,
+          "weight": "100 г",
+          "isShowCase": true,
+          "options": {
+            "portion": "Стандартная"
+          },
+          "toppings": []
+        },
+        {
+          "id": "xzmq1dxlwpsmecdr7duy9loi",
+          "price": 28900,
+          "weight": "190 г",
+          "isShowCase": false,
+          "options": {
+            "portion": "Большая"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Хашбрауны",
+      "description": "Картофельные оладушки из печи. Отличная закуска для завтрака или перекуса в любое время дня",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "rk07yppejyu058b7lobh0c3s",
+          "price": 13900,
+          "weight": "80 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "2 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "jm0b50xdbirtpx196l59ojp9",
+          "price": 18900,
+          "weight": "120 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "3 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "nmjy6g2ht8eaoe5t3jjq1w0v",
+          "price": 23900,
+          "weight": "160 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "4 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Креветки",
+      "description": "Цельные креветки в хрустящей панировке",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "meqtj6npm8948poq3b2zcn8m",
+          "price": 22900,
+          "weight": "40 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "3 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "kxcwdk3r85mcpvxwez4924y0",
+          "price": 35900,
+          "weight": "70 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "5 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "v11mfsjlhifcx03dx8upjxri",
+          "price": 60900,
+          "weight": "140 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "9 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Креветки терияки",
+      "description": "Цельные креветки в хрустящей панировке с соусом терияки",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "v9zif73hb8ay59p2kbwutiz1",
+          "price": 37900,
+          "weight": "80 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "5 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "yynu5x3gfvk6qtvw27428phx",
+          "price": 63900,
+          "weight": "140 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "9 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Куриные наггетсы",
+      "description": "Нежное куриное мясо в хрустящей панировке",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "zn7xc05fej4xsq4sfim6b48v",
+          "price": 17900,
+          "weight": "110 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "5 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "esvsxpi3b6nukycomnf0k4eq",
+          "price": 34900,
+          "weight": "220 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "10 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Куриные кусочки",
+      "description": "Сочные кусочки цельного куриного филе с золотистой корочкой",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "jvtzqneyrnwhjt2or6ee5z2z",
+          "price": 29900,
+          "weight": "120 г",
+          "isShowCase": true,
+          "options": {
+            "portion": "Стандартная"
+          },
+          "toppings": []
+        },
+        {
+          "id": "k9x5u1cyv187ovn9c5u212hs",
+          "price": 56900,
+          "weight": "210 г",
+          "isShowCase": false,
+          "options": {
+            "portion": "Большая"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Куриные крылья барбекю",
+      "description": "Куриные крылышки со специями и ароматом копчения",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "qn25uvnc5ptr5co6hv40l9pg",
+          "price": 58900,
+          "weight": "330 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "10 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Ланчбокс с хреном",
+      "description": "Это блюдо с ярким характером: дерзкий сливочный соус с хреном, свиная шейка и маринованные огурчики с картошкой по-деревенски",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "xwwrp60ytxhkirxrscf4x7fb",
+          "price": 35900,
+          "weight": "280 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Ланчбокс с куриными крыльями",
+      "description": "Горячий сытный обед из куриных крылышек со специями и ароматом копчения, пряного картофеля из печи и соуса барбекю",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "nyd56yt8m7860dgxvt7tf1dm",
+          "price": 42500,
+          "weight": "210 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Ланчбокс с куриными кусочками",
+      "description": "Горячий сытный обед из нежных куриных кусочков, пряного картофеля из печи и сырного соуса",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "u3hhk63aiz9bx6x1hvv4q5nf",
+          "price": 42500,
+          "weight": "210 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    }
+  ]
+}

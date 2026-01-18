@@ -1,0 +1,379 @@
+{
+  "title": "Кофе",
+  "products": [
+    {
+      "name": "Американо",
+      "description": "Горячий кофе для ценителей чистого вкуса",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "m4owip8x1vcfjsh3y5sy6pa5",
+          "price": 11900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": [
+            {
+              "name": "Молоко",
+              "price": 1500
+            },
+            {
+              "name": "Сироп «Черный лес»",
+              "price": 2000
+            },
+            {
+              "name": "Сироп яблочный пирог",
+              "price": 2000
+            },
+            {
+              "name": "Сироп карамель",
+              "price": 2000
+            },
+            {
+              "name": "Сироп фундук",
+              "price": 2000
+            },
+            {
+              "name": "Кокосовый сироп",
+              "price": 2000
+            },
+            {
+              "name": "Сироп сливочный ликер",
+              "price": 2000
+            }
+          ]
+        },
+        {
+          "id": "w1csp2tejbqdepu27oz7hnqm",
+          "price": 12900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": [
+            {
+              "name": "Молоко",
+              "price": 1500
+            },
+            {
+              "name": "Сироп «Черный лес»",
+              "price": 2000
+            },
+            {
+              "name": "Сироп яблочный пирог",
+              "price": 2000
+            },
+            {
+              "name": "Сироп карамель",
+              "price": 2000
+            },
+            {
+              "name": "Сироп фундук",
+              "price": 2000
+            },
+            {
+              "name": "Кокосовый сироп",
+              "price": 2000
+            },
+            {
+              "name": "Сироп сливочный ликер",
+              "price": 2000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Капучино",
+      "description": "Легендарный рецепт кофе: эспрессо, горячее молоко и плотная молочная пенка",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "b37pm45dhhy6y0n5tsxm6045",
+          "price": 15900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": [
+            {
+              "name": "Сироп «Черный лес»",
+              "price": 2000
+            },
+            {
+              "name": "Сироп яблочный пирог",
+              "price": 2000
+            },
+            {
+              "name": "Сироп карамель",
+              "price": 2000
+            },
+            {
+              "name": "Сироп фундук",
+              "price": 2000
+            },
+            {
+              "name": "Кокосовый сироп",
+              "price": 2000
+            },
+            {
+              "name": "Сироп сливочный ликер",
+              "price": 2000
+            }
+          ]
+        },
+        {
+          "id": "imi520vggar2aume99duhzys",
+          "price": 17900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": [
+            {
+              "name": "Сироп «Черный лес»",
+              "price": 2000
+            },
+            {
+              "name": "Сироп яблочный пирог",
+              "price": 2000
+            },
+            {
+              "name": "Сироп карамель",
+              "price": 2000
+            },
+            {
+              "name": "Сироп фундук",
+              "price": 2000
+            },
+            {
+              "name": "Кокосовый сироп",
+              "price": 2000
+            },
+            {
+              "name": "Сироп сливочный ликер",
+              "price": 2000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Латте",
+      "description": "Идеально сбалансированное сочетание кофе, увеличенной порции молока и нежнейшей пенки",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "sfj3t7nanipblq1po9f5evyx",
+          "price": 15900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": [
+            {
+              "name": "Сироп «Черный лес»",
+              "price": 2000
+            },
+            {
+              "name": "Сироп яблочный пирог",
+              "price": 2000
+            },
+            {
+              "name": "Сироп карамель",
+              "price": 2000
+            },
+            {
+              "name": "Сироп фундук",
+              "price": 2000
+            },
+            {
+              "name": "Кокосовый сироп",
+              "price": 2000
+            },
+            {
+              "name": "Сироп сливочный ликер",
+              "price": 2000
+            }
+          ]
+        },
+        {
+          "id": "zanf0xy2r14saltdux962rt3",
+          "price": 17900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": [
+            {
+              "name": "Сироп «Черный лес»",
+              "price": 2000
+            },
+            {
+              "name": "Сироп яблочный пирог",
+              "price": 2000
+            },
+            {
+              "name": "Сироп карамель",
+              "price": 2000
+            },
+            {
+              "name": "Сироп фундук",
+              "price": 2000
+            },
+            {
+              "name": "Кокосовый сироп",
+              "price": 2000
+            },
+            {
+              "name": "Сироп сливочный ликер",
+              "price": 2000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Латте «Черный лес»",
+      "description": "Вишня, шоколад и мягкий кофе — вкус, как у знаменитого пирожного",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "b2hjiql1rdnmrb7372nczutj",
+          "price": 16900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "rel88uv448obxdghhx3exu23",
+          "price": 18900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Карамельный капучино",
+      "description": "Классический капучино с молочной пенкой и карамельным сиропом",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "mysf2vzcc5lrjlgr46wm79f8",
+          "price": 16900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "g3oee1snenn1nj46sebkauzv",
+          "price": 18900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Кокосовый латте",
+      "description": "Горячий латте с кокосовым сиропом",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "dm55k9d1i6mzt4iu07mhvngy",
+          "price": 16900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "puw2j8hrr8n7ld32c933fw3e",
+          "price": 18900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Ореховый латте",
+      "description": "Горячий латте с сиропом со вкусом фундука",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "c8ukv5nlnrm81am1r7otx4jx",
+          "price": 16900,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "st0ghhdjzebk9ss01pmxc99w",
+          "price": 18900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.4 л"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Айс капучино",
+      "description": "Освежающий холодный кофе с порцией эспрессо и пломбиром",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "kq2h1fbt41n88zc5ciykl1us",
+          "price": 27000,
+          "weight": "",
+          "isShowCase": true,
+          "options": {
+            "volume": "0.3 л"
+          },
+          "toppings": []
+        },
+        {
+          "id": "ad6e15hcwvzj38a3tfiox6b8",
+          "price": 34900,
+          "weight": "",
+          "isShowCase": false,
+          "options": {
+            "volume": "0.6 л"
+          },
+          "toppings": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "title": "Соусы",
+  "products": [
+    {
+      "name": "Тысяча островов",
+      "description": "Фирменный соус с нотками томата и пряностей для горячих закусок и бортиков пиццы",
+      "ingredients": null,
+      "variants": [
+        {
+          "id": "e0yon0gljiv99160nss4vs51",
+          "price": 4900,
+          "weight": "25 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": null
+        }
+      ]
+    },
+    {
+      "name": "Сырный",
+      "description": "Фирменный соус со вкусом расплавленного сыра для бортиков пиццы и горячих закусок",
+      "ingredients": null,
+      "variants": [
+        {
+          "id": "is1a1pwkvc0ce6rz3rwrcm4z",
+          "price": 4900,
+          "weight": "25 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": null
+        }
+      ]
+    },
+    {
+      "name": "Чесночный",
+      "description": "Фирменный соус с чесночным вкусом для бортиков пиццы и горячих закусок",
+      "ingredients": null,
+      "variants": [
+        {
+          "id": "dr924aprr0xqz5g38ukaxrmj",
+          "price": 4900,
+          "weight": "25 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": null
+        }
+      ]
+    },
+    {
+      "name": "Барбекю",
+      "description": "Фирменный соус с дымным ароматом для бортиков пиццы и горячих закусок",
+      "ingredients": null,
+      "variants": [
+        {
+          "id": "oh41tsd3fcujw2wlsg97xhou",
+          "price": 4900,
+          "weight": "25 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": null
+        }
+      ]
+    },
+    {
+      "name": "Медово-горчичный",
+      "description": "Фирменный медово-горчичный соус со жгучей сладостью для бортиков пиццы и горячих закусок",
+      "ingredients": null,
+      "variants": [
+        {
+          "id": "nn25sbrk386yiqui3xyuo5eo",
+          "price": 4900,
+          "weight": "25 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": null
+        }
+      ]
+    }
+  ]
+}

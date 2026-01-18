@@ -12,7 +12,7 @@ build/
 .vscode/*
 .idea/
 *~
-*.local
+*.local*
 
-# Generated Prisma Client
-**/prisma/generated
+# Generated files
+**/generated
