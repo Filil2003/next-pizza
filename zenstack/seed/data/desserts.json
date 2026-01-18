@@ -36,6 +36,23 @@
       ]
     },
     {
+      "name": "Шоколадный кукис",
+      "description": "Мягкое печенье с кусочками шоколада. Идеально сочетается с чаем, кофе или какао",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "bq34yxhqa84jc6zpxogrddsy",
+          "price": 11500,
+          "weight": "70 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
       "name": "Чизкейк Дубайский",
       "description": "Мягкий чизкейк с насыщенным фисташковым вкусом и глазурью. Вдохновлён десертом, о котором говорят все — и не зря",
       "ingredients": [],
@@ -104,14 +121,31 @@
       ]
     },
     {
-      "name": "Шоколадный кукис",
-      "description": "Мягкое печенье с кусочками шоколада. Идеально сочетается с чаем, кофе или какао",
+      "name": "Сорбет Лимонный фреш",
+      "description": "Цитрусовая свежесть и сладкий вкус с приятной кислинкой",
       "ingredients": [],
       "variants": [
         {
-          "id": "bq34yxhqa84jc6zpxogrddsy",
-          "price": 11500,
-          "weight": "70 г",
+          "id": "idjnp4h2iblvlxqm9oob7j36",
+          "price": 16500,
+          "weight": "90 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "1 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
+      "name": "Сорбет Клубничный гранат",
+      "description": "Охлаждающий дуэт сочных ягод и спелых фруктов",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "a90nbu2is8w1rtdrnxz83td6",
+          "price": 16500,
+          "weight": "90 г",
           "isShowCase": true,
           "options": {
             "quantity": "1 шт"
@@ -172,6 +206,33 @@
       ]
     },
     {
+      "name": "Сырники",
+      "description": "Любимый десерт многих гостей — румяные сырники из печи. Нежные, в меру сладкие и напоминающие детство",
+      "ingredients": [],
+      "variants": [
+        {
+          "id": "s9e3crqadup8awodt3ovrt45",
+          "price": 16500,
+          "weight": "130 г",
+          "isShowCase": true,
+          "options": {
+            "quantity": "2 шт"
+          },
+          "toppings": []
+        },
+        {
+          "id": "to0wqwmtewq19ihvcs3e4r8c",
+          "price": 32900,
+          "weight": "260 г",
+          "isShowCase": false,
+          "options": {
+            "quantity": "4 шт"
+          },
+          "toppings": []
+        }
+      ]
+    },
+    {
       "name": "Сырники с малиновым вареньем",
       "description": "Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство",
       "ingredients": [],
@@ -220,67 +281,6 @@
           "isShowCase": false,
           "options": {
             "quantity": "4 шт"
-          },
-          "toppings": []
-        }
-      ]
-    },
-    {
-      "name": "Сырники",
-      "description": "Любимый десерт многих гостей — румяные сырники из печи. Нежные, в меру сладкие и напоминающие детство",
-      "ingredients": [],
-      "variants": [
-        {
-          "id": "s9e3crqadup8awodt3ovrt45",
-          "price": 16500,
-          "weight": "130 г",
-          "isShowCase": true,
-          "options": {
-            "quantity": "2 шт"
-          },
-          "toppings": []
-        },
-        {
-          "id": "to0wqwmtewq19ihvcs3e4r8c",
-          "price": 32900,
-          "weight": "260 г",
-          "isShowCase": false,
-          "options": {
-            "quantity": "4 шт"
-          },
-          "toppings": []
-        }
-      ]
-    },
-    {
-      "name": "Сорбет Лимонный фреш",
-      "description": "Цитрусовая свежесть и сладкий вкус с приятной кислинкой",
-      "ingredients": [],
-      "variants": [
-        {
-          "id": "idjnp4h2iblvlxqm9oob7j36",
-          "price": 16500,
-          "weight": "90 г",
-          "isShowCase": true,
-          "options": {
-            "quantity": "1 шт"
-          },
-          "toppings": []
-        }
-      ]
-    },
-    {
-      "name": "Сорбет Клубничный гранат",
-      "description": "Охлаждающий дуэт сочных ягод и спелых фруктов",
-      "ingredients": [],
-      "variants": [
-        {
-          "id": "a90nbu2is8w1rtdrnxz83td6",
-          "price": 16500,
-          "weight": "90 г",
-          "isShowCase": true,
-          "options": {
-            "quantity": "1 шт"
           },
           "toppings": []
         }
