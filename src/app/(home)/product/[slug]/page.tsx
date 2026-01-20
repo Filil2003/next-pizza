@@ -1,46 +1,82 @@
 import { notFound } from "next/dist/client/components/not-found";
-import { PizzaConfigurator } from "#/components/product";
-import { prisma } from "#/shared/lib/prisma";
+import { ProductConfigurator } from "#/components/product";
+import { zen } from "#/shared/lib/zenstack";
 import { Container } from "#/shared/ui";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export default async function PizzaPage({ params }: Props) {
+export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
-  const pizza = await prisma.pizza.findFirst({
+  const product = await zen.product.findUnique({
     where: { slug },
-    include: {
+    select: {
+      name: true,
+      description: true,
+      inStock: true,
       ingredients: {
-        include: {
-          ingredient: true
+        orderBy: { createdAt: "asc" },
+        select: {
+          isRemovable: true,
+          ingredient: {
+            select: {
+              name: true
+            }
+          }
         }
       },
-      toppings: {
-        include: {
-          ingredient: true
+      variants: {
+        orderBy: { createdAt: "asc" },
+        select: {
+          id: true,
+          isShowCase: true,
+          weight: true,
+          price: true,
+          imageUrl: true,
+          options: true,
+          toppings: {
+            select: {
+              price: true,
+              ingredient: {
+                select: {
+                  name: true,
+                  imageUrl: true
+                }
+              }
+            }
+          }
         }
       }
     }
   });
 
-  if (!pizza) return notFound();
+  if (!product) return notFound();
 
   return (
     <Container>
-      <PizzaConfigurator
-        pizza={{
-          name: pizza.name,
-          slug: pizza.slug,
-          ingredients: pizza.ingredients.map(({ ingredient, isRemovable }) => ({
-            name: ingredient.name,
-            isRemovable
-          })),
-          toppings: pizza.toppings.map(({ ingredient }) => ({
-            name: ingredient.name,
-            price: ingredient.price,
-            imageUrn: ingredient.imageUrn
+      <ProductConfigurator
+        product={{
+          name: product.name,
+          description: product.description ?? "",
+          ingredients: product.ingredients.map(
+            ({ ingredient, isRemovable }) => ({
+              name: ingredient.name,
+              isRemovable
+            })
+          ),
+          variants: product.variants.map((variant) => ({
+            id: variant.id,
+            isShowCase: variant.isShowCase,
+            weight: variant.weight ?? "",
+            price: variant.price,
+            imageUrl: variant.imageUrl,
+            options: variant.options as Record<string, string>,
+            toppings: variant.toppings.map(({ price, ingredient }) => ({
+              price,
+              name: ingredient?.name ?? "",
+              imageUrl: ingredient?.imageUrl ?? ""
+            }))
           }))
         }}
       />

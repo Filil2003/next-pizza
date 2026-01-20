@@ -1,20 +1,78 @@
 import { Suspense } from "react";
 import { Filtration, ProductsGroup, TopBar } from "#/components";
-import { Services } from "#/services";
-import { Container, Heading } from "#/shared/ui";
+import { capitalize } from "#/shared/lib/string";
+import { zen } from "#/shared/lib/zenstack";
+import { Container } from "#/shared/ui";
 
 export default async function Home() {
-  const products = await Services.product.getAll();
+  const categoriesRaw = await zen.category.findMany({
+    orderBy: { createdAt: "asc" },
+    select: {
+      name: true,
+      slug: true,
+      products: {
+        orderBy: { createdAt: "asc" },
+        select: {
+          name: true,
+          slug: true,
+          inStock: true,
+          description: true,
+          variants: {
+            select: {
+              price: true,
+              imageUrl: true,
+              isShowCase: true
+            }
+          },
+          ingredients: {
+            select: {
+              ingredient: {
+                select: {
+                  name: true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  });
+
+  const categories = categoriesRaw.map((category) => ({
+    name: category.name,
+    slug: category.slug,
+    products: category.products.map((product) => {
+      const minPrice = Math.min(...product.variants.map(({ price }) => price));
+      const showCaseVariant =
+        product.variants.find(({ isShowCase }) => isShowCase) ??
+        // biome-ignore lint/style/noNonNullAssertion: <Guaranteed by the database>
+        product.variants[0]!;
+
+      return {
+        name: product.name,
+        slug: product.slug,
+        description:
+          product.description ||
+          capitalize(
+            product.ingredients
+              .map(({ ingredient }) => ingredient.name)
+              .join(", ")
+          ),
+        inStock: product.inStock,
+        minPrice,
+        showCaseImageUrl: showCaseVariant.imageUrl
+      };
+    })
+  }));
 
   return (
     <>
-      <Container className="mt-10">
-        <Heading as="h2" className="font-extrabold">
-          Все пиццы
-        </Heading>
-      </Container>
-
-      <TopBar />
+      <TopBar
+        categories={categories.map(({ name, slug }) => ({
+          name,
+          slug
+        }))}
+      />
 
       <Container className="flex gap-14 mt-10">
         {/* Filtration */}
@@ -25,8 +83,15 @@ export default async function Home() {
         </aside>
 
         {/* Feed */}
-        <div className="grow flex flex-col gap-12">
-          <ProductsGroup title="Пиццы" products={products} />
+        <div className="grow flex flex-col gap-24">
+          {categories.map((category) => (
+            <ProductsGroup
+              key={category.name}
+              title={category.name}
+              slug={category.slug}
+              products={category.products}
+            />
+          ))}
         </div>
       </Container>
     </>

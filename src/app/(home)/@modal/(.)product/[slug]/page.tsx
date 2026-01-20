@@ -1,6 +1,6 @@
 import { notFound } from "next/dist/client/components/not-found";
-import { PizzaConfiguratorModal } from "#/components/product";
-import { prisma } from "#/shared/lib/prisma";
+import { ProductConfiguratorModal } from "#/components/product";
+import { zen } from "#/shared/lib/zenstack";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -8,23 +8,73 @@ interface Props {
 
 export default async function PizzaModal({ params }: Props) {
   const { slug } = await params;
-  const pizza = await prisma.pizza.findFirst({
+  const product = await zen.product.findUnique({
     where: { slug },
-    include: {
+    select: {
+      name: true,
+      description: true,
+      inStock: true,
       ingredients: {
-        include: {
-          ingredient: true
+        orderBy: { createdAt: "asc" },
+        select: {
+          isRemovable: true,
+          ingredient: {
+            select: {
+              name: true
+            }
+          }
         }
       },
-      toppings: {
-        include: {
-          ingredient: true
+      variants: {
+        orderBy: { createdAt: "asc" },
+        select: {
+          id: true,
+          isShowCase: true,
+          weight: true,
+          price: true,
+          imageUrl: true,
+          options: true,
+          toppings: {
+            select: {
+              price: true,
+              ingredient: {
+                select: {
+                  name: true,
+                  imageUrl: true
+                }
+              }
+            }
+          }
         }
       }
     }
   });
 
-  if (!pizza) return notFound();
+  if (!product || !product.inStock) return notFound();
 
-  return <PizzaConfiguratorModal pizza={pizza} />;
+  return (
+    <ProductConfiguratorModal
+      product={{
+        name: product.name,
+        description: product.description ?? "",
+        ingredients: product.ingredients.map(({ ingredient, isRemovable }) => ({
+          name: ingredient.name,
+          isRemovable
+        })),
+        variants: product.variants.map((variant) => ({
+          id: variant.id,
+          isShowCase: variant.isShowCase,
+          weight: variant.weight ?? "",
+          price: variant.price,
+          imageUrl: variant.imageUrl ?? "",
+          options: variant.options as Record<string, string>,
+          toppings: variant.toppings.map(({ price, ingredient }) => ({
+            price,
+            name: ingredient?.name ?? "",
+            imageUrl: ingredient?.imageUrl ?? ""
+          }))
+        }))
+      }}
+    />
+  );
 }

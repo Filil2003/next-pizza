@@ -1,41 +1,26 @@
-"use client";
-
 import type { ComponentProps } from "react";
-import { InView } from "react-intersection-observer";
-import { Heading } from "#/shared/ui";
-import { useCategoryStore } from "#/store/category.ts";
+import { cn } from "#/shared/lib/tailwind";
 import { ProductCard } from "./ProductCard.tsx";
 
 /* ===== Typing props ===== */
 interface Props {
   title: string;
+  slug: string;
   products: ComponentProps<typeof ProductCard>[];
   className?: string;
 }
 
-/* ===== ProductsGroupList component ===== */
-export function ProductsGroup({ title, products, className }: Props) {
-  const { setActiveCategory } = useCategoryStore();
-
+/* ===== ProductsGroup component ===== */
+export function ProductsGroup({ title, slug, products, className }: Props) {
   return (
-    <InView
-      className={className}
-      as="section"
-      id={title}
-      rootMargin="-50% 0px -50% 0px"
-      onChange={(inView) => {
-        if (inView) setActiveCategory(title);
-      }}
-    >
-      <Heading as="h2" className="font-extrabold mb-5">
-        {title}
-      </Heading>
+    <section id={slug} className={cn("scroll-mt-28", className)}>
+      <h2 className="text-3xl font-bold mb-8">{title}</h2>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-12">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8">
         {products.map((product) => (
-          <ProductCard {...product} key={product.name} price={product.price} />
+          <ProductCard key={product.name} {...product} />
         ))}
       </div>
-    </InView>
+    </section>
   );
 }

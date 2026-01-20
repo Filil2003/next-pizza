@@ -1,5 +1,4 @@
 import { CircleCheckBigIcon } from "lucide-react";
-import { useSet } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 import { ImageWithFallback } from "#/shared/ui";
 
@@ -8,37 +7,41 @@ interface Props {
   toppings: {
     name: string;
     price: number;
-    imageUrn: string;
+    imageUrl: string;
   }[];
+  selected: Set<string>;
+  onToggle: (name: string) => void;
   className?: string;
 }
 
 /* ===== ToppingsPicker component ===== */
-export function ToppingsPicker({ toppings, className }: Props) {
-  const [selectedToppings, { toggle: toggleSelectedToppings }] =
-    useSet<string>();
-
+export function ToppingsPicker({
+  toppings,
+  selected,
+  onToggle,
+  className
+}: Props) {
   return (
     <section className={cn("", className)}>
       <div className="flex items-center gap-2 mb-3 ">
         <h2 className="font-bold text-xl align-middle">Добавить по вкусу</h2>
-        {selectedToppings.size > 0 && (
+        {selected.size > 0 && (
           <span className="text-primary bg-primary/10 px-2 py-0.5 rounded-full text-xs">
-            {selectedToppings.size}
+            {selected.size}
           </span>
         )}
       </div>
 
       <div className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-2 overflow-visible">
         {toppings.map((topping) => {
-          const isSelected = selectedToppings.has(topping.name);
+          const isSelected = selected.has(topping.name);
 
           return (
             <button
               key={topping.name}
               type="button"
               aria-pressed={isSelected}
-              onClick={() => toggleSelectedToppings(topping.name)}
+              onClick={() => onToggle(topping.name)}
               className={cn(
                 `
                 p-2
@@ -55,7 +58,7 @@ export function ToppingsPicker({ toppings, className }: Props) {
               <div className="relative aspect-square w-full self-start mx-auto">
                 <ImageWithFallback
                   className="object-contain pointer-events-none"
-                  src={topping.imageUrn}
+                  src={topping.imageUrl}
                   alt={topping.name}
                   fallbackSrc="/pizza/ingredients/placeholder.svg"
                   sizes="100px"

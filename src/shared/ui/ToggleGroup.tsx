@@ -3,7 +3,7 @@ import { cn } from "#/shared/lib/tailwind";
 /* ===== Typing props ===== */
 interface Props<T extends string | number> {
   options: {
-    label: string;
+    label?: string;
     value: T;
     isDisabled?: boolean;
   }[];
@@ -48,7 +48,7 @@ export function ToggleGroup<T extends string>({
             disabled={option.isDisabled}
             className="sr-only"
           />
-          {option.label}
+          {option.label ?? option.value}
         </label>
       ))}
     </div>

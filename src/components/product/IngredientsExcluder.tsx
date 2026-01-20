@@ -1,7 +1,4 @@
-"use client";
-
 import { MinusCircleIcon, PlusCircleIcon } from "lucide-react";
-import { useSet } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 
 /* ===== Typing props ===== */
@@ -10,13 +7,18 @@ interface Props {
     name: string;
     isRemovable: boolean;
   }[];
+  excluded: Set<string>;
+  onToggle: (name: string) => void;
   className?: string;
 }
 
 /* ===== IngredientsExcluder component ===== */
-export function IngredientsExcluder({ ingredients, className }: Props) {
-  const [removedIngredients, { toggle: toggleRemovedIngredients }] = useSet();
-
+export function IngredientsExcluder({
+  ingredients,
+  excluded,
+  onToggle,
+  className
+}: Props) {
   return (
     <section className={cn("", className)}>
       <h2 className="sr-only">Ингредиенты</h2>
@@ -32,7 +34,7 @@ export function IngredientsExcluder({ ingredients, className }: Props) {
       >
         {ingredients.map(({ name, isRemovable }) => {
           if (isRemovable) {
-            const isRemoved = removedIngredients.has(name);
+            const isRemoved = excluded.has(name);
 
             return (
               <li key={name}>
@@ -45,7 +47,7 @@ export function IngredientsExcluder({ ingredients, className }: Props) {
                       "line-through decoration-solid": isRemoved
                     }
                   )}
-                  onClick={() => toggleRemovedIngredients(name)}
+                  onClick={() => onToggle(name)}
                 >
                   <span>{name}</span>
                   {isRemoved ? (

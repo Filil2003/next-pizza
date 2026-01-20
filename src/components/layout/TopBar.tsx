@@ -1,16 +1,19 @@
-import type { PropsWithChildren } from "react";
+"use server";
+
+import type { ComponentProps } from "react";
 import { SortPopover } from "#/components/filtration";
 import { Categories } from "#/components/navigation";
 import { cn } from "#/shared/lib/tailwind";
 import { Container } from "#/shared/ui";
 
 /* ===== Typing props ===== */
-interface Props extends PropsWithChildren {
+interface Props {
+  categories: ComponentProps<typeof Categories>["categories"];
   className?: string;
 }
 
 /* ===== TopBar component ===== */
-export function TopBar({ className }: Props) {
+export async function TopBar({ categories, className }: Props) {
   return (
     <div
       className={cn(
@@ -19,7 +22,7 @@ export function TopBar({ className }: Props) {
       )}
     >
       <Container className="flex justify-between">
-        <Categories />
+        <Categories categories={categories} />
         <SortPopover />
       </Container>
     </div>

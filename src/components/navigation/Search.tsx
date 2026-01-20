@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { type ChangeEvent, useEffect, useRef, useState } from "react";
 import { Services } from "#/services";
-import type { SearchProductDto } from "#/shared/dto";
 import { useClickAway } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 
@@ -18,13 +17,13 @@ interface Props {
 export const Search = ({ className }: Props) => {
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
-  const [suggestions, setSuggestions] = useState<SearchProductDto[]>([]);
+  const [suggestions, setSuggestions] = useState([]);
   const searchRef = useRef(null);
 
   useClickAway(searchRef, () => setIsFocused(false));
 
   useEffect(() => {
-    void Services.product.search(query).then(setSuggestions);
+    if (query) void Services.product.search(query).then(setSuggestions);
   }, [query]);
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {

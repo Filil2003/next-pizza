@@ -1,39 +1,18 @@
 import { type NextRequest, NextResponse } from "next/server";
-import type { SearchProductDto } from "#/shared/dto";
-import { prisma } from "#/shared/lib/prisma";
+import { zen } from "#/shared/lib/zenstack";
 
-export async function GET(
-  request: NextRequest
-): Promise<NextResponse<SearchProductDto[]>> {
+export async function GET(request: NextRequest) {
   const query = request.nextUrl.searchParams.get("query") ?? "";
 
-  const products = await prisma.pizza.findMany({
+  const products = await zen.product.findMany({
     where: {
       name: {
         contains: query,
         mode: "insensitive"
       }
     },
-    include: {
-      variants: {
-        where: {
-          sizeId: "LARGE",
-          crustId: "TRADITIONAL"
-        },
-        select: {
-          imageUrn: true
-        }
-      }
-    },
     take: 5
   });
 
-  const flattenedProducts: SearchProductDto[] = products.map(
-    ({ variants, ...product }) => ({
-      ...product,
-      imageUrn: variants[0]?.imageUrn ?? ""
-    })
-  );
-
-  return NextResponse.json(flattenedProducts);
+  return NextResponse.json(products);
 }
