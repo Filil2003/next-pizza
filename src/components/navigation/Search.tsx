@@ -4,9 +4,9 @@ import { Search as SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { type ChangeEvent, useEffect, useRef, useState } from "react";
-import { Services } from "#/services";
 import { useClickAway } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
+import { search } from "./api";
 
 /* ===== Typing props ===== */
 interface Props {
@@ -17,13 +17,15 @@ interface Props {
 export const Search = ({ className }: Props) => {
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
-  const [suggestions, setSuggestions] = useState([]);
+  const [suggestions, setSuggestions] = useState<
+    Awaited<ReturnType<typeof search>>
+  >([]);
   const searchRef = useRef(null);
 
   useClickAway(searchRef, () => setIsFocused(false));
 
   useEffect(() => {
-    if (query) void Services.product.search(query).then(setSuggestions);
+    if (query) void search(query).then(setSuggestions);
   }, [query]);
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
@@ -76,16 +78,16 @@ export const Search = ({ className }: Props) => {
             role="listbox"
           >
             {suggestions.map((suggestion) => (
-              <div key={suggestion.id}>
+              <div key={suggestion.slug}>
                 <Link
                   className="flex items-center gap-3 px-3 py-2 hover:bg-primary/10"
                   role="option"
-                  href={`/product/${suggestion.id}`}
+                  href={`/product/${suggestion.slug}`}
                   onClick={handleClick}
                 >
                   <div className="relative aspect-square w-8">
                     <Image
-                      src={suggestion.imageUrn}
+                      src={suggestion.showCaseImageUrl}
                       alt={suggestion.name}
                       sizes="32px"
                       fill
@@ -104,7 +106,9 @@ export const Search = ({ className }: Props) => {
                         )
                       )}
                   </span>
-                  <span className="text-gray-500">От 249₽</span>
+                  <span className="text-gray-500">
+                    От {suggestion.minPrice / 100}₽
+                  </span>
                 </Link>
               </div>
             ))}

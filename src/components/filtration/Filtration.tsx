@@ -1,4 +1,6 @@
-import { Services } from "#/services";
+"use server";
+
+import { zen } from "#/shared/lib/zenstack";
 import { IngredientsFilter } from "./IngredientsFilter.tsx";
 import { PriceFilter } from "./PriceFilter.tsx";
 
@@ -9,7 +11,12 @@ interface Props {
 
 /* ===== Filtration component ===== */
 export async function Filtration({ className }: Props) {
-  const ingredients = await Services.ingredient.getAll();
+  const ingredientsRow = await zen.ingredient.findMany({
+    select: {
+      id: true,
+      name: true
+    }
+  });
 
   return (
     <aside className={className}>
@@ -19,7 +26,7 @@ export async function Filtration({ className }: Props) {
 
       <IngredientsFilter
         className="mt-5 border-y border-y-neutral-100 py-6"
-        ingredients={ingredients.map(({ name, id }) => ({
+        ingredients={ingredientsRow.map(({ name, id }) => ({
           label: name,
           value: id
         }))}

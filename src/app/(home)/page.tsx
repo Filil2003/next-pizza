@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { Filtration, ProductsGroup, TopBar } from "#/components";
 import { capitalize } from "#/shared/lib/string";
 import { zen } from "#/shared/lib/zenstack";
@@ -77,9 +76,7 @@ export default async function Home() {
       <Container className="flex gap-14 mt-10">
         {/* Filtration */}
         <aside className="basis-[250px] shrink-0">
-          <Suspense fallback={<div>Загрузка фильтров...</div>}>
-            <Filtration />
-          </Suspense>
+          <Filtration />
         </aside>
 
         {/* Feed */}
