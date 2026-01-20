@@ -1,0 +1,195 @@
+{
+  "title": "Пиццы Вулкан",
+  "products": [
+    {
+      "name": "Вулкан Аррива!",
+      "description": "",
+      "ingredients": [
+        {
+          "name": "Цыпленок",
+          "isRemovable": false
+        },
+        {
+          "name": "Острая чоризо",
+          "isRemovable": false
+        },
+        {
+          "name": "Моцарелла",
+          "isRemovable": false
+        },
+        {
+          "name": "Сладкий перец",
+          "isRemovable": false
+        },
+        {
+          "name": "Красный лук",
+          "isRemovable": false
+        },
+        {
+          "name": "Томаты",
+          "isRemovable": false
+        },
+        {
+          "name": "Чеснок",
+          "isRemovable": false
+        },
+
+        {
+          "name": "Соус ранч",
+          "isRemovable": false
+        },
+        {
+          "name": "Соус бургер",
+          "isRemovable": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "zegzzy1jkvwpyppov7qpqqcn",
+          "price": 69900,
+          "weight": "670 г",
+          "isShowCase": true,
+          "options": {
+            "size": "30 см"
+          },
+          "toppings": [
+            {
+              "name": "Соус барбекю",
+              "price": 0
+            },
+            {
+              "name": "Горчичный соус",
+              "price": 0
+            },
+            {
+              "name": "Соус ранч",
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Вулкан Цыпленок ранч",
+      "description": "",
+      "ingredients": [
+        {
+          "name": "Цыпленок",
+          "isRemovable": false
+        },
+        {
+          "name": "Ветчина",
+          "isRemovable": false
+        },
+        {
+          "name": "Моцарелла",
+          "isRemovable": false
+        },
+        {
+          "name": "Томаты",
+          "isRemovable": false
+        },
+        {
+          "name": "Чеснок",
+          "isRemovable": false
+        },
+        {
+          "name": "Соус ранч",
+          "isRemovable": true
+        },
+        {
+          "name": "Сливочный соус",
+          "isRemovable": false
+        }
+      ],
+      "variants": [
+        {
+          "id": "op1663koi90kl2ifklpl7pdj",
+          "price": 69900,
+          "weight": "730 г",
+          "isShowCase": true,
+          "options": {
+            "size": "30 см"
+          },
+          "toppings": [
+            {
+              "name": "Соус барбекю",
+              "price": 0
+            },
+            {
+              "name": "Горчичный соус",
+              "price": 0
+            },
+            {
+              "name": "Соус бургер",
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Вулкан Бургер-пицца",
+      "description": "",
+      "ingredients": [
+        {
+          "name": "Ветчина",
+          "isRemovable": false
+        },
+        {
+          "name": "Маринован­ные огурчики",
+          "isRemovable": true
+        },
+        {
+          "name": "Томаты",
+          "isRemovable": false
+        },
+        {
+          "name": "Красный лук",
+          "isRemovable": false
+        },
+        {
+          "name": "Чеснок",
+          "isRemovable": false
+        },
+        {
+          "name": "Моцарелла",
+          "isRemovable": false
+        },
+        {
+          "name": "Соус бургер",
+          "isRemovable": true
+        },
+        {
+          "name": "Томатный соус",
+          "isRemovable": false
+        }
+      ],
+      "variants": [
+        {
+          "id": "rklane4ljttzfnsa5xti7khj",
+          "price": 69900,
+          "weight": "730 г",
+          "isShowCase": true,
+          "options": {
+            "size": "30 см"
+          },
+          "toppings": [
+            {
+              "name": "Соус ранч",
+              "price": 0
+            },
+            {
+              "name": "Горчичный соус",
+              "price": 0
+            },
+            {
+              "name": "Соус барбекю",
+              "price": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

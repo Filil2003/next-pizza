@@ -6,8 +6,18 @@ import ingredients from "./ingredients.json";
 import pizzas from "./pizzas.json";
 import sauces from "./sauces.json";
 import snacks from "./snacks.json";
+import volcanoPizzas from "./volcano-pizzas.json";
 
 export default {
-  categoriesData: [pizzas, snacks, coffee, drinks, cocktails, desserts, sauces],
+  categoriesData: [
+    volcanoPizzas,
+    pizzas,
+    snacks,
+    coffee,
+    drinks,
+    cocktails,
+    desserts,
+    sauces
+  ],
   ingredientsData: ingredients
 } as const;

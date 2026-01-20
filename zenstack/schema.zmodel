@@ -19,7 +19,7 @@ type TimestampMixin {
 }
 
 // ===== Category =====
-model Category with IdMixin {
+model Category with IdMixin, TimestampMixin {
   name     String    @unique
   slug     String    @unique
   products Product[]

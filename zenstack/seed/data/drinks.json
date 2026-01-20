@@ -255,23 +255,6 @@
           "toppings": []
         }
       ]
-    },
-    {
-      "name": "Какао",
-      "description": "Насыщенное, плотное и такое знакомое какао с молоком",
-      "ingredients": [],
-      "variants": [
-        {
-          "id": "kbxyuzh4nfqt4ug0z40fy9in",
-          "price": 15900,
-          "weight": "",
-          "isShowCase": true,
-          "options": {
-            "volume": "0.3 л"
-          },
-          "toppings": []
-        }
-      ]
     }
   ]
 }
