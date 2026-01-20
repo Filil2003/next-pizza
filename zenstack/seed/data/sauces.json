@@ -44,6 +44,7 @@
           "id": "te07p13t0w46m4y0xw7tskhx",
           "price": 4900,
           "weight": "25 г",
+          "isShowCase": true,
           "options": {
             "quantity": "1 шт"
           },
