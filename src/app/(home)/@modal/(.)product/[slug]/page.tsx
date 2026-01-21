@@ -44,7 +44,8 @@ export default async function PizzaModal({ params }: Props) {
                 }
               }
             }
-          }
+          },
+          toppingsLimit: true
         }
       }
     }
@@ -72,7 +73,8 @@ export default async function PizzaModal({ params }: Props) {
             price,
             name: ingredient?.name ?? "",
             imageUrl: ingredient?.imageUrl ?? ""
-          }))
+          })),
+          toppingsLimit: variant.toppingsLimit
         }))
       }}
     />

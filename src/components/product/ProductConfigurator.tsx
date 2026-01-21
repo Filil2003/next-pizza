@@ -103,6 +103,7 @@ export function ProductConfigurator({ product, className }: Props) {
             <ToppingsPicker
               className="px-7.5 pb-5"
               toppings={selectedVariant.toppings}
+              toppingsLimit={selectedVariant.toppingsLimit}
               selected={selectedToppings}
               onToggle={toggleSelectedTopping}
             />

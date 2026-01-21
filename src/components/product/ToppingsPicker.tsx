@@ -9,6 +9,7 @@ interface Props {
     price: number;
     imageUrl: string;
   }[];
+  toppingsLimit: number | null;
   selected: Set<string>;
   onToggle: (name: string) => void;
   className?: string;
@@ -17,13 +18,14 @@ interface Props {
 /* ===== ToppingsPicker component ===== */
 export function ToppingsPicker({
   toppings,
+  toppingsLimit,
   selected,
   onToggle,
   className
 }: Props) {
   return (
     <section className={cn("", className)}>
-      <div className="flex items-center gap-2 mb-3 ">
+      <div className="flex items-center gap-2">
         <h2 className="font-bold text-xl align-middle">Добавить по вкусу</h2>
         {selected.size > 0 && (
           <span className="text-primary bg-primary/10 px-2 py-0.5 rounded-full text-xs">
@@ -31,10 +33,16 @@ export function ToppingsPicker({
           </span>
         )}
       </div>
+      {toppingsLimit && (
+        <p className="text-sm text-gray-500">
+          Можно выбрать не больше {toppingsLimit}
+        </p>
+      )}
 
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-2 overflow-visible">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-2 overflow-visible mt-3">
         {toppings.map((topping) => {
           const isSelected = selected.has(topping.name);
+          const isDisabled = !isSelected && selected.size === toppingsLimit;
 
           return (
             <button
@@ -42,16 +50,20 @@ export function ToppingsPicker({
               type="button"
               aria-pressed={isSelected}
               onClick={() => onToggle(topping.name)}
+              disabled={isDisabled}
               className={cn(
                 `
                 p-2
                 text-sm text-center
                 grid grid-rows-[auto_1fr_auto]
-                shadow-lg rounded-xl
+                rounded-xl
                 border border-transparent
+                transition-all
                 `,
                 {
-                  "border-primary": isSelected
+                  "grayscale-100 cursor-not-allowed ": isDisabled,
+                  "border-primary": isSelected,
+                  "shadow-lg": !isSelected
                 }
               )}
             >

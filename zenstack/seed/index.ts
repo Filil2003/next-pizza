@@ -70,7 +70,8 @@ async function seed() {
             price: variantData.price,
             isShowCase: variantData.isShowCase,
             imageUrl: `/${category.slug}/${product.slug}/${variantData.id}.png`,
-            options: variantData.options
+            options: variantData.options,
+            toppingsLimit: variantData.toppingsLimit
           }
         });
 

@@ -52,6 +52,7 @@
           "options": {
             "size": "30 см"
           },
+          "toppingsLimit": 1,
           "toppings": [
             {
               "name": "Соус барбекю",
@@ -111,6 +112,7 @@
           "options": {
             "size": "30 см"
           },
+          "toppingsLimit": 1,
           "toppings": [
             {
               "name": "Соус барбекю",
@@ -174,6 +176,7 @@
           "options": {
             "size": "30 см"
           },
+          "toppingsLimit": 1,
           "toppings": [
             {
               "name": "Соус ранч",

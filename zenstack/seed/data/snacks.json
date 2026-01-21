@@ -14,6 +14,7 @@
           "options": {
             "portion": "Стандартная"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -24,6 +25,7 @@
           "options": {
             "portion": "Большая"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -41,6 +43,7 @@
           "options": {
             "portion": "Стандартная"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -51,6 +54,7 @@
           "options": {
             "portion": "Большая"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -68,6 +72,7 @@
           "options": {
             "quantity": "2 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -78,6 +83,7 @@
           "options": {
             "quantity": "3 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -88,6 +94,7 @@
           "options": {
             "quantity": "4 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -105,6 +112,7 @@
           "options": {
             "quantity": "3 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -115,6 +123,7 @@
           "options": {
             "quantity": "5 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -125,6 +134,7 @@
           "options": {
             "quantity": "9 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -142,6 +152,7 @@
           "options": {
             "quantity": "5 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -152,6 +163,7 @@
           "options": {
             "quantity": "9 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -169,6 +181,7 @@
           "options": {
             "quantity": "5 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -179,6 +192,7 @@
           "options": {
             "quantity": "10 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -196,6 +210,7 @@
           "options": {
             "portion": "Стандартная"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -206,6 +221,7 @@
           "options": {
             "portion": "Большая"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -223,6 +239,7 @@
           "options": {
             "quantity": "10 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -240,6 +257,7 @@
           "options": {
             "quantity": "1 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -257,6 +275,7 @@
           "options": {
             "quantity": "1 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -274,6 +293,7 @@
           "options": {
             "quantity": "1 шт"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]

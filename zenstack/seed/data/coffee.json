@@ -14,6 +14,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": [
             {
               "name": "Молоко",
@@ -49,6 +50,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": [
             {
               "name": "Молоко",
@@ -91,6 +93,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": [
             {
               "name": "Сироп «Черный лес»",
@@ -122,6 +125,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": [
             {
               "name": "Сироп «Черный лес»",
@@ -160,6 +164,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": [
             {
               "name": "Сироп «Черный лес»",
@@ -191,6 +196,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": [
             {
               "name": "Сироп «Черный лес»",
@@ -229,6 +235,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -246,6 +253,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -256,6 +264,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -273,6 +282,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -283,6 +293,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -300,6 +311,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -310,6 +322,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -327,6 +340,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -337,6 +351,7 @@
           "options": {
             "volume": "0.4 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]
@@ -354,6 +369,7 @@
           "options": {
             "volume": "0.3 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         },
         {
@@ -364,6 +380,7 @@
           "options": {
             "volume": "0.6 л"
           },
+          "toppingsLimit": null,
           "toppings": []
         }
       ]

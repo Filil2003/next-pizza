@@ -20,6 +20,7 @@ type Product = {
       price: number;
       imageUrl: string;
     }[];
+    toppingsLimit: number | null;
     weight?: string;
   }[];
 };

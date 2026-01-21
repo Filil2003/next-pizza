@@ -38,16 +38,17 @@ model Product with IdMixin, TimestampMixin {
 
 // ===== ProductVariant =====
 model ProductVariant with IdMixin, TimestampMixin {
-  price      Int
-  imageUrl   String
-  toppings   ProductVariantTopping[]
-  options    Json
-  weight     String?
+  price         Int
+  imageUrl      String
+  toppings      ProductVariantTopping[]
+  toppingsLimit Int?
+  options       Json
+  weight        String?
 
-  isShowCase Boolean                 @default(false)
+  isShowCase    Boolean                 @default(false)
 
-  product    Product                 @relation(fields: [productId], references: [id])
-  productId  String
+  product       Product                 @relation(fields: [productId], references: [id])
+  productId     String
 }
 
 // ===== Ingredient =====
