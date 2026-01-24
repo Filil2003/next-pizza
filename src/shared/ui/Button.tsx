@@ -1,16 +1,23 @@
+"use client";
+
 import { cva, type VariantProps } from "class-variance-authority";
+import { LoaderCircleIcon } from "lucide-react";
 import Link from "next/link";
 import type { ComponentProps } from "react";
+import { useAppearanceDelay } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 
 const variants = cva(
   `
   inline-flex items-center justify-center
-  text-sm font-medium whitespace-nowrap
-  rounded-xl
+  text-sm font-bold whitespace-nowrap
+  rounded-full
   transition-colors
-  active:translate-y-px
   has-[svg]:gap-1
+  not-disabled:active:translate-y-px
+  disabled:cursor-not-allowed
+  disabled:text-gray-400
+  disabled:bg-gray-200
   `,
   {
     variants: {
@@ -50,7 +57,9 @@ const variants = cva(
 /* ===== Typing props ===== */
 type CommonProps = VariantProps<typeof variants>;
 
-type ButtonSpecificProps = ComponentProps<"button">;
+type ButtonSpecificProps = ComponentProps<"button"> & {
+  loading?: boolean;
+};
 
 type LinkSpecificProps = ComponentProps<typeof Link> & {
   type: "link";
@@ -77,9 +86,43 @@ export function Button({
     );
   }
 
+  const { type: _, ...buttonProps } = restProps;
   return (
-    <button className={classNames} type="button" {...restProps}>
+    <ExtendedButton className={classNames} {...buttonProps}>
       {children}
+    </ExtendedButton>
+  );
+}
+
+function ExtendedButton({
+  children,
+  className,
+  disabled,
+  loading = false,
+  ...restProps
+}: ButtonSpecificProps) {
+  const delayedLoading = useAppearanceDelay(loading, {
+    appearanceDelay: 300,
+    minDisplayTime: 600
+  });
+
+  return (
+    <button
+      className={cn(className, "relative", {
+        "disabled:cursor-wait": delayedLoading
+      })}
+      type="button"
+      disabled={disabled || delayedLoading}
+      {...restProps}
+    >
+      {delayedLoading && (
+        <LoaderCircleIcon className="absolute animate-spin" aria-hidden />
+      )}
+      {delayedLoading ? (
+        <span className="text-transparent">{children}</span>
+      ) : (
+        children
+      )}
     </button>
   );
 }
