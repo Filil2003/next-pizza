@@ -10,6 +10,9 @@ async function seed() {
   await zen.ingredient.deleteMany();
   await zen.product.deleteMany();
   await zen.category.deleteMany();
+  await zen.cartItem.deleteMany();
+  await zen.cart.deleteMany();
+  await zen.user.deleteMany();
 
   /* ===== Ingredient ===== */
   for (const ingredientData of seedData.ingredientsData) {
@@ -96,6 +99,39 @@ async function seed() {
       }
     }
   }
+
+  /* ===== User ===== */
+  const user = await zen.user.create({
+    data: {
+      id: "znjjb5heltly9zbznku3i03f",
+      email: "user@gmail.com"
+    }
+  });
+
+  /* ===== Cart ===== */
+  const cart = await zen.cart.create({
+    data: {
+      userId: user.id
+    }
+  });
+
+  /* ===== CartItem ===== */
+  await zen.cartItem.createMany({
+    data: [
+      {
+        cartId: cart.id,
+        productVariantId: "dcb3dh6ccu6k685fbmemxuv7"
+      },
+      {
+        cartId: cart.id,
+        productVariantId: "jm1fkvjv24koe27gp7rnz9jr"
+      },
+      {
+        cartId: cart.id,
+        productVariantId: "qjf5uml2vsvhujm1v6exek3f"
+      }
+    ]
+  });
 }
 
 void seed();

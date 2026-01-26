@@ -25,6 +25,17 @@ model Category with IdMixin, TimestampMixin {
   products Product[]
 }
 
+// ===== CategoryFilter =====
+// TODO: Фильтры для каждой категории
+
+// ===== Ingredient =====
+model Ingredient with IdMixin, TimestampMixin {
+  name     String                  @unique
+  imageUrl String?
+  products ProductIngredient[]
+  toppings ProductVariantTopping[]
+}
+
 // ===== Product =====
 model Product with IdMixin, TimestampMixin {
   name        String              @unique
@@ -36,7 +47,6 @@ model Product with IdMixin, TimestampMixin {
   ingredients ProductIngredient[]
 }
 
-// ===== ProductVariant =====
 model ProductVariant with IdMixin, TimestampMixin {
   price         Int
   imageUrl      String
@@ -49,19 +59,14 @@ model ProductVariant with IdMixin, TimestampMixin {
 
   product       Product                 @relation(fields: [productId], references: [id])
   productId     String
+
+  cartItems     CartItem[]
 }
 
-// ===== Ingredient =====
-model Ingredient with IdMixin, TimestampMixin {
-  name     String                  @unique
-  imageUrl String?
-  products ProductIngredient[]
-  toppings ProductVariantTopping[]
-}
-
-// ===== ProductIngredient =====
 model ProductIngredient with IdMixin, TimestampMixin {
   isRemovable  Boolean    @default(false)
+
+  cartItems    CartItem[]
 
   product      Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
   productId    String
@@ -73,9 +78,10 @@ model ProductIngredient with IdMixin, TimestampMixin {
   @@index([productId, createdAt])
 }
 
-// ===== ProductVariantTopping =====
 model ProductVariantTopping with IdMixin, TimestampMixin {
   price            Int
+
+  cartItems        CartItem[]
 
   productVariant   ProductVariant @relation(fields: [productVariantId], references: [id], onDelete: Cascade)
   productVariantId String
@@ -85,4 +91,33 @@ model ProductVariantTopping with IdMixin, TimestampMixin {
 
   @@unique([productVariantId, ingredientId])
   @@index([productVariantId, createdAt])
+}
+
+// ===== User =====
+model User with IdMixin, TimestampMixin {
+  email String @unique
+  cart  Cart?
+}
+
+// ===== Cart =====
+model Cart with IdMixin, TimestampMixin {
+  items  CartItem[]
+
+  user   User?      @relation(fields: [userId], references: [id])
+  userId String?    @unique
+}
+
+model CartItem with IdMixin, TimestampMixin {
+  quantity            Int                     @default(1)
+
+  excludedIngredients ProductIngredient[]
+  selectedToppings    ProductVariantTopping[]
+
+  productVariant      ProductVariant          @relation(fields: [productVariantId], references: [id], onDelete: Cascade)
+  productVariantId    String
+
+  cart                Cart                    @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  cartId              String
+
+  @@index([cartId])
 }

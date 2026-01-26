@@ -17,6 +17,7 @@ export default async function PizzaModal({ params }: Props) {
       ingredients: {
         orderBy: { createdAt: "asc" },
         select: {
+          id: true,
           isRemovable: true,
           ingredient: {
             select: {
@@ -36,6 +37,7 @@ export default async function PizzaModal({ params }: Props) {
           options: true,
           toppings: {
             select: {
+              id: true,
               price: true,
               ingredient: {
                 select: {
@@ -51,17 +53,21 @@ export default async function PizzaModal({ params }: Props) {
     }
   });
 
-  if (!product || !product.inStock) return notFound();
+  if (!product) return notFound();
 
   return (
     <ProductConfiguratorModal
       product={{
         name: product.name,
         description: product.description ?? "",
-        ingredients: product.ingredients.map(({ ingredient, isRemovable }) => ({
-          name: ingredient.name,
-          isRemovable
-        })),
+        inStock: product.inStock,
+        ingredients: product.ingredients.map(
+          ({ id, ingredient, isRemovable }) => ({
+            id,
+            name: ingredient.name,
+            isRemovable
+          })
+        ),
         variants: product.variants.map((variant) => ({
           id: variant.id,
           isShowCase: variant.isShowCase,
@@ -69,7 +75,8 @@ export default async function PizzaModal({ params }: Props) {
           price: variant.price,
           imageUrl: variant.imageUrl ?? "",
           options: variant.options as Record<string, string>,
-          toppings: variant.toppings.map(({ price, ingredient }) => ({
+          toppings: variant.toppings.map(({ id, price, ingredient }) => ({
+            id,
             price,
             name: ingredient?.name ?? "",
             imageUrl: ingredient?.imageUrl ?? ""

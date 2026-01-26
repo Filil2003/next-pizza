@@ -1,11 +1,15 @@
 "use client";
 
-import { useConfigurator } from "#/components/product/model";
-import { Preview } from "#/components/product/Preview.tsx";
+import { useMutation } from "@tanstack/react-query";
+import { useRouter } from "next/navigation";
+import { mutations } from "#/components/checkout/api";
+import { useAppearanceDelay } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 import { Button, ToggleGroup } from "#/shared/ui";
 import { ScrollArea } from "#/shared/ui/ScrollArea";
+import { useConfigurator } from "../model";
 import { IngredientsExcluder } from "./IngredientsExcluder.tsx";
+import { Preview } from "./Preview.tsx";
 import { ToppingsPicker } from "./ToppingsPicker.tsx";
 
 /* ===== Typing props ===== */
@@ -28,12 +32,37 @@ export function ProductConfigurator({ product, className }: Props) {
     toggleSelectedTopping
   } = useConfigurator(product);
 
+  const router = useRouter();
+  const addMutation = useMutation(mutations.addToCart());
+
+  const isPending = useAppearanceDelay(addMutation.isPending);
+
   const summary = [
     ...Object.values(selectedVariant.options),
     selectedVariant.weight
   ]
     .filter(Boolean)
     .join(", ");
+
+  function handleAddToCart() {
+    addMutation.mutate(
+      {
+        productVariantId: selectedVariant.id,
+        excludedIngredientIds: product.ingredients
+          .filter(
+            ({ name, isRemovable }) =>
+              isRemovable && excludedIngredients.has(name)
+          )
+          .flatMap(({ id }) => id),
+        selectedToppingIds: selectedVariant.toppings
+          .filter(({ name }) => selectedToppings.has(name))
+          .flatMap(({ id }) => id)
+      },
+      {
+        onSuccess: () => void router.back()
+      }
+    );
+  }
 
   return (
     <article
@@ -112,8 +141,15 @@ export function ProductConfigurator({ product, className }: Props) {
 
         {/* Action */}
         <footer className="pt-6 px-7.5">
-          <Button className="text-base font-bold rounded-full w-full h-12">
-            В корзину за {totalPrice / 100} ₽
+          <Button
+            className="text-base font-bold w-full h-12"
+            onClick={handleAddToCart}
+            loading={isPending}
+            disabled={!product.inStock}
+          >
+            {product.inStock
+              ? `В корзину за ${totalPrice / 100} ₽`
+              : "Раскупили"}
           </Button>
         </footer>
       </div>

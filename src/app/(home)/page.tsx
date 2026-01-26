@@ -1,4 +1,4 @@
-import { Filtration, ProductsGroup, TopBar } from "#/components";
+import { Filtration, ProductSection, TopBar } from "#/components";
 import { capitalize } from "#/shared/lib/string";
 import { zen } from "#/shared/lib/zenstack";
 import { Container } from "#/shared/ui";
@@ -18,6 +18,7 @@ export default async function Home() {
           description: true,
           variants: {
             select: {
+              id: true,
               price: true,
               imageUrl: true,
               isShowCase: true
@@ -58,8 +59,12 @@ export default async function Home() {
               .join(", ")
           ),
         inStock: product.inStock,
+        hasVariants: product.variants.length > 1,
         minPrice,
-        showCaseImageUrl: showCaseVariant.imageUrl
+        showCaseVariant: {
+          id: showCaseVariant.id,
+          imageUrl: showCaseVariant.imageUrl
+        }
       };
     })
   }));
@@ -82,10 +87,10 @@ export default async function Home() {
         {/* Feed */}
         <div className="grow flex flex-col gap-24">
           {categories.map((category) => (
-            <ProductsGroup
+            <ProductSection
+              id={category.slug}
               key={category.name}
               title={category.name}
-              slug={category.slug}
               products={category.products}
             />
           ))}

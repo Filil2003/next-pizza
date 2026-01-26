@@ -2,9 +2,9 @@
 
 import { useRouter } from "next/navigation";
 import type { ComponentProps } from "react";
-import { ProductConfigurator } from "#/components";
 import { cn } from "#/shared/lib/tailwind";
 import { Dialog, DialogContent } from "#/shared/ui";
+import { ProductConfigurator } from "./ProductConfigurator.tsx";
 
 /* ===== Typing props ===== */
 interface Props {

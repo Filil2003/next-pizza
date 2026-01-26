@@ -1,7 +1,8 @@
-import { ArrowRight, ShoppingCartIcon, UserIcon } from "lucide-react";
+import { UserIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ComponentProps } from "react";
+import { CartButton } from "#/components/checkout";
 import { cn } from "#/shared/lib/tailwind";
 import { Button, Container } from "#/shared/ui";
 import { Search } from "../navigation";
@@ -28,23 +29,12 @@ export function Header({ className }: Props) {
         <Search />
 
         {/* Right side */}
-        <div className="flex items-center gap-3">
+        <div className={cn("flex items-center gap-3", className)}>
           <Button variant="outline">
             <UserIcon size="16" />
             Войти
           </Button>
-          <Button className="group grid grid-cols-[repeat(3,auto)]">
-            <b>520 ₽</b>
-            <span className="h-full w-px bg-white/30 mx-3" />
-            <div className="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0 col-start-3 row-start-1">
-              <ShoppingCartIcon size="16" strokeWidth="2" />
-              <b>3</b>
-            </div>
-            <ArrowRight
-              size={20}
-              className="transition duration-300 opacity-0 group-hover:opacity-100 col-start-3 row-start-1 -translate-x-2 group-hover:translate-x-0 justify-self-center"
-            />
-          </Button>
+          <CartButton />
         </div>
       </Container>
     </header>

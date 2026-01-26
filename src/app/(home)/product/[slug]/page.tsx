@@ -18,6 +18,7 @@ export default async function ProductPage({ params }: Props) {
       ingredients: {
         orderBy: { createdAt: "asc" },
         select: {
+          id: true,
           isRemovable: true,
           ingredient: {
             select: {
@@ -37,6 +38,7 @@ export default async function ProductPage({ params }: Props) {
           options: true,
           toppings: {
             select: {
+              id: true,
               price: true,
               ingredient: {
                 select: {
@@ -45,7 +47,8 @@ export default async function ProductPage({ params }: Props) {
                 }
               }
             }
-          }
+          },
+          toppingsLimit: true
         }
       }
     }
@@ -60,7 +63,8 @@ export default async function ProductPage({ params }: Props) {
           name: product.name,
           description: product.description ?? "",
           ingredients: product.ingredients.map(
-            ({ ingredient, isRemovable }) => ({
+            ({ id, ingredient, isRemovable }) => ({
+              id,
               name: ingredient.name,
               isRemovable
             })
@@ -70,13 +74,15 @@ export default async function ProductPage({ params }: Props) {
             isShowCase: variant.isShowCase,
             weight: variant.weight ?? "",
             price: variant.price,
-            imageUrl: variant.imageUrl,
+            imageUrl: variant.imageUrl ?? "",
             options: variant.options as Record<string, string>,
-            toppings: variant.toppings.map(({ price, ingredient }) => ({
+            toppings: variant.toppings.map(({ id, price, ingredient }) => ({
+              id,
               price,
               name: ingredient?.name ?? "",
               imageUrl: ingredient?.imageUrl ?? ""
-            }))
+            })),
+            toppingsLimit: variant.toppingsLimit
           }))
         }}
       />

@@ -5,7 +5,9 @@ import { useSet } from "#/shared/lib/react";
 type Product = {
   name: string;
   description: string;
+  inStock: boolean;
   ingredients: {
+    id: string;
     name: string;
     isRemovable: boolean;
   }[];
@@ -16,6 +18,7 @@ type Product = {
     imageUrl: string;
     options: Record<string, string>;
     toppings: {
+      id: string;
       name: string;
       price: number;
       imageUrl: string;
