@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useId } from "react";
+import { Price } from "#/shared/ui";
 import { ActionButton } from "./ActionButton.tsx";
 
 /* ===== Typing props ===== */
@@ -54,7 +55,7 @@ export function ProductCard({
       <p className={"text-sm font-medium text-gray-500 mb-4"}>{description}</p>
       <footer className="flex justify-between items-center mt-auto">
         <span className="text-lg">
-          от <b>{minPrice / 100} ₽</b>
+          от <Price className="font-bold" amount={minPrice} />
         </span>
         <ActionButton
           slug={slug}

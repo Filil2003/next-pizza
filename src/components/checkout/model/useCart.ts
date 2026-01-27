@@ -33,11 +33,10 @@ export function useCart() {
     return pizzaUnitPrice * product.quantity;
   };
 
-  const totalPrice =
-    availableProducts.reduce(
-      (total, product) => total + getProductPrice(product),
-      0
-    ) / 100;
+  const totalPrice = availableProducts.reduce(
+    (total, product) => total + getProductPrice(product),
+    0
+  );
 
   const productsQuantity = products.reduce(
     (total, { quantity }) => total + quantity,

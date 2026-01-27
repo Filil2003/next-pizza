@@ -4,6 +4,7 @@ export { Container } from "./Container";
 export * from "./Dialog";
 export { ImageWithFallback } from "./ImageWithFallback";
 export { Input } from "./Input";
+export { Price } from "./Price";
 export { RangeSlider } from "./RangeSlider";
 export { ScrollArea } from "./ScrollArea";
 export { Sheet } from "./Sheet";

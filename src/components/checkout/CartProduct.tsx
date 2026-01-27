@@ -4,7 +4,7 @@ import Image from "next/image";
 import { mutations } from "#/components/checkout/api";
 import { useAppearanceDelay } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
-import { Button } from "#/shared/ui";
+import { Button, Price } from "#/shared/ui";
 import { QuantityCounter } from "./ui/QuantityCounter.tsx";
 
 /* ===== Typing props ===== */
@@ -87,7 +87,7 @@ export function CartProduct({ product, className }: Props) {
         {product.inStock ? (
           <>
             <span>
-              Цена: <b>{totalPrice / 100} ₽</b>
+              Цена: <Price className="font-bold" amount={totalPrice} />
             </span>
             <QuantityCounter product={product} />
           </>

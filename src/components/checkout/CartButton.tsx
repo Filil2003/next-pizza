@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import { Toaster } from "sonner";
 import { cn } from "#/shared/lib/tailwind";
-import { Button, ScrollArea, Sheet } from "#/shared/ui";
+import { Button, Price, ScrollArea, Sheet } from "#/shared/ui";
 import {
   SheetClose,
   SheetContent,
@@ -42,7 +42,7 @@ export function CartButton({ className }: Props) {
         <SheetTrigger asChild>
           <Button className={cn("", className)} loading={isLoading}>
             <div className="group grid grid-cols-[repeat(3,auto)] items-start">
-              <b>{totalPrice} ₽</b>
+              <Price className="font-bold" amount={totalPrice} />
               <span className="h-full w-px bg-white/30 mx-3" />
               <div className="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0 col-start-3 row-start-1">
                 <ShoppingCartIcon size="16" strokeWidth="2" />
@@ -69,7 +69,8 @@ export function CartButton({ className }: Props) {
             <SheetHeader>
               <SheetTitle asChild>
                 <h1 className="text-lg font-bold">
-                  В корзине {productsQuantity} товара на сумму {totalPrice} ₽
+                  В корзине {productsQuantity} товара на сумму{" "}
+                  <Price amount={totalPrice} />
                 </h1>
               </SheetTitle>
             </SheetHeader>
@@ -102,7 +103,7 @@ export function CartButton({ className }: Props) {
             <SheetFooter className="bg-white">
               <p className="flex justify-between text-lg font-bold mb-4">
                 <span>Сумма заказа</span>
-                <span>{totalPrice} ₽</span>
+                <Price amount={totalPrice} />
               </p>
 
               <Button

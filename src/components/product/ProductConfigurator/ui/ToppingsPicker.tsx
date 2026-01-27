@@ -1,6 +1,6 @@
 import { CircleCheckBigIcon } from "lucide-react";
 import { cn } from "#/shared/lib/tailwind";
-import { ImageWithFallback } from "#/shared/ui";
+import { ImageWithFallback, Price } from "#/shared/ui";
 
 /* ===== Typing props ===== */
 interface Props {
@@ -82,9 +82,10 @@ export function ToppingsPicker({
               </div>
 
               <p className="leading-4">{topping.name}</p>
-              <p className="text-base font-bold mt-1">
-                {topping.price / 100} ₽
-              </p>
+              <Price
+                className="text-base font-bold mt-1"
+                amount={topping.price}
+              />
             </button>
           );
         })}

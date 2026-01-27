@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { mutations } from "#/components/checkout/api";
 import { useAppearanceDelay } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
-import { Button, ToggleGroup } from "#/shared/ui";
+import { Button, Price, ToggleGroup } from "#/shared/ui";
 import { ScrollArea } from "#/shared/ui/ScrollArea";
 import { useConfigurator } from "../model";
 import { IngredientsExcluder } from "./IngredientsExcluder.tsx";
@@ -147,9 +147,13 @@ export function ProductConfigurator({ product, className }: Props) {
             loading={isPending}
             disabled={!product.inStock}
           >
-            {product.inStock
-              ? `В корзину за ${totalPrice / 100} ₽`
-              : "Раскупили"}
+            {product.inStock ? (
+              <span>
+                В корзину за <Price amount={totalPrice} />
+              </span>
+            ) : (
+              "Раскупили"
+            )}
           </Button>
         </footer>
       </div>

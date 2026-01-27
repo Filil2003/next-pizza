@@ -6,6 +6,7 @@ import Link from "next/link";
 import { type ChangeEvent, useEffect, useRef, useState } from "react";
 import { useClickAway } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
+import { Price } from "#/shared/ui";
 import { search } from "./api";
 
 /* ===== Typing props ===== */
@@ -107,7 +108,7 @@ export const Search = ({ className }: Props) => {
                       )}
                   </span>
                   <span className="text-gray-500">
-                    От {suggestion.minPrice / 100}₽
+                    От <Price amount={suggestion.minPrice} />
                   </span>
                 </Link>
               </div>
