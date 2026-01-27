@@ -75,7 +75,7 @@ export function Button({
   children,
   ...restProps
 }: Props) {
-  const classNames = cn(variants({ variant, size, className }));
+  const classNames = cn(variants({ variant, size }), className);
 
   if (restProps.type === "link") {
     const { type: _, ...linkProps } = restProps;
