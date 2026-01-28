@@ -86,9 +86,8 @@ export function Button({
     );
   }
 
-  const { type: _, ...buttonProps } = restProps;
   return (
-    <ExtendedButton className={classNames} {...buttonProps}>
+    <ExtendedButton className={classNames} {...restProps}>
       {children}
     </ExtendedButton>
   );
