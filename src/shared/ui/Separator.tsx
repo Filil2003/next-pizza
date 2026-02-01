@@ -1,25 +1,32 @@
-import * as SeparatorPrimitive from "@radix-ui/react-separator";
 import type { ComponentProps } from "react";
 import { cn } from "#/shared/lib/tailwind";
 
-function Separator({
-  className,
+/* ===== Typing props ===== */
+interface Props extends ComponentProps<"hr"> {
+  orientation?: "horizontal" | "vertical";
+  isDecorative?: boolean;
+}
+
+/* ===== Separator component ===== */
+export function Separator({
   orientation = "horizontal",
-  decorative = true,
-  ...props
-}: ComponentProps<typeof SeparatorPrimitive.Root>) {
+  isDecorative = true,
+  className,
+  ...restProps
+}: Props) {
   return (
-    <SeparatorPrimitive.Root
-      data-slot="separator"
-      decorative={decorative}
-      orientation={orientation}
+    <hr
       className={cn(
-        "bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px",
+        "bg-current/30",
+        {
+          "h-px w-full": orientation === "horizontal",
+          "w-px h-full": orientation === "vertical"
+        },
         className
       )}
-      {...props}
+      role={isDecorative ? "none" : "separator"}
+      aria-orientation={orientation}
+      {...restProps}
     />
   );
 }
-
-export { Separator };

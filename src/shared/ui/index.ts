@@ -10,5 +10,6 @@ export { Logo } from "./Logo";
 export { Price } from "./Price";
 export { RangeSlider } from "./RangeSlider";
 export { ScrollArea } from "./ScrollArea";
+export { Separator } from "./Separator";
 export { Sheet } from "./Sheet";
 export { ToggleGroup } from "./ToggleGroup";
