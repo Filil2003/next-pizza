@@ -16,7 +16,11 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        /* TanStack Form use children prop */
+        "noChildrenProp": "off"
+      }
     },
     "domains": {
       "next": "recommended",

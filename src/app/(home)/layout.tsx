@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import type { PropsWithChildren, ReactNode } from "react";
 import { Header } from "#/components";
 
-interface Props {
-  children: ReactNode;
+interface Props extends PropsWithChildren {
   modal: ReactNode;
 }
 
@@ -15,7 +14,7 @@ export default function HomeLayout({ children, modal }: Props) {
   return (
     <>
       <Header />
-      <main className="min-h-svh">{children}</main>
+      <main className="grow">{children}</main>
       {modal}
     </>
   );

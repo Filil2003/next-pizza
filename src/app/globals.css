@@ -8,6 +8,10 @@
   --primary-foreground: oklch(0.98 0.016 73.684);
   --secondary: oklch(0.988 0.009 67.727);
   --secondary-foreground: oklch(0.216 0.006 56.043);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
 }
 
 @theme inline {
@@ -17,6 +21,9 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
   /*noinspection CssUnresolvedCustomProperty*/
   --font-sans: var(--font-nunito);
 }

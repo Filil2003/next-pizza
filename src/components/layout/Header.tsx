@@ -25,6 +25,7 @@ export function Header({ className }: Props) {
             </p>
           </div>
         </Link>
+
         {/* Middle side */}
         <Search />
 

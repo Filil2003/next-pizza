@@ -9,6 +9,7 @@ import { cn } from "#/shared/lib/tailwind";
 
 const variants = cva(
   `
+  w-fit h-fit
   inline-flex items-center justify-center
   text-sm font-bold whitespace-nowrap
   rounded-full

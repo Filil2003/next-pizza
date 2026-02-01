@@ -2,8 +2,8 @@ import "./globals.css";
 import { clsx } from "clsx";
 import { Nunito } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
-import type { ReactNode } from "react";
-import { QueryProvider } from "#/shared/lib/tanstack/query";
+import type { PropsWithChildren } from "react";
+import { TanStackProvider } from "#/shared/lib/tanstack";
 
 const nunito = Nunito({
   subsets: ["cyrillic"],
@@ -11,21 +11,17 @@ const nunito = Nunito({
   weight: ["400", "500", "600", "700", "800", "900"]
 });
 
-interface Props {
-  children: ReactNode;
-}
-
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html
       className={clsx(nunito.variable, "antialiased")}
       lang="ru"
       data-scroll-behavior="smooth"
     >
-      <body>
-        <QueryProvider>
+      <body className="min-h-svh flex flex-col">
+        <TanStackProvider>
           <NuqsAdapter>{children}</NuqsAdapter>
-        </QueryProvider>
+        </TanStackProvider>
       </body>
     </html>
   );

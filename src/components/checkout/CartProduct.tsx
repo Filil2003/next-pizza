@@ -72,7 +72,7 @@ export function CartProduct({ product, className }: Props) {
             {product.summary}
           </p>
           {product.excludedIngredients.length > 0 && (
-            <p className="text-sm font-semibold text-red-700 lowercase first-letter:uppercase">
+            <p className="text-sm font-semibold text-red-700 lowercase">
               - {product.excludedIngredients.join(", ")}
             </p>
           )}

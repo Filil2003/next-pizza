@@ -1,5 +1,5 @@
 import { mutationOptions, queryOptions } from "@tanstack/react-query";
-import { queryClient } from "#/shared/lib/tanstack/query";
+import { queryClient } from "#/shared/lib/tanstack";
 import { cartToast } from "../ui/CartToaster.tsx";
 
 export const queries = {
@@ -73,5 +73,24 @@ export const mutations = {
         });
       },
       onSuccess: () => queryClient.invalidateQueries({ queryKey: ["cart"] })
+    }),
+  createPayment: () =>
+    mutationOptions({
+      mutationFn: async (data: {
+        name: string;
+        email: string;
+        phone: string;
+        address: string;
+      }) => {
+        return fetch("/api/cart/checkout", {
+          method: "POST",
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ data })
+        });
+      },
+      onSuccess: async (response) => {
+        window.location.href = (await response.json()).confirmationUrl;
+      }
     })
 };

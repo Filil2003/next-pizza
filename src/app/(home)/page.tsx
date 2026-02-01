@@ -3,7 +3,7 @@ import { capitalize } from "#/shared/lib/string";
 import { zen } from "#/shared/lib/zenstack";
 import { Container } from "#/shared/ui";
 
-export default async function Home() {
+export default async function HomePage() {
   const categoriesRaw = await zen.category.findMany({
     orderBy: { createdAt: "asc" },
     select: {

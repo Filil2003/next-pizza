@@ -108,8 +108,8 @@ export function CartButton({ className }: Props) {
 
               <Button
                 className="text-base font-bold rounded-full w-full h-12"
-                as="link"
-                href="/cart"
+                type="link"
+                href="/checkout"
                 disabled={hasUnavailableProducts}
               >
                 Оформить заказ

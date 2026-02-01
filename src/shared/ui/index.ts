@@ -3,6 +3,7 @@ export { Button } from "./Button";
 export { Checkbox } from "./Checkbox";
 export { Container } from "./Container";
 export * from "./Dialog";
+export * from "./Field";
 export { ImageWithFallback } from "./ImageWithFallback";
 export { Input } from "./Input";
 export { Price } from "./Price";
