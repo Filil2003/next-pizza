@@ -6,6 +6,7 @@ export * from "./Dialog";
 export * from "./Field";
 export { ImageWithFallback } from "./ImageWithFallback";
 export { Input } from "./Input";
+export { Logo } from "./Logo";
 export { Price } from "./Price";
 export { RangeSlider } from "./RangeSlider";
 export { ScrollArea } from "./ScrollArea";
