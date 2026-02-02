@@ -41,7 +41,7 @@
           "weight": "240 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -138,7 +138,7 @@
           "weight": "400 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -235,7 +235,7 @@
           "weight": "290 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -332,7 +332,7 @@
           "weight": "600 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -433,7 +433,7 @@
           "weight": "470 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -530,7 +530,7 @@
           "weight": "820 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -630,7 +630,7 @@
           "price": 108900,
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "weight": "690 г",
@@ -760,7 +760,7 @@
           "weight": "250 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -857,7 +857,7 @@
           "weight": "390 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -954,7 +954,7 @@
           "weight": "310 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -1051,7 +1051,7 @@
           "weight": "560 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -1152,7 +1152,7 @@
           "weight": "460 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -1249,7 +1249,7 @@
           "weight": "790 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -1350,7 +1350,7 @@
           "weight": "690 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -1471,7 +1471,7 @@
           "weight": "230 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -1564,7 +1564,7 @@
           "weight": "370 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -1657,7 +1657,7 @@
           "weight": "280 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -1750,7 +1750,7 @@
           "weight": "580 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -1847,7 +1847,7 @@
           "weight": "480 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -1940,7 +1940,7 @@
           "weight": "780 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -2037,7 +2037,7 @@
           "weight": "670 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -2158,7 +2158,7 @@
           "weight": "220 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -2255,7 +2255,7 @@
           "weight": "330 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -2352,7 +2352,7 @@
           "weight": "250 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -2449,7 +2449,7 @@
           "weight": "520 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -2550,7 +2550,7 @@
           "weight": "400 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -2647,7 +2647,7 @@
           "weight": "700 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -2748,7 +2748,7 @@
           "weight": "600 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -2877,7 +2877,7 @@
           "weight": "230 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -2974,7 +2974,7 @@
           "weight": "350 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -3071,7 +3071,7 @@
           "weight": "270 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -3168,7 +3168,7 @@
           "weight": "530 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -3269,7 +3269,7 @@
           "weight": "430 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -3366,7 +3366,7 @@
           "weight": "730 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -3467,7 +3467,7 @@
           "weight": "630 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -3588,7 +3588,7 @@
           "weight": "210 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -3685,7 +3685,7 @@
           "weight": "340 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -3782,7 +3782,7 @@
           "weight": "230 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -3879,7 +3879,7 @@
           "weight": "510 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -3980,7 +3980,7 @@
           "weight": "400 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -4077,7 +4077,7 @@
           "weight": "690 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -4178,7 +4178,7 @@
           "weight": "570 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -4295,7 +4295,7 @@
           "weight": "180 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -4392,7 +4392,7 @@
           "weight": "310 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -4489,7 +4489,7 @@
           "weight": "210 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -4586,7 +4586,7 @@
           "weight": "470 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -4687,7 +4687,7 @@
           "weight": "360 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -4784,7 +4784,7 @@
           "weight": "640 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -4885,7 +4885,7 @@
           "weight": "530 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -5006,7 +5006,7 @@
           "weight": "200 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -5103,7 +5103,7 @@
           "weight": "330 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -5200,7 +5200,7 @@
           "weight": "240 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -5297,7 +5297,7 @@
           "weight": "470 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -5398,7 +5398,7 @@
           "weight": "380 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -5495,7 +5495,7 @@
           "weight": "630 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -5596,7 +5596,7 @@
           "weight": "500 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -5713,7 +5713,7 @@
           "weight": "190 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -5810,7 +5810,7 @@
           "weight": "320 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -5907,7 +5907,7 @@
           "weight": "240 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -6004,7 +6004,7 @@
           "weight": "480 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -6105,7 +6105,7 @@
           "weight": "370 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -6202,7 +6202,7 @@
           "weight": "630 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -6303,7 +6303,7 @@
           "weight": "550 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -6420,7 +6420,7 @@
           "weight": "190 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -6513,7 +6513,7 @@
           "weight": "360 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -6606,7 +6606,7 @@
           "weight": "240 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -6699,7 +6699,7 @@
           "weight": "520 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -6796,7 +6796,7 @@
           "weight": "430 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -6889,7 +6889,7 @@
           "weight": "710 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -6986,7 +6986,7 @@
           "weight": "610 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -7115,7 +7115,7 @@
           "weight": "270 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -7212,7 +7212,7 @@
           "weight": "430 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -7309,7 +7309,7 @@
           "weight": "320 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -7406,7 +7406,7 @@
           "weight": "610 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -7507,7 +7507,7 @@
           "weight": "490 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -7604,7 +7604,7 @@
           "weight": "860 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -7705,7 +7705,7 @@
           "weight": "710 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -7838,7 +7838,7 @@
           "weight": "240 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -7935,7 +7935,7 @@
           "weight": "390 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -8032,7 +8032,7 @@
           "weight": "300 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -8129,7 +8129,7 @@
           "weight": "560 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -8230,7 +8230,7 @@
           "weight": "480 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -8327,7 +8327,7 @@
           "weight": "800 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -8428,7 +8428,7 @@
           "weight": "690 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -8549,7 +8549,7 @@
           "weight": "250 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -8646,7 +8646,7 @@
           "weight": "370 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -8743,7 +8743,7 @@
           "weight": "280 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -8840,7 +8840,7 @@
           "weight": "580 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -8941,7 +8941,7 @@
           "weight": "450 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -9038,7 +9038,7 @@
           "weight": "740 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -9139,7 +9139,7 @@
           "weight": "660 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -9280,7 +9280,7 @@
           "weight": "240 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -9377,7 +9377,7 @@
           "weight": "370 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -9474,7 +9474,7 @@
           "weight": "270 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -9571,7 +9571,7 @@
           "weight": "570 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -9672,7 +9672,7 @@
           "weight": "460 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -9769,7 +9769,7 @@
           "weight": "760 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -9870,7 +9870,7 @@
           "weight": "650 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -9999,7 +9999,7 @@
           "weight": "260 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -10096,7 +10096,7 @@
           "weight": "390 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -10193,7 +10193,7 @@
           "weight": "300 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -10290,7 +10290,7 @@
           "weight": "630 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -10391,7 +10391,7 @@
           "weight": "480 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -10488,7 +10488,7 @@
           "weight": "800 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -10589,7 +10589,7 @@
           "weight": "710 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -10726,7 +10726,7 @@
           "weight": "220 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -10823,7 +10823,7 @@
           "weight": "410 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -10920,7 +10920,7 @@
           "weight": "290 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -11017,7 +11017,7 @@
           "weight": "590 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -11118,7 +11118,7 @@
           "weight": "520 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -11215,7 +11215,7 @@
           "weight": "800 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -11316,7 +11316,7 @@
           "weight": "710 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -11453,7 +11453,7 @@
           "weight": "260 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -11550,7 +11550,7 @@
           "weight": "430 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -11647,7 +11647,7 @@
           "weight": "310 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -11744,7 +11744,7 @@
           "weight": "630 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -11845,7 +11845,7 @@
           "weight": "510 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -11942,7 +11942,7 @@
           "weight": "820 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -12043,7 +12043,7 @@
           "weight": "730 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -12172,7 +12172,7 @@
           "weight": "250 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -12269,7 +12269,7 @@
           "weight": "400 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -12366,7 +12366,7 @@
           "weight": "300 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -12463,7 +12463,7 @@
           "weight": "610 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -12564,7 +12564,7 @@
           "weight": "490 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -12661,7 +12661,7 @@
           "weight": "810 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -12762,7 +12762,7 @@
           "weight": "740 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -12899,7 +12899,7 @@
           "weight": "260 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -12996,7 +12996,7 @@
           "weight": "420 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -13093,7 +13093,7 @@
           "weight": "300 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -13190,7 +13190,7 @@
           "weight": "630 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -13291,7 +13291,7 @@
           "weight": "540 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -13388,7 +13388,7 @@
           "weight": "890 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -13489,7 +13489,7 @@
           "weight": "780 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -13622,7 +13622,7 @@
           "weight": "230 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -13719,7 +13719,7 @@
           "weight": "410 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -13816,7 +13816,7 @@
           "weight": "310 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -13913,7 +13913,7 @@
           "weight": "620 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -14014,7 +14014,7 @@
           "weight": "510 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -14111,7 +14111,7 @@
           "weight": "860 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -14212,7 +14212,7 @@
           "weight": "760 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -14333,7 +14333,7 @@
           "weight": "220 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -14430,7 +14430,7 @@
           "weight": "390 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -14527,7 +14527,7 @@
           "weight": "290 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -14624,7 +14624,7 @@
           "weight": "590 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -14725,7 +14725,7 @@
           "weight": "490 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -14822,7 +14822,7 @@
           "weight": "810 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -14923,7 +14923,7 @@
           "weight": "680 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -15052,7 +15052,7 @@
           "weight": "260 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -15149,7 +15149,7 @@
           "weight": "420 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -15246,7 +15246,7 @@
           "weight": "320 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -15343,7 +15343,7 @@
           "weight": "640 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -15444,7 +15444,7 @@
           "weight": "540 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -15541,7 +15541,7 @@
           "weight": "900 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -15642,7 +15642,7 @@
           "weight": "780 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -15775,7 +15775,7 @@
           "weight": "270 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -15872,7 +15872,7 @@
           "weight": "410 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -15969,7 +15969,7 @@
           "weight": "310 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -16066,7 +16066,7 @@
           "weight": "630 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -16167,7 +16167,7 @@
           "weight": "470 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -16264,7 +16264,7 @@
           "weight": "880 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -16365,7 +16365,7 @@
           "weight": "720 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -16486,7 +16486,7 @@
           "weight": "250 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -16583,7 +16583,7 @@
           "weight": "400 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -16680,7 +16680,7 @@
           "weight": "290 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -16777,7 +16777,7 @@
           "weight": "590 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -16878,7 +16878,7 @@
           "weight": "500 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -16975,7 +16975,7 @@
           "weight": "830 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -17076,7 +17076,7 @@
           "weight": "710 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -17217,7 +17217,7 @@
           "weight": "280 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -17314,7 +17314,7 @@
           "weight": "420 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -17411,7 +17411,7 @@
           "weight": "320 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -17508,7 +17508,7 @@
           "weight": "610 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -17609,7 +17609,7 @@
           "weight": "510 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -17706,7 +17706,7 @@
           "weight": "910 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -17807,7 +17807,7 @@
           "weight": "750 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -17924,7 +17924,7 @@
           "weight": "220 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18017,7 +18017,7 @@
           "weight": "340 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18110,7 +18110,7 @@
           "weight": "270 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -18203,7 +18203,7 @@
           "weight": "550 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18300,7 +18300,7 @@
           "weight": "450 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -18393,7 +18393,7 @@
           "weight": "760 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18490,7 +18490,7 @@
           "weight": "630 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -18603,7 +18603,7 @@
           "weight": "250 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18700,7 +18700,7 @@
           "weight": "390 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18797,7 +18797,7 @@
           "weight": "300 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -18894,7 +18894,7 @@
           "weight": "620 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -18995,7 +18995,7 @@
           "weight": "490 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -19092,7 +19092,7 @@
           "weight": "770 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19193,7 +19193,7 @@
           "weight": "660 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -19330,7 +19330,7 @@
           "weight": "380 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19355,7 +19355,7 @@
           "weight": "270 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -19380,7 +19380,7 @@
           "weight": "610 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19405,7 +19405,7 @@
           "weight": "510 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -19430,7 +19430,7 @@
           "weight": "840 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19455,7 +19455,7 @@
           "weight": "730 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -19520,7 +19520,7 @@
           "weight": "220 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19617,7 +19617,7 @@
           "weight": "420 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19714,7 +19714,7 @@
           "weight": "290 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -19811,7 +19811,7 @@
           "weight": "610 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -19912,7 +19912,7 @@
           "weight": "530 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20009,7 +20009,7 @@
           "weight": "870 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20110,7 +20110,7 @@
           "weight": "740 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20267,7 +20267,7 @@
           "weight": "440 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20292,7 +20292,7 @@
           "weight": "310 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20317,7 +20317,7 @@
           "weight": "640 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20342,7 +20342,7 @@
           "weight": "540 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20367,7 +20367,7 @@
           "weight": "900 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20392,7 +20392,7 @@
           "weight": "800 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20453,7 +20453,7 @@
           "weight": "260 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20550,7 +20550,7 @@
           "weight": "430 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20647,7 +20647,7 @@
           "weight": "360 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20744,7 +20744,7 @@
           "weight": "650 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -20845,7 +20845,7 @@
           "weight": "520 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -20942,7 +20942,7 @@
           "weight": "860 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21043,7 +21043,7 @@
           "weight": "730 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -21164,7 +21164,7 @@
           "weight": "230 г",
           "isShowCase": false,
           "options": {
-            "size": "20 см",
+            "diameter": "20 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21261,7 +21261,7 @@
           "weight": "350 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21358,7 +21358,7 @@
           "weight": "260 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -21455,7 +21455,7 @@
           "weight": "530 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21556,7 +21556,7 @@
           "weight": "430 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -21653,7 +21653,7 @@
           "weight": "710 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21754,7 +21754,7 @@
           "weight": "610 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -21883,7 +21883,7 @@
           "weight": "400 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21908,7 +21908,7 @@
           "weight": "320 г",
           "isShowCase": false,
           "options": {
-            "size": "25 см",
+            "diameter": "25 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -21933,7 +21933,7 @@
           "weight": "590 г",
           "isShowCase": true,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -21958,7 +21958,7 @@
           "weight": "440 г",
           "isShowCase": false,
           "options": {
-            "size": "30 см",
+            "diameter": "30 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,
@@ -21983,7 +21983,7 @@
           "weight": "820 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Традиционное"
           },
           "toppingsLimit": null,
@@ -22008,7 +22008,7 @@
           "weight": "690 г",
           "isShowCase": false,
           "options": {
-            "size": "35 см",
+            "diameter": "35 см",
             "crust": "Тонкое"
           },
           "toppingsLimit": null,

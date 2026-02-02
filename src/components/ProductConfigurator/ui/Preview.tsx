@@ -5,15 +5,15 @@ import { cn } from "#/shared/lib/tailwind";
 interface Props {
   name: string;
   src: string;
-  size?: string;
+  diameter?: string;
 }
 
 /* ===== Preview component ===== */
-export function Preview({ name, size, src }: Props) {
+export function Preview({ name, diameter, src }: Props) {
   return (
     <div className="grid content-center h-full bg-secondary">
       <div className="grid place-items-center relative aspect-square">
-        {size && (
+        {diameter && (
           <svg
             className="absolute inset-0"
             viewBox="0 0 100 100"
@@ -68,15 +68,15 @@ export function Preview({ name, size, src }: Props) {
 
         <figure
           className={cn("relative transition-size duration-300 size-[85%]", {
-            "size-[52%]": size === "20 см",
-            "size-[66%]": size === "25 см",
-            "size-[80%]": size === "30 см",
-            "size-[94%]": size === "35 см"
+            "size-[52%]": diameter === "20 см",
+            "size-[66%]": diameter === "25 см",
+            "size-[80%]": diameter === "30 см",
+            "size-[94%]": diameter === "35 см"
           })}
         >
           <Image
             className={cn({
-              "transform translate-[2.5%]": size
+              "transform translate-[2.5%]": diameter
             })}
             src={src}
             alt={name}

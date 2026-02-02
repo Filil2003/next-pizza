@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren, ReactNode } from "react";
-import { Header } from "#/components";
+import { Header } from "#/components/Header.tsx";
 
 interface Props extends PropsWithChildren {
   modal: ReactNode;

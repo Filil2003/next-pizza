@@ -25,7 +25,9 @@ export function Separator({
         className
       )}
       role={isDecorative ? "none" : "separator"}
-      aria-orientation={orientation}
+      {...(!isDecorative && {
+        "aria-orientation": orientation
+      })}
       {...restProps}
     />
   );

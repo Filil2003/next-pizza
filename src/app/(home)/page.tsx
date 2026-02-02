@@ -1,4 +1,6 @@
-import { Filtration, ProductSection, TopBar } from "#/components";
+import { Filtration } from "#/components/Filtration";
+import { ProductSection } from "#/components/ProductSection";
+import { TopBar } from "#/components/TopBar.tsx";
 import { capitalize } from "#/shared/lib/string";
 import { zen } from "#/shared/lib/zenstack";
 import { Container } from "#/shared/ui";
@@ -78,7 +80,7 @@ export default async function HomePage() {
         }))}
       />
 
-      <Container className="flex gap-14 mt-10">
+      <Container className="flex gap-14 py-10">
         {/* Filtration */}
         <aside className="basis-[250px] shrink-0">
           <Filtration />

@@ -1,5 +1,5 @@
-import { notFound } from "next/dist/client/components/not-found";
-import { ProductConfigurator } from "#/components/product";
+import { notFound } from "next/navigation";
+import { ProductConfigurator } from "#/components/ProductConfigurator";
 import { zen } from "#/shared/lib/zenstack";
 import { Container } from "#/shared/ui";
 
@@ -61,6 +61,7 @@ export default async function ProductPage({ params }: Props) {
       <ProductConfigurator
         product={{
           name: product.name,
+          inStock: product.inStock,
           description: product.description ?? "",
           ingredients: product.ingredients.map(
             ({ id, ingredient, isRemovable }) => ({

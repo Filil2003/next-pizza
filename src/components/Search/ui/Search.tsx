@@ -1,13 +1,14 @@
 "use client";
 
+import { useQuery } from "@tanstack/react-query";
 import { Search as SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { type ChangeEvent, useEffect, useRef, useState } from "react";
+import { type ChangeEvent, useId, useRef, useState } from "react";
 import { useClickAway } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 import { Price } from "#/shared/ui";
-import { search } from "./api";
+import { queries } from "../api";
 
 /* ===== Typing props ===== */
 interface Props {
@@ -18,16 +19,11 @@ interface Props {
 export const Search = ({ className }: Props) => {
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
-  const [suggestions, setSuggestions] = useState<
-    Awaited<ReturnType<typeof search>>
-  >([]);
+  const { data: suggestions = [] } = useQuery(queries.search(query));
   const searchRef = useRef(null);
+  const suggestionsId = useId();
 
   useClickAway(searchRef, () => setIsFocused(false));
-
-  useEffect(() => {
-    if (query) void search(query).then(setSuggestions);
-  }, [query]);
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     const newSearchValue = event.currentTarget.value
@@ -43,10 +39,10 @@ export const Search = ({ className }: Props) => {
   function handleClick() {
     setIsFocused(false);
     setQuery("");
-    setSuggestions([]);
   }
 
-  // TODO: Добавить анимацию печатания категорий: Найти пиццу... Найти кофе... и так далее
+  const hasSuggestions = isFocused && suggestions.length > 0;
+
   return (
     <>
       {isFocused && (
@@ -60,11 +56,13 @@ export const Search = ({ className }: Props) => {
             className="rounded-2xl outline-none h-full w-full bg-gray-100 pl-11"
             type="search"
             name="query"
-            placeholder="Найти пиццу..."
+            placeholder="Найти покушать..."
             autoComplete="off"
             value={query}
+            role="combobox"
             aria-autocomplete="list"
-            aria-controls="suggestions"
+            aria-expanded={hasSuggestions}
+            aria-controls={suggestionsId}
             onChange={handleChange}
             onFocus={handleFocus}
           />
@@ -75,7 +73,7 @@ export const Search = ({ className }: Props) => {
               "absolute w-full bg-white rounded-xl py-2 top-14 shadow-md transition-all duration-200 invisible opacity-0 z-30",
               isFocused && "visible opacity-100 top-12"
             )}
-            id="suggestions"
+            id={suggestionsId}
             role="listbox"
           >
             {suggestions.map((suggestion) => (

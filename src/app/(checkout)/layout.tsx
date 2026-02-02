@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
-import { Header } from "#/components";
+import { Header } from "#/components/Header.tsx";
 
 export const metadata: Metadata = {
   title: "Next Pizza | Оформление заказа"

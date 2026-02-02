@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import type { ComponentProps } from "react";
 import { cn } from "#/shared/lib/tailwind";
-import { Dialog, DialogContent } from "#/shared/ui";
+import { Dialog, DialogContent, DialogTitle } from "#/shared/ui";
 import { ProductConfigurator } from "./ProductConfigurator.tsx";
 
 /* ===== Typing props ===== */
@@ -18,6 +18,7 @@ export function ProductConfiguratorModal({ product, className }: Props) {
 
   return (
     <Dialog open={Boolean(product)} onOpenChange={() => router.back()}>
+      <DialogTitle className="sr-only">Конфигуратор продукта</DialogTitle>
       <DialogContent className={cn("", className)}>
         <ProductConfigurator product={product} />
       </DialogContent>

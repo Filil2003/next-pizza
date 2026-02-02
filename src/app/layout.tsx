@@ -1,5 +1,6 @@
 import "./globals.css";
 import { clsx } from "clsx";
+import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import type { PropsWithChildren } from "react";
@@ -10,6 +11,11 @@ const nunito = Nunito({
   variable: "--font-nunito",
   weight: ["400", "500", "600", "700", "800", "900"]
 });
+
+export const metadata: Metadata = {
+  description:
+    "Учебный проект, повторяющий интерфейс и функциональность сервиса Додо Пицца"
+};
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (

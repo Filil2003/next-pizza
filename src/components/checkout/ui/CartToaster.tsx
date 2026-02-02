@@ -13,7 +13,7 @@ export function CartToaster({ name, summary }: Props) {
     <div className="min-w-62 py-4 px-5 text-sm font-bold text-white bg-[#373535]  rounded-xl opacity-95">
       <p>Добавлено:</p>
       <p>
-        {name}, {summary}
+        {name}: <span className="lowercase">{summary}</span>
       </p>
     </div>
   );

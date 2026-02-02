@@ -12,7 +12,7 @@ interface Props extends ComponentProps<"article"> {
 
 /* ===== OrderSummary component ===== */
 export function OrderSummary({ className }: Props) {
-  const { products, totalPrice, productsQuantity } = useCart();
+  const { products, totalPrice } = useCart();
 
   const promoDiscount = Math.floor((totalPrice * 15) / 100);
   const deliveryPrice = 25000;
@@ -66,7 +66,7 @@ export function OrderSummary({ className }: Props) {
       <footer className="mt-4 pt-4 border-t-2 border-t-gray-200">
         <dl>
           <p className="flex justify-between">
-            <dt>{productsQuantity} товаров</dt>
+            <dt>Сумма корзины</dt>
             <dd>
               <Price amount={totalPrice} />
             </dd>
@@ -84,7 +84,7 @@ export function OrderSummary({ className }: Props) {
             </dd>
           </p>
           <p className="flex justify-between mt-4 pt-4 border-t-2 border-t-gray-200">
-            <dt className="text-lg font-bold">Сумма заказа</dt>
+            <dt className="text-lg font-bold">Итого</dt>
             <dd>
               <Price amount={finalPrice} />
             </dd>

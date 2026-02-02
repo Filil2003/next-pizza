@@ -14,14 +14,10 @@ export function Logo({ className }: Props) {
       className={cn("flex items-center gap-4", className)}
       aria-label="Перейти на главную страницу"
     >
-      <figure className="relative h-full aspect-square">
-        <Image src="/logo.png" alt="Логотип" aria-hidden fill />
-      </figure>
+      <Image width={36} height={36} src="/logo.png" alt="Логотип" aria-hidden />
       <div>
-        <h1 className="text-[22px] uppercase font-black">Next Pizza</h1>
-        <p className="text-sm text-justify text-gray-400 leading-3">
-          вкуснее уже некуда
-        </p>
+        <h1 className="text-[22px] uppercase font-black">Next Pizza</h1>
+        <p className="text-sm text-gray-400 leading-3">вкуснее уже некуда</p>
       </div>
     </Link>
   );

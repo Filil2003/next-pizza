@@ -1,29 +1,27 @@
-"use server";
-
 import type { ComponentProps } from "react";
-import { SortPopover } from "#/components/filtration";
-import { Categories } from "#/components/navigation";
 import { cn } from "#/shared/lib/tailwind";
 import { Container } from "#/shared/ui";
+import { Categories } from "./Categories";
+import { CartButton } from "./checkout";
 
 /* ===== Typing props ===== */
-interface Props {
+interface Props extends ComponentProps<"div"> {
   categories: ComponentProps<typeof Categories>["categories"];
-  className?: string;
 }
 
 /* ===== TopBar component ===== */
-export async function TopBar({ categories, className }: Props) {
+export async function TopBar({ categories, className, ...restProps }: Props) {
   return (
     <div
       className={cn(
-        "sticky top-0 z-10 bg-white py-5 shadow-lg shadow-black/5",
+        "sticky top-0 z-10 bg-white/80 backdrop-blur-xl backdrop-filter py-2 ",
         className
       )}
+      {...restProps}
     >
-      <Container className="flex justify-between">
+      <Container className="flex items-center justify-between">
         <Categories categories={categories} />
-        <SortPopover />
+        <CartButton />
       </Container>
     </div>
   );

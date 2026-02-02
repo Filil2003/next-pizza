@@ -1,11 +1,11 @@
 import { useMutation } from "@tanstack/react-query";
 import { XIcon } from "lucide-react";
 import Image from "next/image";
-import { mutations } from "#/components/checkout/api";
 import { useAppearanceDelay } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 import { Button, Price } from "#/shared/ui";
-import { QuantityCounter } from "./ui/QuantityCounter.tsx";
+import { mutations } from "../api";
+import { QuantityCounter } from "./QuantityCounter.tsx";
 
 /* ===== Typing props ===== */
 interface Props {

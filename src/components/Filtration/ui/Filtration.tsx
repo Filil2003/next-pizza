@@ -21,7 +21,7 @@ export async function Filtration({ className }: Props) {
 
   return (
     <aside className={className}>
-      <h4 className="text-2xl mb-5 font-bold">Фильтрация</h4>
+      <h2 className="text-2xl mb-5 font-bold">Фильтрация</h2>
 
       <Suspense>
         <PriceFilter />

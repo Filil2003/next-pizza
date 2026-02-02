@@ -2,7 +2,7 @@
 
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
-import { mutations } from "#/components/checkout/api";
+import { mutations } from "#/components/checkout";
 import { useAppearanceDelay } from "#/shared/lib/react";
 import { cn } from "#/shared/lib/tailwind";
 import { Button, Price, ToggleGroup } from "#/shared/ui";
@@ -74,7 +74,7 @@ export function ProductConfigurator({ product, className }: Props) {
       {/* ===== Preview ===== */}
       <Preview
         name={product.name}
-        size={selectedVariant.options["size"] ?? ""}
+        diameter={selectedVariant.options["diameter"] ?? ""}
         src={selectedVariant.imageUrl}
       />
 

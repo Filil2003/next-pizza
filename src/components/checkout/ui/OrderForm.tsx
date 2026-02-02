@@ -3,10 +3,10 @@
 import { useMutation } from "@tanstack/react-query";
 import type { ComponentProps } from "react";
 import * as z from "zod";
-import { mutations } from "#/components/checkout/api";
 import { cn } from "#/shared/lib/tailwind";
 import { useAppForm } from "#/shared/lib/tanstack/form";
 import { FieldGroup, FieldSet } from "#/shared/ui";
+import { mutations } from "../api";
 
 /* ===== Typing props ===== */
 interface Props extends ComponentProps<"form"> {

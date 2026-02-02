@@ -9,10 +9,11 @@ import { cn } from "#/shared/lib/tailwind";
 
 const variants = cva(
   `
-  w-fit h-fit
   inline-flex items-center justify-center
-  text-sm font-bold whitespace-nowrap
+  text-base font-bold whitespace-nowrap
   rounded-full
+  leading-1
+  min-h-10
   transition-colors
   has-[svg]:gap-1
   not-disabled:active:translate-y-px
@@ -64,6 +65,7 @@ type ButtonSpecificProps = ComponentProps<"button"> & {
 
 type LinkSpecificProps = ComponentProps<typeof Link> & {
   type: "link";
+  disabled?: boolean;
 };
 
 type Props = CommonProps & (ButtonSpecificProps | LinkSpecificProps);
@@ -79,9 +81,12 @@ export function Button({
   const classNames = cn(variants({ variant, size }), className);
 
   if (restProps.type === "link") {
-    const { type: _, ...linkProps } = restProps;
+    const { type: _, disabled = false, ...linkProps } = restProps;
     return (
-      <Link className={classNames} {...linkProps}>
+      <Link
+        className={cn({ "pointer-events-none": disabled }, classNames)}
+        {...linkProps}
+      >
         {children}
       </Link>
     );

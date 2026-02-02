@@ -8,5 +8,9 @@ interface Props extends PropsWithChildren {
 
 /* ===== Container component ===== */
 export function Container({ className, children }: Props) {
-  return <div className={cn("mx-auto max-w-7xl", className)}>{children}</div>;
+  return (
+    <div className={cn("mx-auto max-w-7xl px-3 md:px-0", className)}>
+      {children}
+    </div>
+  );
 }

@@ -7,9 +7,10 @@ import {
   ShoppingCartIcon
 } from "lucide-react";
 import Image from "next/image";
+import type { ComponentProps } from "react";
 import { Toaster } from "sonner";
 import { cn } from "#/shared/lib/tailwind";
-import { Button, Price, ScrollArea, Sheet } from "#/shared/ui";
+import { Button, Price, ScrollArea, Separator, Sheet } from "#/shared/ui";
 import {
   SheetClose,
   SheetContent,
@@ -18,13 +19,11 @@ import {
   SheetTitle,
   SheetTrigger
 } from "#/shared/ui/Sheet.tsx";
+import { useCart } from "../model";
 import { CartProduct } from "./CartProduct.tsx";
-import { useCart } from "./model";
 
 /* ===== Typing props ===== */
-interface Props {
-  className?: string;
-}
+type Props = ComponentProps<"button">;
 
 /* ===== CartButton component ===== */
 export function CartButton({ className }: Props) {
@@ -40,20 +39,27 @@ export function CartButton({ className }: Props) {
     <Sheet>
       <div className="relative">
         <SheetTrigger asChild>
-          <Button className={cn("", className)} loading={isLoading}>
-            <div className="group grid grid-cols-[repeat(3,auto)] items-start">
-              <Price className="font-bold" amount={totalPrice} />
-              <span className="h-full w-px bg-white/30 mx-3" />
-              <div className="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0 col-start-3 row-start-1">
-                <ShoppingCartIcon size="16" strokeWidth="2" />
-                <b>{productsQuantity}</b>
+          {productsQuantity === 0 ? (
+            <Button className={cn("min-w-33", className)} loading={isLoading}>
+              Корзина
+            </Button>
+          ) : (
+            <Button className={cn("group min-w-33", className)}>
+              <div className="grid grid-cols-[repeat(3,auto)] items-center">
+                <Price amount={totalPrice} className="font-bold" />
+                <Separator orientation="vertical" className="mx-3" />
+
+                <div className="col-start-3 row-start-1 flex items-center gap-1 justify-self-center transition-opacity duration-300 group-hover:opacity-0">
+                  <ShoppingCartIcon size={16} strokeWidth={2} />
+                  {productsQuantity}
+                </div>
+                <ArrowRight
+                  size={20}
+                  className="col-start-3 row-start-1 -translate-x-2 justify-self-center opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                />
               </div>
-              <ArrowRight
-                size={20}
-                className="transition duration-300 opacity-0 group-hover:opacity-100 col-start-3 row-start-1 -translate-x-2 group-hover:translate-x-0 justify-self-center"
-              />
-            </div>
-          </Button>
+            </Button>
+          )}
         </SheetTrigger>
         <Toaster
           position="top-right"

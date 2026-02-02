@@ -1,5 +1,5 @@
-import { notFound } from "next/dist/client/components/not-found";
-import { ProductConfiguratorModal } from "#/components/product";
+import { notFound } from "next/navigation";
+import { ProductConfiguratorModal } from "#/components/ProductConfigurator";
 import { zen } from "#/shared/lib/zenstack";
 
 interface Props {
