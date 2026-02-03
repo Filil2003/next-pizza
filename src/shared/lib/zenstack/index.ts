@@ -9,7 +9,7 @@ export * from "./generated/models";
 export const zen = new ZenStackClient(schema, {
   dialect: new PostgresDialect({
     pool: new Pool({
-      connectionString: process.env.DATABASE_URL
+      connectionString: process.env["DATABASE_URL"]
     })
   })
 });

@@ -6,7 +6,7 @@ next-env.d.ts
 node_modules/
 
 # Build output
-build/
+dist/
 
 # Editor directories and files
 .vscode/*

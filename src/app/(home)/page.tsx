@@ -5,6 +5,8 @@ import { capitalize } from "#/shared/lib/string";
 import { zen } from "#/shared/lib/zenstack";
 import { Container } from "#/shared/ui";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const categoriesRaw = await zen.category.findMany({
     orderBy: { createdAt: "asc" },

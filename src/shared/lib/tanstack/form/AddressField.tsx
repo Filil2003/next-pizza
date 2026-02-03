@@ -36,7 +36,7 @@ export function AddressField({ label }: Props) {
         }}
         selectOnBlur
         onChange={(data) => field.handleChange(data?.value ?? "")}
-        token={process.env.NEXT_PUBLIC_DADATA_TOKEN ?? ""}
+        token={process.env["NEXT_PUBLIC_DADATA_TOKEN"] ?? ""}
       />
       {isInvalid && <FieldError errors={field.state.meta.errors} />}
     </Field>

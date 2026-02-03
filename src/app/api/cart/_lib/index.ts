@@ -35,7 +35,7 @@ export async function findOrCreateCart() {
 
   cookieStore.set("cart", newCart.id, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure: process.env["NODE_ENV"] === "production",
     sameSite: "lax",
     maxAge: 60 * 60 * 24
   });

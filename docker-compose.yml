@@ -10,6 +10,17 @@ services:
       - "5432:5432"
     volumes:
       - storage:/var/lib/postgresql/data
-
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: next-pizza_app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.local
+    depends_on:
+      - db
 volumes:
   storage:

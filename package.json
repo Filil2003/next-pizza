@@ -11,6 +11,7 @@
     "format": "biome format --write",
     "check": "biome check --fix --error-on-warnings --no-errors-on-unmatched",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-versel": "pnpm db:generate && pnpm build",
     "db:push": "zen db push --force-reset",
     "db:generate": "zen generate",
     "db:migrate": "zen migrate dev",

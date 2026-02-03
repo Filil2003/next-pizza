@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
       headers: {
         "Content-Type": "application/json",
         "Idempotence-Key": crypto.randomUUID(),
-        Authorization: `Basic ${btoa(`${process.env.YOOKASSA_SHOP_ID}:${process.env.YOOKASSA_API_KEY}`)}`
+        Authorization: `Basic ${btoa(`${process.env["YOOKASSA_SHOP_ID"]}:${process.env["YOOKASSA_API_KEY"]}`)}`
       },
       body: JSON.stringify({
         capture: true,
