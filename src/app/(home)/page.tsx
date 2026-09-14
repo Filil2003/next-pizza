@@ -84,9 +84,7 @@ export default async function HomePage() {
 
       <Container className="flex gap-14 py-10">
         {/* Filtration */}
-        <aside className="basis-[250px] shrink-0">
-          <Filtration />
-        </aside>
+        <Filtration className="sticky left-0 top-20 h-max basis-62.5 shrink-0" />
 
         {/* Feed */}
         <div className="grow flex flex-col gap-24">
