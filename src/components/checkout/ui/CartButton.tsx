@@ -139,7 +139,7 @@ export function CartButton({ className }: Props) {
               Пицца, пицца и что‑нибудь попить.
             </p>
 
-            <SheetClose>
+            <SheetClose asChild={true}>
               <Button className="text-base">
                 <ArrowLeft className="w-5 mr-2" />
                 Вернуться назад
