@@ -1,3 +1,4 @@
+import type { JsonValue } from "@zenstackhq/orm";
 import { type NextRequest, NextResponse } from "next/server";
 import { zen } from "#/shared/lib/zenstack";
 import { findOrCreateCart } from "../_lib";
@@ -95,7 +96,9 @@ export async function POST(request: NextRequest) {
       {
         name: result.productVariant.product.name,
         summary: [
-          ...Object.values(result.productVariant.options),
+          ...Object.values(
+            result.productVariant.options as Record<string, JsonValue | null>
+          ),
           result.productVariant.weight
         ]
           .filter(Boolean)

@@ -1,3 +1,4 @@
+import type { JsonValue } from "@zenstackhq/orm";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { zen } from "#/shared/lib/zenstack";
@@ -54,7 +55,9 @@ export async function GET() {
       name: item.productVariant.product.name,
       inStock: item.productVariant.product.inStock,
       summary: [
-        ...Object.values(item.productVariant.options),
+        ...Object.values(
+          item.productVariant.options as Record<string, JsonValue | null>
+        ),
         item.productVariant.weight
       ]
         .filter(Boolean)

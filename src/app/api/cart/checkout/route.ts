@@ -1,3 +1,4 @@
+import type { JsonValue } from "@zenstackhq/orm";
 import { cookies } from "next/headers";
 import { type NextRequest, NextResponse } from "next/server";
 import { zen } from "#/shared/lib/zenstack";
@@ -58,7 +59,12 @@ export async function POST(request: NextRequest) {
             cart.items.map((item) => ({
               name: item.productVariant.product.name,
               summary: [
-                ...Object.values(item.productVariant.options),
+                ...Object.values(
+                  item.productVariant.options as Record<
+                    string,
+                    JsonValue | null
+                  >
+                ),
                 item.productVariant.weight
               ]
                 .filter(Boolean)
