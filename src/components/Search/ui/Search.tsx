@@ -50,10 +50,10 @@ export const Search = ({ className }: Props) => {
       )}
 
       <search className={cn("relative z-30", className)} ref={searchRef}>
-        <form className="relative h-full">
+        <form className="relative h-10">
           <SearchIcon className="text-gray-400 absolute top-1/2 -translate-y-1/2 left-3 h-[1.8cap]" />
           <input
-            className="rounded-2xl outline-none h-full w-full bg-gray-100 pl-11"
+            className="rounded-full outline-none h-full w-full bg-gray-100 pl-11"
             type="search"
             name="query"
             placeholder="Найти покушать..."
