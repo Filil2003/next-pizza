@@ -34,32 +34,34 @@ export function QuantityCounter({ product }: Props) {
   }
 
   return (
-    <div className="relative flex gap-1 items-center bg-primary  text-primary-foreground rounded-full">
+    <div className="relative flex text-primary-foreground rounded-full overflow-hidden">
       <button
         type="button"
-        className="grid place-items-center size-8 hover:text-black transition-colors"
+        className="grid place-items-center size-8 bg-primary hover:bg-primary/90 transition-colors"
         onClick={handleDecrement}
         disabled={isPending}
         aria-label="Уменьшить количество"
       >
         <Minus className="h-4" aria-hidden />
       </button>
-      {isPending && (
-        <LoaderCircleIcon
-          className="absolute inset-0 m-auto size-5 animate-spin"
-          aria-hidden
-        />
-      )}
-      <span
-        className={cn("text-base", {
-          "text-transparent": isPending
-        })}
-      >
-        {product.quantity}
-      </span>
+      <div className="flex items-center bg-primary px-1">
+        {isPending && (
+          <LoaderCircleIcon
+            className="absolute inset-0 m-auto size-5 animate-spin"
+            aria-hidden
+          />
+        )}
+        <span
+          className={cn("text-base", {
+            "text-transparent": isPending
+          })}
+        >
+          {product.quantity}
+        </span>
+      </div>
       <button
         type="button"
-        className="grid place-items-center size-8 hover:text-black transition-colors"
+        className="grid place-items-center size-8 bg-primary hover:bg-primary/90 transition-colors"
         onClick={handleIncrement}
         disabled={isPending}
         aria-label="Увеличить количество"
