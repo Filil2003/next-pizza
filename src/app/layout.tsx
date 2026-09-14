@@ -13,8 +13,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  description:
-    "Учебный проект, повторяющий интерфейс и функциональность сервиса Додо Пицца"
+  description: "Учебный проект пиццерии"
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {

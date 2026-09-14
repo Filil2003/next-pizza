@@ -1,27 +1,21 @@
 "use client";
 
-import { TanStackDevtools } from "@tanstack/react-devtools";
-import { formDevtoolsPlugin } from "@tanstack/react-form-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
+import dynamic from "next/dynamic";
 import type { PropsWithChildren } from "react";
 
 export const queryClient = new QueryClient();
+
+const Devtools = dynamic(
+  () => import("./devtools-setup").then((mod) => mod.default),
+  { ssr: false }
+);
 
 export function TanStackProvider({ children }: PropsWithChildren) {
   return (
     <QueryClientProvider client={queryClient}>
       {children}
-      <TanStackDevtools
-        plugins={[
-          {
-            name: "TanStack Query",
-            render: <ReactQueryDevtoolsPanel />,
-            defaultOpen: true
-          },
-          formDevtoolsPlugin()
-        ]}
-      />
+      {process.env.NODE_ENV === "development" && <Devtools />}
     </QueryClientProvider>
   );
 }
