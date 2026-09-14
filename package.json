@@ -29,6 +29,7 @@
     "@tanstack/react-form-nextjs": "^1.33.5",
     "@tanstack/react-query": "^5.102.8",
     "@zenstackhq/orm": "^3.9.4",
+    "@zenstackhq/schema": "^3.9.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.45.0",
