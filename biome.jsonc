@@ -16,7 +16,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "correctness": {
         /* TanStack Form use children prop */
         "noChildrenProp": "off"
